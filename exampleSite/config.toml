@@ -216,7 +216,7 @@ home = "Accueil"
 
 ########################### Russian language ############################
 [Languages.ru]
-languageName = RU"
+languageName = "RU"
 languageCode = "ru-ru"
 contentDir = "content/russian"
 weight = 3
