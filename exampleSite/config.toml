@@ -1,23 +1,97 @@
-######################## default configuration ####################
 baseURL = "http://examplesite.org"
-title = "AMICO DIGITAL"
-theme = "enov-hugo"
-# post pagination
-paginate = "6"
-# post excerpt
-summaryLength = "10"
-# disqus short name
-disqusShortname = "enov" # get your shortname form here : https://disqus.com
 defaultContentLanguage = "ua"
-# disable language
-disableLanguages = [] # desable language from here
-
+disableLanguages = []
+disqusShortname = "enov"
+paginate = "6"
+summaryLength = "10"
+theme = "enov-hugo"
+title = "AMICO DIGITAL"
+[Languages.en]
+contentDir = "content/english"
+copyright = ""
+home = "Home"
+languageCode = "en-us"
+languageName = "En"
+weight = 2
+[Languages.ru]
+contentDir = "content/russian"
+home = "Accueil"
+languageCode = "ru-ru"
+languageName = "RU"
+weight = 3
+[Languages.ua]
+contentDir = "content/ukrainian"
+home = "Accueil"
+languageCode = "ua-ua"
+languageName = "UA"
+weight = 1
+[[menu.footer]]
+URL = "service"
+name = "service"
+weight = 1
+[[menu.footer]]
+URL = "about"
+name = "about"
+weight = 2
+[[menu.footer]]
+URL = "blog"
+name = "blog"
+weight = 3
+[[menu.footer]]
+URL = "pricing"
+name = "pricing"
+weight = 4
+[[menu.main]]
+URL = "about"
+name = "About"
+weight = 2
+[[menu.main]]
+URL = "blog"
+name = "Blog"
+weight = 3
+[[menu.main]]
+hasChildren = true
+name = "Pages"
+weight = 4
+[[menu.main]]
+URL = "project"
+name = "Portfolio"
+parent = "Pages"
+[[menu.main]]
+URL = "pricing"
+name = "Pricing"
+parent = "Pages"
+[[menu.main]]
+URL = "service"
+name = "Service"
+parent = "Pages"
+[[menu.main]]
+URL = "contact"
+name = "Contact"
+weight = 5
 [outputs]
 home = ["HTML", "RSS", "JSON"]
-
-######################### Plugins #############################
-
-# CSS Plugins
+[params]
+address = "9567 Turner Trace Apt. BC C3G8A4"
+author = "Themefisher"
+contact_form_action = "#"
+description = "This is meta description"
+email = "info@enov.com"
+google_analitycs_id = ""
+logo = "images/logo.png"
+phone = "+211234565523"
+search = true
+top_header = true
+[params.map]
+enable = true
+gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
+map_latitude = "51.5223477"
+map_longitude = "-0.1622023"
+map_marker = "images/marker.png"
+[params.navigation_button]
+enable = true
+label = "get a quote"
+link = "contact"
 [[params.plugins.css]]
 link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
@@ -28,8 +102,6 @@ link = "plugins/magnific-popup/magnific-popup.css"
 link = "plugins/slick/slick.css"
 [[params.plugins.css]]
 link = "plugins/aos/aos.css"
-
-# JS Plugins
 [[params.plugins.js]]
 link = "plugins/jquery/jquery.js"
 [[params.plugins.js]]
@@ -50,174 +122,38 @@ link = "plugins/search/mark.js"
 link = "plugins/search/search.js"
 [[params.plugins.js]]
 link = "plugins/google-map/map.js"
-  
-############################## navigation ###############################
-
-# main menu
-[[menu.main]]
-name = "About"
-URL = "about"
-weight = 2
-
-[[menu.main]]
-name = "Blog"
-URL = "blog"
-weight = 3
-
-[[menu.main]]
-weight = 4
-name = "Pages"
-hasChildren = true
-
-  [[menu.main]]
-  parent = "Pages"
-  name = "Portfolio"
-  URL = "project"
-
-  [[menu.main]]
-  parent = "Pages"
-  name = "Pricing"
-  URL = "pricing"
-
-  [[menu.main]]
-  parent = "Pages"
-  name = "Service"
-  URL = "service"
-  
-[[menu.main]]
-name = "Contact"
-URL = "contact"
-weight = 5
-
-# footer menu
-[[menu.footer]]
-name = "service"
-URL = "service"
-weight = 1
-
-[[menu.footer]]
-name = "about"
-URL = "about"
-weight = 2
-
-[[menu.footer]]
-name = "blog"
-URL = "blog"
-weight = 3
-
-[[menu.footer]]
-name = "pricing"
-URL = "pricing"
-weight = 4
-
-
-#################### default parameters ################################
-[params]
-logo = "images/logo.png"
-# top header
-top_header = true
-# Meta data
-description = "This is meta description"
-author = "Themefisher"
-# contact info
-address = "9567 Turner Trace Apt. BC C3G8A4"
-phone = "+211234565523"
-email = "info@enov.com"
-# contact form action
-contact_form_action = "#" # contact form works with https://formspree.io
-# Google Analitycs
-google_analitycs_id = "" # your id
-# search
-search = true
-
-# Preloader
 [params.preloader]
 enable = true
-preloader = "" # use jpg, png, svg or gif format.
-
-# Navigation button
-[params.navigation_button]
-enable = true
-label = "get a quote"
-link = "contact"
-
-# google map
-[params.map]
-enable = true
-gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
-map_latitude = "51.5223477"
-map_longitude = "-0.1622023"
-map_marker = "images/marker.png"
-
-######################### Clients logo ################################
+preloader = ""
 [[params.clients_logo]]
 logo = "images/about/key-vision1.png"
-
 [[params.clients_logo]]
 logo = "images/about/key-vision2.png"
-
 [[params.clients_logo]]
 logo = "images/about/key-vision3.png"
-
 [[params.clients_logo]]
 logo = "images/about/key-vision4.png"
-
 [[params.clients_logo]]
 logo = "images/about/key-vision3.png"
-
 [[params.clients_logo]]
 logo = "images/about/key-vision5.png"
-
 [[params.clients_logo]]
 logo = "images/about/key-vision2.png"
-
 [[params.clients_logo]]
 logo = "images/about/key-vision1.png"
-
-#################### social icon ######################################
 [[params.social]]
-name = "Facebook"
 icon = "ti-facebook"
 link = "#"
-
+name = "Facebook"
 [[params.social]]
-name = "Twitter"
 icon = "ti-twitter-alt"
 link = "#"
-
+name = "Twitter"
 [[params.social]]
-name = "Vimeo"
 icon = "ti-vimeo-alt"
 link = "#"
-
+name = "Vimeo"
 [[params.social]]
-name = "Github"
 icon = "ti-github"
 link = "#"
-
-########################### English language ###########################
-[Languages.en]
-languageName = "En"
-languageCode = "en-us"
-contentDir = "content/english"
-weight = 2
-home = "Home"
-# copyright
-copyright = "Copyright &copy; 2020 a hugo theme by [themefisher](https://themefisher.com)"
-
-
-########################### Ukraine language ############################
-[Languages.ua]
-languageName = "UA"
-languageCode = "ua-ua"
-contentDir = "content/ukrainian"
-weight = 1
-home = "Accueil"
-
-########################### Russian language ############################
-[Languages.ru]
-languageName = "RU"
-languageCode = "ru-ru"
-contentDir = "content/russian"
-weight = 3
-home = "Accueil"
+name = "Github"
