@@ -1,64 +1,53 @@
 .widget {
-  margin-bottom: 30px;
-  padding-bottom: 35px;
-
+  margin-bottom:30px;
+  padding-bottom:35px;
   .widget-title {
-    margin-bottom: 15px;
-    padding-bottom: 10px;
+    margin-bottom:15px;
+    padding-bottom:10px;
     font-size: 16px;
-    color: #333;
-    font-weight: 500;
-    border-bottom: 1px solid $border-color;
+    color:#333;
+    font-weight:500;
+    border-bottom:1px solid $border-color;
   }
-
   // latest Posts
   &.widget-latest-post {
     .media {
       .media-object {
         width: 100px;
-        height: auto;
+        height:auto;
       }
-
       .media-heading {
         a {
           color: $black;
           font-size: 16px;
         }
       }
-
       p {
         font-size: 12px;
-        color: #808080;
+        color:#808080;
       }
     }
-  }
-
-  //end latest posts
+  } //end latest posts
 
   // Caterogry
   &.widget-category {
     ul {
       li {
         margin-bottom: 10px;
-
         a {
           color: #837f7e;
           @include transition (all, 0.3s, ease);
-
           &:before {
             padding-right: 10px;
           }
-
           &:hover {
-            color: $primary-color;
+            color:$primary-color;
             padding-left: 5px;
           }
         }
       }
     }
-  }
-
-  //end caterogry
+  } //end caterogry
 
   // Tag Cloud
   &.widget-tag {
@@ -66,21 +55,19 @@
       li {
         margin-bottom: 10px;
         display: inline-block;
-        margin-right: 5px;
-
+        margin-right:5px;
         a {
           color: #837f7e;
           display: inline-block;
-          padding: 8px 15px;
-          border: 1px solid #dedede;
+          padding:8px 15px;
+          border:1px solid #dedede;
           border-radius: 30px;
           font-size: 14px;
           @include transition (all, 0.3s, ease);
-
           &:hover {
-            color: $light;
+            color:$light;
             background: $primary-color;
-            border: 1px solid $primary-color;
+            border:1px solid $primary-color;
           }
         }
       }
@@ -88,3 +75,4 @@
   }
 
 }
+

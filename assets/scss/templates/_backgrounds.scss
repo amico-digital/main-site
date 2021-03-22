@@ -1,18 +1,49 @@
-.bg-1 {
+.bg-cover{
 	background-size: cover;
+	background-position: center center;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
-
-	@include tablet {
-		background-attachment: scroll;
-	}
 }
 
-.bg-2 {
-	background-size: cover;
-	background-attachment: fixed;
 
-	@include tablet {
-		background-attachment: scroll;
+@include mobile{
+	.cta-section{
+		.bg-2 {
+		    background: #eee;
+		    width: 100% !important;
+		}
+	}
+}
+@include mobile-xs{
+	.cta-section {
+	    padding: 40px 0px;
+	}
+	.cta-section{
+		.bg-2 {
+		    background: #eee;
+		    width: 100% !important;
+		}
+	}
+}
+@include tablet{
+	.cta-section {
+	    padding: 40px 0px;
+	}
+
+	.cta-section{
+		.bg-2 {
+		    background: #eee;
+		    width: 100% !important;
+		}
+	}
+}
+@include desktop{
+	.cta-section {
+	    padding: 40px 0px;
+	}
+	.cta-section{
+		.bg-2 {
+		    background: #eee;
+		    width: 100% !important;
+		}
 	}
 }

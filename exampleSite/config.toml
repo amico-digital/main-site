@@ -1,411 +1,216 @@
-################################# Default configuration ###################
+######################## default configuration ####################
 baseURL = "http://examplesite.org"
-title = "Airspace | Creative Agency Hugo Template"
-theme = "airspace-hugo"
-themesDir = "../.."
+title = "Enov Hugo | Html5 Business template"
+theme = "enov-hugo"
 # post pagination
-paginate = "4"
+paginate = "6"
 # post excerpt
-summaryLength = "30"
+summaryLength = "10"
 # disqus short name
-disqusShortname = "" # get your shortname form here : https://disqus.com
-defaultContentLanguage = "UA"
+disqusShortname = "enov" # get your shortname form here : https://disqus.com
 # disable language
-disableLanguages = []
+disableLanguages = [] # desable language from here
 
-################################# Outputs #################################
-# hugo outputs
 [outputs]
-home = ["HTML"]
+home = ["HTML", "RSS", "JSON"]
 
-# render unsafe html
-[markup.goldmark.renderer]
-unsafe = true
-
-
-#################################### Plugins ##############################
+######################### Plugins #############################
 
 # CSS Plugins
 [[params.plugins.css]]
 link = "plugins/bootstrap/bootstrap.min.css"
-attributes = "media='screen'"
-
 [[params.plugins.css]]
-link = "plugins/Ionicons/css/ionicons.min.css"
-attributes = ""
-
+link = "plugins/themify/css/themify-icons.css"
 [[params.plugins.css]]
-link = "plugins/magnific-popup/magnific-popup.min.css"
-attributes = ""
-
+link = "plugins/magnific-popup/magnific-popup.css"
 [[params.plugins.css]]
 link = "plugins/slick/slick.css"
-attributes = ""
+[[params.plugins.css]]
+link = "plugins/aos/aos.css"
 
 # JS Plugins
 [[params.plugins.js]]
-link = "plugins/jQuery/jquery.min.js"
-attributes = ""
-
+link = "plugins/jquery/jquery.js"
 [[params.plugins.js]]
 link = "plugins/bootstrap/bootstrap.min.js"
-attributes = ""
-
+[[params.plugins.js]]
+link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
 [[params.plugins.js]]
 link = "plugins/slick/slick.min.js"
-attributes = ""
-
-[[params.plugins.js]]
-link = "plugins/magnific-popup/magnific-popup.min.js"
-attributes = ""
-
 [[params.plugins.js]]
 link = "plugins/shuffle/shuffle.min.js"
-attributes = ""
-
 [[params.plugins.js]]
-link = "plugins/google-map/gmap.js"
-attributes = "defer"
+link = "plugins/aos/aos.js"
+[[params.plugins.js]]
+link = "plugins/search/fuse.min.js"
+[[params.plugins.js]]
+link = "plugins/search/mark.js"
+[[params.plugins.js]]
+link = "plugins/search/search.js"
+[[params.plugins.js]]
+link = "plugins/google-map/map.js"
+  
+############################## navigation ###############################
 
+# main menu
+[[menu.main]]
+name = "About"
+URL = "about"
+weight = 2
 
-############################### widgets #################################
+[[menu.main]]
+name = "Blog"
+URL = "blog"
+weight = 3
 
-[params.widgets]
-sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
+[[menu.main]]
+weight = 4
+name = "Pages"
+hasChildren = true
+
+  [[menu.main]]
+  parent = "Pages"
+  name = "Portfolio"
+  URL = "project"
+
+  [[menu.main]]
+  parent = "Pages"
+  name = "Pricing"
+  URL = "pricing"
+
+  [[menu.main]]
+  parent = "Pages"
+  name = "Service"
+  URL = "service"
+  
+[[menu.main]]
+name = "Contact"
+URL = "contact"
+weight = 5
+
+# footer menu
+[[menu.footer]]
+name = "service"
+URL = "service"
+weight = 1
+
+[[menu.footer]]
+name = "about"
+URL = "about"
+weight = 2
+
+[[menu.footer]]
+name = "blog"
+URL = "blog"
+weight = 3
+
+[[menu.footer]]
+name = "pricing"
+URL = "pricing"
+weight = 4
 
 
 #################### default parameters ################################
 [params]
 logo = "images/logo.png"
-logo_width = "150px"
+# top header
+top_header = true
 # Meta data
 description = "This is meta description"
 author = "Themefisher"
-# Contact Information
-mobile = "0124857985320"
-email = "demo@email.com"
-location = "North Main Street,Brooklyn Australia"
+# contact info
+address = "9567 Turner Trace Apt. BC C3G8A4"
+phone = "+211234565523"
+email = "info@enov.com"
 # contact form action
-contact_form_action = "#" # contact form works with : https://formspree.io
+contact_form_action = "#" # contact form works with https://formspree.io
 # Google Analitycs
-google_analitycs_id = "" # Your ID# search
-# multi-author support (if set to true, you must use an Array in the author field)
-multi_author = false
+google_analitycs_id = "" # your id
+# search
+search = true
 
 # Preloader
 [params.preloader]
 enable = true
-preloader = "" # use .png , .svg or .gif format
+preloader = "" # use jpg, png, svg or gif format.
 
-# Navigation get start button
-[params.nav_button]
+# Navigation button
+[params.navigation_button]
 enable = true
-label = "Get A Quote"
+label = "get a quote"
 link = "contact"
 
 # google map
-[params.gmap]
+[params.map]
 enable = true
-gmap_api = "AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
+gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
 map_latitude = "51.5223477"
 map_longitude = "-0.1622023"
 map_marker = "images/marker.png"
 
-# cookies
-[params.cookies]
-enable = true
-expire_days = 2
+######################### Clients logo ################################
+[[params.clients_logo]]
+logo = "images/about/key-vision1.png"
 
-############################# social site ########################
+[[params.clients_logo]]
+logo = "images/about/key-vision2.png"
+
+[[params.clients_logo]]
+logo = "images/about/key-vision3.png"
+
+[[params.clients_logo]]
+logo = "images/about/key-vision4.png"
+
+[[params.clients_logo]]
+logo = "images/about/key-vision3.png"
+
+[[params.clients_logo]]
+logo = "images/about/key-vision5.png"
+
+[[params.clients_logo]]
+logo = "images/about/key-vision2.png"
+
+[[params.clients_logo]]
+logo = "images/about/key-vision1.png"
+
+#################### social icon ######################################
 [[params.social]]
-icon = "ion-social-googleplus-outline" #ionicon pack v2 : https://ionicons.com/v2/
+name = "Facebook"
+icon = "ti-facebook"
 link = "#"
 
 [[params.social]]
-icon = "ion-social-linkedin-outline" #ionicon pack v2 : https://ionicons.com/v2/
+name = "Twitter"
+icon = "ti-twitter-alt"
 link = "#"
 
 [[params.social]]
-icon = "ion-social-pinterest-outline" #ionicon pack v2 : https://ionicons.com/v2/
+name = "Vimeo"
+icon = "ti-vimeo-alt"
 link = "#"
 
 [[params.social]]
-icon = "ion-social-dribbble-outline" #ionicon pack v2 : https://ionicons.com/v2/
+name = "Github"
+icon = "ti-github"
 link = "#"
 
-[[params.social]]
-icon = "ion-social-twitter-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
-
-[[params.social]]
-icon = "ion-social-facebook-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
-
-################################ Ukraine Language ########################
-[Languages.ua]
-languageName = "UA"
-languageCode = "ua-ua"
-contentDir = "content/ukrainian"
-weight = 2
-# copyright
-copyright = "Copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved"
-
-
-######################### ukraine navigation #############################
-# main menu
-[[Languages.ua.menu.main]]
-name = "Accueil"
-URL = "/"
-weight = 1
-
-[[Languages.ua.menu.main]]
-name = "À propos"
-URL = "about"
-weight = 2
-
-[[Languages.ua.menu.main]]
-name = "Projet"
-URL = "project"
-weight = 3
-
-[[Languages.ua.menu.main]]
-name = "Blog"
-URL = "blog"
-weight = 4
-
-[[Languages.ua.menu.main]]
-weight = 5
-name = "Pages"
-hasChildren = true
-
-  [[Languages.ua.menu.main]]
-  parent = "Pages"
-  name = "FAQ"
-  URL = "faq"
-
-  [[Languages.ua.menu.main]]
-  parent = "Pages"
-  name = "Tarification"
-  URL = "pricing"
-
-  [[Languages.ua.menu.main]]
-  parent = "Pages"
-  name = "Un service"
-  URL = "service"
-  
-[[Languages.ua.menu.main]]
-name = "Contact"
-URL = "contact"
-weight = 6
-
-
-# footer menu
-[[Languages.ua.menu.footer]]
-name = "About"
-URL = "about"
-weight = 1
-
-[[Languages.ua.menu.footer]]
-name = "Project"
-URL = "project"
-weight = 2
-
-[[Languages.ua.menu.footer]]
-name = "Service"
-URL = "service"
-weight = 3
-
-[[Languages.ua.menu.footer]]
-name = "Pricing"
-URL = "pricing"
-weight = 4
-
-[[Languages.ua.menu.footer]]
-name = "FAQ"
-URL = "faq"
-weight = 5
-
-[[Languages.ua.menu.footer]]
-name = "Contact"
-URL = "contact"
-weight = 6
-
-################################ English Language ########################
+########################### English language ###########################
 [Languages.en]
 languageName = "En"
 languageCode = "en-us"
 contentDir = "content/english"
 weight = 1
+home = "Home"
 # copyright
-copyright = "Copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved"
+copyright = "Copyright &copy; 2020 a hugo theme by [themefisher](https://themefisher.com)"
 
 
-######################### english navigation #############################
-# main menu
-[[Languages.en.menu.main]]
-name = "Home"
-URL = "/"
-weight = 1
-
-[[Languages.en.menu.main]]
-name = "About"
-URL = "about"
+########################### French language ############################
+[Languages.fr]
+languageName = "Fr"
+languageCode = "fr-fr"
+contentDir = "content/french"
 weight = 2
-
-[[Languages.en.menu.main]]
-name = "Project"
-URL = "project"
-weight = 3
-
-[[Languages.en.menu.main]]
-name = "Blog"
-URL = "blog"
-weight = 4
-
-[[Languages.en.menu.main]]
-weight = 5
-name = "Pages"
-hasChildren = true
-
-  [[Languages.en.menu.main]]
-  parent = "Pages"
-  name = "FAQ"
-  URL = "faq"
-
-  [[Languages.en.menu.main]]
-  parent = "Pages"
-  name = "Pricing"
-  URL = "pricing"
-
-  [[Languages.en.menu.main]]
-  parent = "Pages"
-  name = "Service"
-  URL = "service"
-  
-[[Languages.en.menu.main]]
-name = "Contact"
-URL = "contact"
-weight = 6
-
-
-# footer menu
-[[Languages.en.menu.footer]]
-name = "About"
-URL = "about"
-weight = 1
-
-[[Languages.en.menu.footer]]
-name = "Project"
-URL = "project"
-weight = 2
-
-[[Languages.en.menu.footer]]
-name = "Service"
-URL = "service"
-weight = 3
-
-[[Languages.en.menu.footer]]
-name = "Pricing"
-URL = "pricing"
-weight = 4
-
-[[Languages.en.menu.footer]]
-name = "FAQ"
-URL = "faq"
-weight = 5
-
-[[Languages.en.menu.footer]]
-name = "Contact"
-URL = "contact"
-weight = 6
-
-
-
-################################ Russian Language ########################
-[Languages.ru]
-languageName = "RU"
-languageCode = "ru-ru"
-contentDir = "content/russian"
-weight = 2
+home = "Accueil"
 # copyright
-copyright = "Copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved"
-
-
-######################### russian navigation #############################
-# main menu
-[[Languages.ru.menu.main]]
-name = "Accueil"
-URL = "/"
-weight = 1
-
-[[Languages.ru.menu.main]]
-name = "À propos"
-URL = "about"
-weight = 2
-
-[[Languages.ru.menu.main]]
-name = "Projet"
-URL = "project"
-weight = 3
-
-[[Languages.ru.menu.main]]
-name = "Blog"
-URL = "blog"
-weight = 4
-
-[[Languages.ru.menu.main]]
-weight = 5
-name = "Pages"
-hasChildren = true
-
-  [[Languages.ru.menu.main]]
-  parent = "Pages"
-  name = "FAQ"
-  URL = "faq"
-
-  [[Languages.ru.menu.main]]
-  parent = "Pages"
-  name = "Tarification"
-  URL = "pricing"
-
-  [[Languages.ru.menu.main]]
-  parent = "Pages"
-  name = "Un service"
-  URL = "service"
-  
-[[Languages.ru.menu.main]]
-name = "Contact"
-URL = "contact"
-weight = 6
-
-
-# footer menu
-[[Languages.ru.menu.footer]]
-name = "About"
-URL = "about"
-weight = 1
-
-[[Languages.ru.menu.footer]]
-name = "Project"
-URL = "project"
-weight = 2
-
-[[Languages.ru.menu.footer]]
-name = "Service"
-URL = "service"
-weight = 3
-
-[[Languages.ru.menu.footer]]
-name = "Pricing"
-URL = "pricing"
-weight = 4
-
-[[Languages.ru.menu.footer]]
-name = "FAQ"
-URL = "faq"
-weight = 5
-
-[[Languages.ru.menu.footer]]
-name = "Contact"
-URL = "contact"
-weight = 6
+copyright = "Copyright &copy; 2020 a hugo theme by [themefisher](https://themefisher.com)"

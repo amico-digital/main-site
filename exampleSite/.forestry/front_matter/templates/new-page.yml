@@ -1,16 +1,18 @@
 ---
 label: New Page
-hide_body: false
+hide_body: true
 fields:
 - type: text
   name: title
   label: title
+- type: datetime
+  name: date
+  label: date
 - type: text
   name: description
   label: description
-- name: bg_image
-  type: file
-  config:
-    maxSize: 250
+  description: meta description
+- type: file
+  name: bg_image
   label: bg image
-  description: page header background image
+  description: Page header background image

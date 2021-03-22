@@ -1,29 +1,42 @@
-.about{
-	.block{
-		
-		h2{
-			padding-top: 35px;
-			margin:0;
-		}
-		p{
-			padding-top: 20px;
-			line-height:28px;
-		}
-		img{
-			width: 100%;
-		}
+// About Setcion
+
+.about-img{
+  box-shadow: 0 30px 100px rgba(0,0,0,.17);
+  img{
+    border-radius:3px;
+  }
+}
+
+
+
+.feature {
+	span{
+		color: rgba(0,0,0,0.2);
 	}
-	.about-img {
-		overflow:hidden;
-		&:hover img {
-			transform: scale3D(1.1,1.1,1);
-		}
-		img {
-			opacity: .6;
-			@include transition (all, 0.5s, ease-out);
-		}
-	}
-	.section-title {
-		margin-bottom: 0px;
-	}
+}
+
+
+
+
+
+@include mobile-xs{
+  .bg-about{
+    display: none;
+  }
+}
+
+
+@include mobile{
+
+  .bg-about{
+    display: none;
+  }
+}
+
+
+@include tablet{
+ 
+  .bg-about{
+    display: none;
+  }
 }

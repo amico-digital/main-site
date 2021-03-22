@@ -8,20 +8,22 @@ fields:
 - type: datetime
   name: date
   label: date
-- type: file
-  name: bg_image
-  label: bg image
-  description: page header background image
-- type: file
-  name: image
-  label: image
-- type: text
-  name: author
-  label: author
 - type: text
   name: description
   label: description
-  description: this is meta description
+  description: meta description
+- type: file
+  name: bg_image
+  label: bg image
+  description: Page header background image
+- type: file
+  name: image
+  label: image
+  description: Post thumbnail
+- type: text
+  name: author
+  label: author
+  description: 'Ex: John Doe'
 - type: list
   name: categories
   label: categories

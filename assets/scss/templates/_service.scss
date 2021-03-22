@@ -1,89 +1,82 @@
+// Service section
+
 .service {
-  text-align: center;
-  padding: 90px 0;
+		.card{
+			border: 1px solid rgba(0,0,0,0.05);
+			position: relative;
+			overflow: hidden;
 
-  .service-item {
-    padding-bottom: 30px;
+		 i{
+		 	transition: all .3s ease;
+			-moz-transition: all .3s ease;
+			-webkit-transition: all .3s ease;
+			-o-transition: all .3s ease;
+		 	-webkit-transform: translateY(0px);
+			   -moz-transform: translateY(0px);
+			    -ms-transform: translateY(0px);
+			     -o-transform: translateY(0px);
+			        transform: translateY(0px);
 
-    i {
-      font-size: 60px;
-      color: $primary-color;
-    }
+		}
 
-    h4 {
-      padding-top: 15px;
-      margin: 0;
-      font-weight: 500;
-      text-transform: uppercase;
-    }
+		h4,i,p{
+			position: relative;
+		}
+		h4{
+			transition:color 0.3s ease;
+			-moz-transition: color 0.3s ease;
+			-webkit-transition: color 0.3s ease ;
+			-o-transition: color 0.3s ease ;
+		}
+		p{
+			transition:color 0.3s ease;
+			-moz-transition: color 0.3s ease;
+			-webkit-transition: color 0.3s ease;
+			-o-transition: color 0.3s ease;
+		}
 
-    p {
-      padding-top: 10px;
-      margin: 0;
-    }
-  }
+		
+		&:hover{
+
+			h4{
+				color: $light;
+			}
+			i{
+				color: $light;
+				-webkit-transform: translateY(-10px);
+				   -moz-transform: translateY(-10px);
+				    -ms-transform: translateY(-10px);
+				     -o-transform: translateY(-10px);
+				        transform: translateY(-10px);
+			}
+			p{
+				color: rgba(255,255,255,.8);
+			}
+		}
+	}
+
 }
 
-.dark-service {
-  .title {
-    color: $light;
-  }
-
-  .service-item {
-    padding-bottom: 30px;
-    text-align: center;
-
-    i {
-      font-size: 60px;
-      color: $light;
-    }
-
-    h4 {
-      color: $light;
-      padding-top: 15px;
-      margin: 0;
-      font-weight: 500;
-      text-transform: uppercase;
-    }
-
-    p {
-      padding-top: 10px;
-      margin: 0;
-    }
-  }
+.text-lg{
+	font-size: 50px;
 }
 
-.service-about {
-  p {
-    line-height: 28px;
-  }
-}
+.service .card{
+	&:before{
+		position: absolute;
+		content:"";
+		left: 0px;
+		bottom: -500px;
+		width: 100%;
+		height: 100%;
+		background: $primary-color;
+		transition: all .4s ease;
+		-moz-transition: all .4s ease;
+		-webkit-transition: all .4s ease;
+		-o-transition: all .4s ease;
+	}
 
-
-
-
-
-.service-arrow {
-  .block {
-    padding: 70px 30px;
-
-    i {
-      font-size: 40px;
-    }
-
-    p {
-      color: $light;
-    }
-  }
-}
-
-
-
-
-.service-list {
-  .block {
-    padding: 30px;
-    margin-bottom: 20px;
-    background: $light;
-  }
+	&:hover:before{
+		bottom: 0px;
+	}
 }

@@ -37,7 +37,27 @@ sections:
   templates:
   - author
 - type: heading
-  label: Project
+  label: Other Pages
+- type: directory
+  path: exampleSite/content/english/about
+  label: About (en)
+  create: none
+  match: "*"
+- type: directory
+  path: exampleSite/content/french/about
+  label: About (fr)
+  create: none
+  match: "*"
+- type: directory
+  path: exampleSite/content/english/contact
+  label: Contact (en)
+  create: none
+  match: "*"
+- type: directory
+  path: exampleSite/content/french/contact
+  label: Contact (fr)
+  create: none
+  match: "*"
 - type: directory
   path: exampleSite/content/english/project
   label: Project (en)
@@ -52,28 +72,6 @@ sections:
   match: "**/*"
   templates:
   - project
-- type: heading
-  label: Others Pages
-- type: directory
-  path: exampleSite/content/english/about
-  label: About (en)
-  create: none
-  match: "*"
-- type: directory
-  path: exampleSite/content/french/about
-  label: About (fr)
-  create: none
-  match: "*"
-- type: directory
-  path: exampleSite/content/english/service
-  label: Service (en)
-  create: none
-  match: "*"
-- type: directory
-  path: exampleSite/content/french/service
-  label: Service (fr)
-  create: none
-  match: "*"
 - type: directory
   path: exampleSite/content/english/pricing
   label: Pricing (en)
@@ -85,25 +83,19 @@ sections:
   create: none
   match: "*"
 - type: directory
-  path: exampleSite/content/english/faq
-  label: FAQ (en)
-  create: none
-  match: "*"
+  path: exampleSite/content/english/service
+  label: Service (en)
+  create: documents
+  match: "**/*"
+  templates:
+  - service
 - type: directory
-  path: exampleSite/content/french/faq
-  label: FAQ (fr)
-  create: none
-  match: "*"
-- type: directory
-  path: exampleSite/content/english/contact
-  label: Contact (en)
-  create: none
-  match: "*"
-- type: directory
-  path: exampleSite/content/french/contact
-  label: Contact (fr)
-  create: none
-  match: "*"
+  path: exampleSite/content/french/service
+  label: Service (fr)
+  create: documents
+  match: "**/*"
+  templates:
+  - service
 - type: directory
   path: exampleSite/content/english/pages
   label: Created Pages (en)
@@ -120,18 +112,14 @@ sections:
   - new-page
 - type: directory
   path: exampleSite/content/english
-  label: All Pages (en)
+  label: All Page (en)
   create: all
   match: "**/*"
-  templates:
-  - new-page
 - type: directory
   path: exampleSite/content/french
-  label: All Pages (fr)
+  label: All Page (fr)
   create: all
   match: "**/*"
-  templates:
-  - new-page
 - type: heading
   label: Data
 - type: directory

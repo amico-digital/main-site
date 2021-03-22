@@ -1,121 +1,165 @@
-.portfolio-work {
-	padding: 80px 0;
 
-	.block {
-		.portfolio-menu {
-			text-align: center;
+// Portfolio
+// 
+.portfolio{
+  .btn:focus,.btn:hover{
+    box-shadow: none!important;
+  }
+  .btn.active{
+    background: $primary-color;
+    color: $light;
+  }
+  .btn{
+    border-radius: 4px!important;
+    cursor: pointer;
+  }
 
-			.btn-group {
-				margin-bottom: 40px;
-
-				label {
-					display: inline-block;
-					border: 1px solid $border-color;
-					padding: 8px 25px;
-					cursor: pointer;
-					font-size: 15px;
-					color: #333333;
-					outline: 0;
-					background: $light;
-					margin: 2px;
-					border-radius: 0;
-					@include transition (all, 0.3s, ease);
-				}
-			}
-		}
-	}
+  .btn-group:not(:first-child) > .btn, .btn-group > .btn:not(:first-child) {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
 }
 
-.portfolio {
-	&-item {
-		position: relative;
-		padding: 0;
+ .inner-box{
+  position:relative;
+}
 
-		img {
-			width: 100%;
-			height: auto;
-		}
+.inner-box .image{
+  position:relative;
+}
 
-		&:hover {
-			.portfolio-hover {
-				visibility: visible;
-				opacity: 1;
-			}
+.inner-box .image img{
+  position:relative;
+  width:100%;
+  display:block;
+}
 
-			.portfolio-content {
-				transform: translateY(-50%);
-			}
-		}
-	}
+.inner-box .image .overlay-box{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 2;
+    opacity: 0;
+    display: block;
+    -webkit-transition: all 900ms ease;
+    -ms-transition: all 900ms ease;
+    -o-transition: all 900ms ease;
+    transition: all 900ms ease;
+}
 
-	&-hover {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		top: 0;
-		left: 0;
-		background: rgba(60, 55, 55, 0.5);
-		visibility: hidden;
-		opacity: 0;
-		transition: .3s ease;
-	}
+.inner-box .image .overlay-box:before{
+  position:absolute;
+  content:'';
+  right:0px;
+  top:0px;
+  width:50%;
+  height:100%;
+   display:block;
+  opacity:0; 
+    -webkit-transform: perspective(400px) rotateY(-90deg);
+   -moz-transform: perspective(400px) rotateY(-90deg); 
+    -ms-transform: perspective(400px) rotateY(-90deg);
+    -o-transform: perspective(400px) rotateY(-90deg); 
+    transform: perspective(400px) rotateY(-90deg); 
+    -webkit-transform-origin: right;
+    -moz-transform-origin: right;
+    -ms-transform-origin: right;
+    -o-transform-origin: right;
+    transform-origin: right;
+    -ms-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color:$primary-color;
+}
 
-	&-content {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 50%;
-		transform: translateY(-40%);
-		text-align: center;
-		padding: 20px;
-		transition: inherit;
+.inner-box:hover .image .overlay-box:before{
+  opacity: 1;
+    -webkit-transform: perspective(400px) rotateY(0deg);
+    -moz-transform: perspective(400px) rotateY(0deg);
+    -ms-transform: perspective(400px) rotateY(0deg);
+    -o-transform: perspective(400px) rotateY(0deg);
+    transform: perspective(400px) rotateY(0deg);
+}
 
-		* {
-			color: $light;
-		}
+.inner-box .image .overlay-box:after{
+  position:absolute;
+  content:'';
+  left:0px;
+  top:0px;
+  width:50%;
+  height:100%;
+  display:block;
+  opacity:0;
+    -webkit-transform: perspective(400px) rotateY(90deg);
+    -moz-transform: perspective(400px) rotateY(90deg);
+    -ms-transform: perspective(400px) rotateY(90deg);
+    -o-transform: perspective(400px) rotateY(90deg);
+    transform: perspective(400px) rotateY(90deg);
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -ms-transform-origin: right;
+    -o-transform-origin: left;
+    transform-origin: left;
+    -ms-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color:$primary-color;
+}
 
-		a {
-			display: block;
-			transition: .2s ease;
+.inner-box:hover .image .overlay-box:after{
+  opacity: 1;
+    -webkit-transform: perspective(400px) rotateY(0deg);
+    -moz-transform: perspective(400px) rotateY(0deg);
+    -ms-transform: perspective(400px) rotateY(0deg);
+    -o-transform: perspective(400px) rotateY(0deg);
+    transform: perspective(400px) rotateY(0deg);
+}
 
-			i {
-				font-size: 30px;
-			}
+ .inner-box:hover .image .overlay-box{
+  opacity: 1;
+}
 
-			&.h3 {
-				margin-top: 0;
-			}
-		}
-	}
+ .inner-box .image .overlay-box .overlay-inner{
+  position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: table;
+    text-align: left;
+    z-index:1;
+    padding: 10px 40px;
+    vertical-align: middle;
+}
+
+
+ .inner-box .image .overlay-box .overlay-inner .overlay-content{
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+ .inner-box .image h3{
+  color:$light;
 }
 
 
 
+@include mobile-xs{
+  .btn-group, .btn-group-vertical {
+    display: block;
+  }
+}
 
-// Portfolio Single Page
-.portfolio-single-page {
-	.project-details {
-		h4 {
-			margin-bottom: 20px;
-			padding-bottom: 10px;
-			border-bottom: 2px dashed $border-color;
-		}
-
-		span {
-			color: #838383;
-			width: 180px;
-			display: inline-block;
-		}
-
-		strong {
-			color: #313131;
-			font-weight: normal;
-		}
-
-		ul {
-			li {
-				margin-bottom: 10px;
-			}
-		}
-	}
+@include mobile{
+  .btn-group, .btn-group-vertical {
+    display: block;
+  }
 }
