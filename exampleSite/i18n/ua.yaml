@@ -1,30 +1,30 @@
 - id: last_update
-  translation: Last updated
+  translation: Останнє оновлення
 - id: phone
-  translation: Phone
+  translation: Телефон
 - id: email
   translation: Email
 - id: location
   translation: Location
 - id: buy_now
-  translation: Buy Now
+  translation: Купити зараз
 - id: address_title
   translation: Stop By For A visit
 - id: submit
-  translation: Send Message
+  translation: Відправити повідомлення
 - id: all
-  translation: All
+  translation: Усе
 - id: posted_by
-  translation: Posted By
+  translation: Опубліковано
 - id: read_more
-  translation: Continue Reading
+  translation: Продовжити
 - id: latest_posts
-  translation: Derniers articles
+  translation: Останні новини
 - id: page_prev
-  translation: Précédent
+  translation: Наступне
 - id: page_next
-  translation: Suivant
+  translation: Попереднє
 - id: tags
-  translation: Mots clefs
+  translation: Теги
 - id: categories
-  translation: Catégories
+  translation: Категорії

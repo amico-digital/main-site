@@ -9,6 +9,7 @@ paginate = "4"
 summaryLength = "30"
 # disqus short name
 disqusShortname = "" # get your shortname form here : https://disqus.com
+defaultContentLanguage = "UA"
 # disable language
 disableLanguages = []
 
@@ -140,6 +141,94 @@ link = "#"
 icon = "ion-social-facebook-outline" #ionicon pack v2 : https://ionicons.com/v2/
 link = "#"
 
+################################ Ukraine Language ########################
+[Languages.ua]
+languageName = "UA"
+languageCode = "ua-ua"
+contentDir = "content/ukrainian"
+weight = 2
+# copyright
+copyright = "Copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved"
+
+
+######################### ukraine navigation #############################
+# main menu
+[[Languages.ua.menu.main]]
+name = "Accueil"
+URL = "/"
+weight = 1
+
+[[Languages.ua.menu.main]]
+name = "À propos"
+URL = "about"
+weight = 2
+
+[[Languages.ua.menu.main]]
+name = "Projet"
+URL = "project"
+weight = 3
+
+[[Languages.ua.menu.main]]
+name = "Blog"
+URL = "blog"
+weight = 4
+
+[[Languages.ua.menu.main]]
+weight = 5
+name = "Pages"
+hasChildren = true
+
+  [[Languages.ua.menu.main]]
+  parent = "Pages"
+  name = "FAQ"
+  URL = "faq"
+
+  [[Languages.ua.menu.main]]
+  parent = "Pages"
+  name = "Tarification"
+  URL = "pricing"
+
+  [[Languages.ua.menu.main]]
+  parent = "Pages"
+  name = "Un service"
+  URL = "service"
+  
+[[Languages.ua.menu.main]]
+name = "Contact"
+URL = "contact"
+weight = 6
+
+
+# footer menu
+[[Languages.ua.menu.footer]]
+name = "About"
+URL = "about"
+weight = 1
+
+[[Languages.ua.menu.footer]]
+name = "Project"
+URL = "project"
+weight = 2
+
+[[Languages.ua.menu.footer]]
+name = "Service"
+URL = "service"
+weight = 3
+
+[[Languages.ua.menu.footer]]
+name = "Pricing"
+URL = "pricing"
+weight = 4
+
+[[Languages.ua.menu.footer]]
+name = "FAQ"
+URL = "faq"
+weight = 5
+
+[[Languages.ua.menu.footer]]
+name = "Contact"
+URL = "contact"
+weight = 6
 
 ################################ English Language ########################
 [Languages.en]
@@ -230,98 +319,11 @@ name = "Contact"
 URL = "contact"
 weight = 6
 
-################################ Ukraine Language ########################
-[Languages.ua]
-languageName = "Fr"
-languageCode = "ua-ua"
-contentDir = "content/ukrainian"
-weight = 2
-# copyright
-copyright = "Copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved"
 
-
-######################### ukraine navigation #############################
-# main menu
-[[Languages.ua.menu.main]]
-name = "Accueil"
-URL = "/"
-weight = 1
-
-[[Languages.ua.menu.main]]
-name = "À propos"
-URL = "about"
-weight = 2
-
-[[Languages.ua.menu.main]]
-name = "Projet"
-URL = "project"
-weight = 3
-
-[[Languages.ua.menu.main]]
-name = "Blog"
-URL = "blog"
-weight = 4
-
-[[Languages.ua.menu.main]]
-weight = 5
-name = "Pages"
-hasChildren = true
-
-  [[Languages.ua.menu.main]]
-  parent = "Pages"
-  name = "FAQ"
-  URL = "faq"
-
-  [[Languages.ua.menu.main]]
-  parent = "Pages"
-  name = "Tarification"
-  URL = "pricing"
-
-  [[Languages.ua.menu.main]]
-  parent = "Pages"
-  name = "Un service"
-  URL = "service"
-  
-[[Languages.ua.menu.main]]
-name = "Contact"
-URL = "contact"
-weight = 6
-
-
-# footer menu
-[[Languages.ua.menu.footer]]
-name = "About"
-URL = "about"
-weight = 1
-
-[[Languages.ua.menu.footer]]
-name = "Project"
-URL = "project"
-weight = 2
-
-[[Languages.ua.menu.footer]]
-name = "Service"
-URL = "service"
-weight = 3
-
-[[Languages.ua.menu.footer]]
-name = "Pricing"
-URL = "pricing"
-weight = 4
-
-[[Languages.ua.menu.footer]]
-name = "FAQ"
-URL = "faq"
-weight = 5
-
-[[Languages.ua.menu.footer]]
-name = "Contact"
-URL = "contact"
-weight = 6
 
 ################################ Russian Language ########################
 [Languages.ru]
-languageName = "Fr"
+languageName = "RU"
 languageCode = "ru-ru"
 contentDir = "content/russian"
 weight = 2
