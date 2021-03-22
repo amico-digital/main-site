@@ -150,9 +150,9 @@ home = "Home"
 
 # main menu
 [[Languages.en.menu.main]]
+weight = 2
 name = "About"
 hasChildren = true
-weight = 2
 
   [[Languages.en.menu.main]]
   parent = "About"
@@ -173,11 +173,6 @@ weight = 3
 weight = 4
 name = "Pages"
 hasChildren = true
-
-  [[Languages.en.menu.main]]
-  parent = "Pages"
-  name = "Portfolio"
-  URL = "project"
 
   [[Languages.en.menu.main]]
   parent = "Pages"
@@ -225,16 +220,16 @@ home = "Головна"
 
 # main menu
 [[Languages.ua.menu.main]]
+weight = 2
 name = "О нас"
 hasChildren = true
-weight = 2
 
-  [[menu.main]]
+  [[Languages.ua.menu.main]]
   parent = "О нас"
-  name = "Про компінію"
+  name = "Про компанію"
   URL = "about"
 
-  [[menu.main]]
+  [[Languages.ua.menu.main]]
   parent = "О нас"
   name = "Наші проекти"
   URL = "project"
@@ -252,17 +247,12 @@ hasChildren = true
   [[Languages.ua.menu.main]]
   parent = "Продукти"
   name = "Рівнемір"
-  URL = "project"
+  URL = "service"
 
   [[Languages.ua.menu.main]]
   parent = "Продукти"
   name = "Бар'єр"
   URL = "pricing"
-
-  [[Languages.ua.menu.main]]
-  parent = "Продукти"
-  name = "Система"
-  URL = "service"
   
 [[Languages.ua.menu.main]]
 name = "Контакти"
