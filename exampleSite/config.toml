@@ -120,9 +120,9 @@ top_header = true
 description = "This is meta description"
 author = "Themefisher"
 # contact info
-address = "9567 Turner Trace Apt. BC C3G8A4"
-phone = "+211234565523"
-email = "info@enov.com"
+address = "Україна, м.Миколаїв, вул. Спаська, будинок 1/7"
+phone = "+380979798230"
+email = "info@digitalamico.com"
 # contact form action
 contact_form_action = "#" # contact form works with https://formspree.io
 # Google Analitycs
@@ -212,7 +212,57 @@ languageCode = "ua-ua"
 contentDir = "content/ukrainian"
 weight = 1
 home = "Головна"
-about = "О нас"
+# main menu
+[[Languages.ua.menu.main]]
+name = "О нас"
+URL = "about"
+weight = 2
+
+[[Languages.ua.menu.main]]
+name = "Блог"
+URL = "blog"
+weight = 3
+
+[[Languages.ua.menu.main]]
+weight = 4
+name = "Продукти"
+hasChildren = true
+
+  [[Languages.ua.menu.main]]
+  parent = "Продукти"
+  name = "Рівнемір"
+  URL = "project"
+
+  [[Languages.ua.menu.main]]
+  parent = "Продукти"
+  name = "Бар'єр"
+  URL = "pricing"
+
+  [[Languages.ua.menu.main]]
+  parent = "Продукти"
+  name = "Система"
+  URL = "service"
+  
+[[Languages.ua.menu.main]]
+name = "Контакти"
+URL = "contact"
+weight = 5
+
+# footer menu
+[[Languages.ua.menu.footer]]
+name = "Сервіс"
+URL = "service"
+weight = 1
+
+[[Languages.ua.menu.footer]]
+name = "О нас"
+URL = "about"
+weight = 2
+
+[[Languages.ua.menu.footer]]
+name = "Блог"
+URL = "blog"
+weight = 3
 
 ########################### Russian language ############################
 [Languages.ru]
