@@ -53,67 +53,7 @@ link = "plugins/google-map/map.js"
   
 ############################## navigation ###############################
 
-# main menu
-[[menu.main]]
-name = "About"
-hasChildren = true
-weight = 2
 
-  [[menu.main]]
-  parent = "About"
-  name = "Portfolio"
-  URL = "project"
-
-[[menu.main]]
-name = "Blog"
-URL = "blog"
-weight = 3
-
-[[menu.main]]
-weight = 4
-name = "Pages"
-hasChildren = true
-
-  [[menu.main]]
-  parent = "Pages"
-  name = "Portfolio"
-  URL = "project"
-
-  [[menu.main]]
-  parent = "Pages"
-  name = "Pricing"
-  URL = "pricing"
-
-  [[menu.main]]
-  parent = "Pages"
-  name = "Service"
-  URL = "service"
-  
-[[menu.main]]
-name = "Contact"
-URL = "contact"
-weight = 5
-
-# footer menu
-[[menu.footer]]
-name = "service"
-URL = "service"
-weight = 1
-
-[[menu.footer]]
-name = "about"
-URL = "about"
-weight = 2
-
-[[menu.footer]]
-name = "blog"
-URL = "blog"
-weight = 3
-
-[[menu.footer]]
-name = "pricing"
-URL = "pricing"
-weight = 4
 
 
 #################### default parameters ################################
@@ -208,7 +148,72 @@ contentDir = "content/english"
 weight = 2
 home = "Home"
 
+# main menu
+[[Languages.en.menu.main]]
+name = "About"
+hasChildren = true
+weight = 2
 
+  [[Languages.en.menu.main]]
+  parent = "About"
+  name = "About company"
+  URL = "about"
+
+  [[Languages.en.menu.main]]
+  parent = "About"
+  name = "Portfolio"
+  URL = "project"  
+
+[[Languages.en.menu.main]]
+name = "Blog"
+URL = "blog"
+weight = 3
+
+[[Languages.en.menu.main]]
+weight = 4
+name = "Pages"
+hasChildren = true
+
+  [[Languages.en.menu.main]]
+  parent = "Pages"
+  name = "Portfolio"
+  URL = "project"
+
+  [[Languages.en.menu.main]]
+  parent = "Pages"
+  name = "Pricing"
+  URL = "pricing"
+
+  [[Languages.en.menu.main]]
+  parent = "Pages"
+  name = "Service"
+  URL = "service"
+  
+[[Languages.en.menu.main]]
+name = "Contact"
+URL = "contact"
+weight = 5
+
+# footer menu
+[[Languages.en.menu.footer]]
+name = "service"
+URL = "service"
+weight = 1
+
+[[Languages.en.menu.footer]]
+name = "about"
+URL = "about"
+weight = 2
+
+[[Languages.en.menu.footer]]
+name = "blog"
+URL = "blog"
+weight = 3
+
+[[Languages.en.menu.footer]]
+name = "pricing"
+URL = "pricing"
+weight = 4
 
 ########################### Ukraine language ############################
 [Languages.ua]
@@ -217,6 +222,7 @@ languageCode = "ua-ua"
 contentDir = "content/ukrainian"
 weight = 1
 home = "Головна"
+
 # main menu
 [[Languages.ua.menu.main]]
 name = "О нас"
@@ -226,7 +232,7 @@ weight = 2
   [[menu.main]]
   parent = "О нас"
   name = "Про компінію"
-  URL = "фищгк"
+  URL = "about"
 
   [[menu.main]]
   parent = "О нас"
