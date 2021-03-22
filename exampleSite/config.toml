@@ -230,91 +230,180 @@ name = "Contact"
 URL = "contact"
 weight = 6
 
-################################ France Language ########################
-[Languages.fr]
+################################ Ukraine Language ########################
+[Languages.ua]
 languageName = "Fr"
-languageCode = "fr-fr"
-contentDir = "content/french"
+languageCode = "ua-ua"
+contentDir = "content/ukrainian"
 weight = 2
 # copyright
 copyright = "Copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved"
 
 
-######################### france navigation #############################
+######################### ukraine navigation #############################
 # main menu
-[[Languages.fr.menu.main]]
+[[Languages.ua.menu.main]]
 name = "Accueil"
 URL = "/"
 weight = 1
 
-[[Languages.fr.menu.main]]
+[[Languages.ua.menu.main]]
 name = "À propos"
 URL = "about"
 weight = 2
 
-[[Languages.fr.menu.main]]
+[[Languages.ua.menu.main]]
 name = "Projet"
 URL = "project"
 weight = 3
 
-[[Languages.fr.menu.main]]
+[[Languages.ua.menu.main]]
 name = "Blog"
 URL = "blog"
 weight = 4
 
-[[Languages.fr.menu.main]]
+[[Languages.ua.menu.main]]
 weight = 5
 name = "Pages"
 hasChildren = true
 
-  [[Languages.fr.menu.main]]
+  [[Languages.ua.menu.main]]
   parent = "Pages"
   name = "FAQ"
   URL = "faq"
 
-  [[Languages.fr.menu.main]]
+  [[Languages.ua.menu.main]]
   parent = "Pages"
   name = "Tarification"
   URL = "pricing"
 
-  [[Languages.fr.menu.main]]
+  [[Languages.ua.menu.main]]
   parent = "Pages"
   name = "Un service"
   URL = "service"
   
-[[Languages.fr.menu.main]]
+[[Languages.ua.menu.main]]
 name = "Contact"
 URL = "contact"
 weight = 6
 
 
 # footer menu
-[[Languages.fr.menu.footer]]
+[[Languages.ua.menu.footer]]
 name = "About"
 URL = "about"
 weight = 1
 
-[[Languages.fr.menu.footer]]
+[[Languages.ua.menu.footer]]
 name = "Project"
 URL = "project"
 weight = 2
 
-[[Languages.fr.menu.footer]]
+[[Languages.ua.menu.footer]]
 name = "Service"
 URL = "service"
 weight = 3
 
-[[Languages.fr.menu.footer]]
+[[Languages.ua.menu.footer]]
 name = "Pricing"
 URL = "pricing"
 weight = 4
 
-[[Languages.fr.menu.footer]]
+[[Languages.ua.menu.footer]]
 name = "FAQ"
 URL = "faq"
 weight = 5
 
-[[Languages.fr.menu.footer]]
+[[Languages.ua.menu.footer]]
+name = "Contact"
+URL = "contact"
+weight = 6
+
+################################ Russian Language ########################
+[Languages.ru]
+languageName = "Fr"
+languageCode = "ru-ru"
+contentDir = "content/russian"
+weight = 2
+# copyright
+copyright = "Copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved"
+
+
+######################### russian navigation #############################
+# main menu
+[[Languages.ru.menu.main]]
+name = "Accueil"
+URL = "/"
+weight = 1
+
+[[Languages.ru.menu.main]]
+name = "À propos"
+URL = "about"
+weight = 2
+
+[[Languages.ru.menu.main]]
+name = "Projet"
+URL = "project"
+weight = 3
+
+[[Languages.ru.menu.main]]
+name = "Blog"
+URL = "blog"
+weight = 4
+
+[[Languages.ru.menu.main]]
+weight = 5
+name = "Pages"
+hasChildren = true
+
+  [[Languages.ru.menu.main]]
+  parent = "Pages"
+  name = "FAQ"
+  URL = "faq"
+
+  [[Languages.ru.menu.main]]
+  parent = "Pages"
+  name = "Tarification"
+  URL = "pricing"
+
+  [[Languages.ru.menu.main]]
+  parent = "Pages"
+  name = "Un service"
+  URL = "service"
+  
+[[Languages.ru.menu.main]]
+name = "Contact"
+URL = "contact"
+weight = 6
+
+
+# footer menu
+[[Languages.ru.menu.footer]]
+name = "About"
+URL = "about"
+weight = 1
+
+[[Languages.ru.menu.footer]]
+name = "Project"
+URL = "project"
+weight = 2
+
+[[Languages.ru.menu.footer]]
+name = "Service"
+URL = "service"
+weight = 3
+
+[[Languages.ru.menu.footer]]
+name = "Pricing"
+URL = "pricing"
+weight = 4
+
+[[Languages.ru.menu.footer]]
+name = "FAQ"
+URL = "faq"
+weight = 5
+
+[[Languages.ru.menu.footer]]
 name = "Contact"
 URL = "contact"
 weight = 6
