@@ -1,21 +1,21 @@
 - id: read_more
-  translation: Read More
+  translation: Далее
 - id: posted_by
-  translation: Posted by
+  translation: Опубликовано
 - id: contact_us
-  translation: Contact Us
+  translation: Связаться с нами
 - id: send_message
-  translation: Send Message
+  translation: Отправить сообщение
 - id: search
-  translation: search
+  translation: Поиск
 - id: latest_post
-  translation: Latest Posts
+  translation: Последние новости
 - id: categories
-  translation: Categories
+  translation: Категории
 - id: tags
-  translation: Tags
+  translation: Тэги
 - id: company
-  translation: Company
+  translation: Компания
 - id: quick_links
   translation: Quick Links
 - id: follow_us
