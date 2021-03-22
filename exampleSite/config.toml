@@ -56,8 +56,13 @@ link = "plugins/google-map/map.js"
 # main menu
 [[menu.main]]
 name = "About"
-URL = "about"
+hasChildren = true
 weight = 2
+
+  [[menu.main]]
+  parent = "About"
+  name = "Portfolio"
+  URL = "project"
 
 [[menu.main]]
 name = "Blog"
@@ -215,8 +220,18 @@ home = "Головна"
 # main menu
 [[Languages.ua.menu.main]]
 name = "О нас"
-URL = "about"
+hasChildren = true
 weight = 2
+
+  [[menu.main]]
+  parent = "О нас"
+  name = "Про компінію"
+  URL = "фищгк"
+
+  [[menu.main]]
+  parent = "О нас"
+  name = "Наші проекти"
+  URL = "project"
 
 [[Languages.ua.menu.main]]
 name = "Блог"
