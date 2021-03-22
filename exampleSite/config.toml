@@ -202,8 +202,7 @@ languageCode = "en-us"
 contentDir = "content/english"
 weight = 2
 home = "Home"
-# copyright
-copyright = "Copyright &copy; 2020 a hugo theme by [themefisher](https://themefisher.com)"
+
 
 
 ########################### Ukraine language ############################
@@ -212,7 +211,8 @@ languageName = "UA"
 languageCode = "ua-ua"
 contentDir = "content/ukrainian"
 weight = 1
-home = "Accueil"
+home = "Головна"
+about = "О нас"
 
 ########################### Russian language ############################
 [Languages.ru]
@@ -220,4 +220,5 @@ languageName = "RU"
 languageCode = "ru-ru"
 contentDir = "content/russian"
 weight = 3
-home = "Accueil"
+home = "Главная"
+about = "О нас"
