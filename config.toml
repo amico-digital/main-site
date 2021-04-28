@@ -58,7 +58,7 @@ link = "plugins/google-map/map.js"
 
 #################### default parameters ################################
 [params]
-logo = "images/logo.png"
+logo = "images/logo.svg"
 # top header
 top_header = true
 # Meta data
@@ -66,7 +66,7 @@ description = "This is meta description"
 author = "Themefisher"
 # contact info
 address = "Україна, м.Миколаїв, вул. Спаська, будинок 1/7"
-phone = "+380979798230"
+phone = "+380979798320"
 email = "info@digitalamico.com"
 # contact form action
 contact_form_action = "#" # contact form works with https://formspree.io
