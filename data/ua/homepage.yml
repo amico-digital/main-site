@@ -2,42 +2,43 @@
 banner:
   enable : true
   subtitle : "Prepare for new future"
-  title : "Helping customers be their best in the moments that matter."
+  title : "Побудова систем комерційного обліку"
 
   # solid button
   button_solid:
     enable : true
-    label : "Get started"
+    label : "Рівнеміри"
     link : "pricing"
 
   # border button
   button_border:
     enable : true
-    label : "Discover Enov"
+    label : "Наші проекти"
     link : "service"
 
 ######################## Banner call to action ############################
 banner_cta:
   enable : true
-  title : "Crafting visually stunning memorable experiences for web."
-  content : "Magni perspiciatis sequi, molestias dignissimos numquam placeat eveniet nobis rerum eos, facilis minus, est illo adipisci soluta dolores quisquam, praesentium ab corrupti!"
+  title : "Бар'єри іскрозахисту для під'єднання цифрового та аналогового обладнання"
+  content : "Бар'єр відповідає вимогам ДСТУ EN 60079-0:2017 і ДСТУ EN 60079-
+11:2017, має маркування вибухозахисту II (1) G [Ex ia Ga] IIB."
   button:
     enable : true
-    label : "Learn more"
+    label : "Детальніше"
     link : "about"
 
 ########################## feature ########################################
 feature:
   enable : true
-  title : "We provide best solution to client with their business problem"
+  title : "Ми надаємо найкращі рішення для вирішення бізнес-проблем наших клієнтів"
   feature_item:
     # feature item loop
-    - title : "Modern & Responsive design"
+    - title : "Найсучасніщі рішення"
       icon : "ti-wand" # icon pack : https://themify.me/themify-icons
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, aspernatur."
       
     # feature item loop
-    - title : "Awarded licensed company"
+    - title : "Тільки сертифіковане обладнання"
       icon : "ti-medall" # icon pack : https://themify.me/themify-icons
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, aspernatur."
 
@@ -92,6 +93,11 @@ service:
 pricing:
   enable : true
   # pricing item comes from "data/**/pricing.yml" file
+
+######################### pricing #####################################
+resume:
+  enable : true
+  # pricing item comes from "data/**/resume.yml" file
 
 ############################# Team ##################################
 team:
