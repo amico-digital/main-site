@@ -48,8 +48,6 @@ link = "plugins/search/fuse.min.js"
 link = "plugins/search/mark.js"
 [[params.plugins.js]]
 link = "plugins/search/search.js"
-[[params.plugins.js]]
-link = "plugins/google-map/map.js"
   
 ############################## navigation ###############################
 
@@ -85,14 +83,6 @@ preloader = "" # use jpg, png, svg or gif format.
 enable = true
 label = "get a quote"
 link = "contact"
-
-# google map
-[params.map]
-enable = true
-gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
-map_latitude = "51.5223477"
-map_longitude = "-0.1622023"
-map_marker = "images/marker.png"
 
 ######################### Clients logo ################################
 [[params.clients_logo]]
@@ -176,13 +166,13 @@ hasChildren = true
 
   [[Languages.en.menu.main]]
   parent = "Pages"
-  name = "Pricing"
-  URL = "pricing"
+  name = "Barier"
+  URL = "product"
 
   [[Languages.en.menu.main]]
   parent = "Pages"
-  name = "Service"
-  URL = "service"
+  name = "Level Sensor"
+  URL = "product"
   
 [[Languages.en.menu.main]]
 name = "Contact"
@@ -247,12 +237,12 @@ hasChildren = true
   [[Languages.ua.menu.main]]
   parent = "Продукти"
   name = "Рівнемір"
-  URL = "service"
+  URL = "product"
 
   [[Languages.ua.menu.main]]
   parent = "Продукти"
   name = "Бар'єр"
-  URL = "pricing"
+  URL = "barrier_product"
   
 [[Languages.ua.menu.main]]
 name = "Контакти"
@@ -282,4 +272,60 @@ languageCode = "ru-ru"
 contentDir = "content/russian"
 weight = 3
 home = "Главная"
-about = "О нас"
+
+# main menu
+[[Languages.ru.menu.main]]
+weight = 2
+name = "О нас"
+hasChildren = true
+
+  [[Languages.ru.menu.main]]
+  parent = "О нас"
+  name = "О компании"
+  URL = "about"
+
+  [[Languages.ru.menu.main]]
+  parent = "О нас"
+  name = "Наши проекти"
+  URL = "project"
+
+[[Languages.ru.menu.main]]
+name = "Блог"
+URL = "blog"
+weight = 3
+
+[[Languages.ru.menu.main]]
+weight = 4
+name = "Продукты"
+hasChildren = true
+
+  [[Languages.ru.menu.main]]
+  parent = "Продукты"
+  name = "Уровнемер"
+  URL = "product"
+
+  [[Languages.ru.menu.main]]
+  parent = "Продукти"
+  name = "Барьер"
+  URL = "barrier_product"
+  
+[[Languages.ru.menu.main]]
+name = "Контакты"
+URL = "contact"
+weight = 5
+
+# footer menu
+[[Languages.ru.menu.footer]]
+name = "Сервис"
+URL = "service"
+weight = 1
+
+[[Languages.ru.menu.footer]]
+name = "О нас"
+URL = "about"
+weight = 2
+
+[[Languages.ru.menu.footer]]
+name = "Блог"
+URL = "blog"
+weight = 3

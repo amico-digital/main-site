@@ -1,6 +1,9 @@
 <!-- Header Start -->
 <header class="navigation">
   {{ if .Site.Params.top_header }}
+  
+    
+  
   <!-- top header -->
   <div class="header-top d-none d-md-block d-lg-block">
     <div class="container">
@@ -13,6 +16,7 @@
                 class="ti-email mr-2"></i><span>{{ .Site.Params.email }}</span></a>
           </div>
         </div>
+       
         <div class="col-lg-4 col-md-4">
           <div class="header-top-socials text-center text-lg-right">
             {{ range .Site.Params.social }}
@@ -58,29 +62,12 @@
           </li>
           {{ end }}
           {{ end }}
+          <li>
+            {{ partial "allLanguages.html" . }}
+          </li>
         </ul>
 
-        <!-- Language List -->
-        {{ if .IsTranslated }}
-        <select class="m-2 border-0" id="select-language" onchange="location = this.value;">
-          {{ $siteLanguages := .Site.Languages}}
-          {{ $pageLang := .Page.Lang}}
-          {{ range .Page.AllTranslations }}
-          {{ $translation := .}}
-          {{ range $siteLanguages }}
-          {{ if eq $translation.Lang .Lang }}
-          {{ $selected := false }}
-          {{ if eq $pageLang .Lang}}
-          <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}
-          </option>
-          {{ else }}
-          <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
-          {{ end }}
-          {{ end }}
-          {{ end }}
-          {{ end }}
-        </select>
-        {{ end }}
+        
 
         {{ if .Site.Params.navigation_button.enable }}
         <div class="text-center text-lg-left">
