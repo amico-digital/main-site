@@ -5,55 +5,55 @@ projects:
   project_item:
     # project item loop
     - title : "Sulfur web"
-      image : "images/portfolio/1.jpg"
+      image : "images/portfolio/1.webp"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
       categories: ["branding", "illustration"]
       
     # project item loop
     - title : "Sulfur web"
-      image : "images/portfolio/2.jpg"
+      image : "images/portfolio/2.webp"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
       categories: ["branding", "design"]
         
     # project item loop
     - title : "Sulfur web"
-      image : "images/portfolio/3.jpg"
+      image : "images/portfolio/3.webp"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
       categories: ["illustration"]
         
     # project item loop
     - title : "Sulfur web"
-      image : "images/portfolio/4.jpg"
+      image : "images/portfolio/4.webp"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
       categories: ["branding"]
         
     # project item loop
     - title : "Sulfur web"
-      image : "images/portfolio/5.jpg"
+      image : "images/portfolio/5.webp"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
       categories: ["design"]
         
     # project item loop
     - title : "Sulfur web"
-      image : "images/portfolio/6.jpg"
+      image : "images/portfolio/6.webp"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
       categories: ["branding",  "illustration", "design"]
         
     # project item loop
     - title : "Sulfur web"
-      image : "images/portfolio/1.jpg"
+      image : "images/portfolio/1.webp"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
       categories: ["illustration"]
         
     # project item loop
     - title : "Sulfur web"
-      image : "images/portfolio/2.jpg"
+      image : "images/portfolio/2.webp"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
       categories: ["branding", "illustration"]
         
     # project item loop
     - title : "Sulfur web"
-      image : "images/portfolio/3.jpg"
+      image : "images/portfolio/3.webp"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
       categories: ["design", "illustration"]
 

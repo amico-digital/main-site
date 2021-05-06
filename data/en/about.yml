@@ -7,23 +7,23 @@ about:
   about_item:
     # about item loop
     - title : "Our Mission"
-      image : "images/about/bg-1.jpg"
+      image : "images/about/bg-1.webp"
       content : "llum similique ducimus accusamus laudantium praesentium, impedit quaerat, itaque maxime sunt deleniti  distinctio ."
           
     # about item loop
     - title : "Our Vission"
-      image : "images/about/about.jpg"
+      image : "images/about/about.webp"
       content : "llum similique ducimus accusamus laudantium praesentium, impedit quaerat, itaque maxime sunt deleniti  distinctio ."
           
     # about item loop
     - title : "Our Approach"
-      image : "images/about/home-8.jpg"
+      image : "images/about/home-8.webp"
       content : "llum similique ducimus accusamus laudantium praesentium, impedit quaerat, itaque maxime sunt deleniti  distinctio ."
 
 ##################### Funfacts ######################################
 funfacts:
   enable : true
-  bg_image : "images/bg/banner-1.jpg"
+  bg_image : "images/bg/banner-1.webp"
   # funfact item comes from "data/**/homepage.yml" file.
       
 ############################# Team ##################################
@@ -34,7 +34,7 @@ team:
 ############################ Testimonial ############################
 testimonial:
   enable : true
-  bg_image : "images/bg/about-modern-img-1.jpg"
+  bg_image : "images/bg/about-modern-img-1.webp"
   testimonial_item:
     # testimonial item loop
     - name : "Thomas Johnson"
@@ -56,5 +56,5 @@ testimonial:
 
 ######################### clients logo ##################################
 clients_logo:
-  enable : true
+  enable : false
   # clients logo comes from "config.toml" file.

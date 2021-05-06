@@ -107,7 +107,7 @@ team:
   team_member:
     ################### team member loop
     - name : "Justin hammer"
-      image : "images/team/team-1.jpg"
+      image : ""
       designation : "Project Manager"
       social:
         # social site loop
@@ -128,7 +128,7 @@ team:
           
     ################### team member loop
     - name : "Mikel Emily"
-      image : "images/team/team-2.jpg"
+      image : ""
       designation : "Project Manager"
       social:
         # social site loop
@@ -149,7 +149,7 @@ team:
           
     ################### team member loop
     - name : "David Spensor"
-      image : "images/team/team-3.jpg"
+      image : ""
       designation : "Project Manager"
       social:
         # social site loop
@@ -170,7 +170,7 @@ team:
           
     ################### team member loop
     - name : "Jason Roy"
-      image : "images/team/team-4.jpg"
+      image : ""
       designation : "Project Manager"
       social:
         # social site loop
@@ -191,7 +191,7 @@ team:
           
     ################### team member loop
     - name : "Peter Odin"
-      image : "images/team/team-1.jpg"
+      image : ""
       designation : "Project Manager"
       social:
         # social site loop
@@ -212,7 +212,7 @@ team:
           
     ################### team member loop
     - name : "David Spensor"
-      image : "images/team/team-4.jpg"
+      image : ""
       designation : "Project Manager"
       social:
         # social site loop
@@ -236,7 +236,7 @@ team:
 promo_video:
   enable : true
   title : "See How we work!"
-  video_thumbnail : "images/bg/contact-bg-min-1.jpg"
+  video_thumbnail : "images/bg/contact-bg-min-1.webp"
   video_link : "https://www.youtube.com/watch?v=jrkvirglgaQ"
   content: "Our mission is to produce the highest quality work for everyclient, on every project"
 
