@@ -44,7 +44,7 @@ feature:
 ######################## About #######################################
 about:
   enable : true
-  image : "images/about/home-8.jpg"
+  image : "images/about/home-8.webp"
   title : "Forget about <br> design limits! Build and customize your portfolio"
   content : "We provide consulting services in the area of IFRS and management reporting, helping companies
             to reach their highest level. We optimize business processes, making them easier."

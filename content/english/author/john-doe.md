@@ -3,7 +3,7 @@ title: "John Doe"
 image : ""
 email: "email2@example.org"
 description: "this is meta description"
-bg_image: "images/bg/banner-1.jpg"
+bg_image: "images/bg/banner-1.webp"
 draft: false
 social:
   - icon : "ti-facebook" # themify icon pack : https://themify.me/themify-icons
