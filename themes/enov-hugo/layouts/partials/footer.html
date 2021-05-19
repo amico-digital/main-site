@@ -40,7 +40,7 @@
           <h4 class="text-capitalize mb-4 text-white">{{ i18n "follow_us" }}</h4>
           <ul class="list-unstyled footer-socials">
             {{ range .Site.Params.social }}
-            <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }} mr-2 text-muted"></i>{{ .name }}</a></li>
+            <li><a href="{{ .link | safeURL }}"><img alt="{{ .name }}" src="{{ .icon }}" style="padding: 5px;"></i>{{ .name }}</a></li>
             {{ end }}
           </ul>
         </div>
@@ -65,11 +65,6 @@
 <script>
   var indexURL = {{ "index.json" | absURL }}
 </script>
-{{ end }}
-
-{{ "<!-- Google Map API -->" | safeHTML }}
-{{ if .Site.Params.map.enable }}
-<script src="{{ .Site.Params.map.gmap_api | safeURL }}"></script>
 {{ end }}
 
 {{ "<!-- JS Plugins -->" | safeHTML }}

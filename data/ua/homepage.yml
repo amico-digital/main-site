@@ -101,7 +101,7 @@ resume:
 
 ############################# Team ##################################
 team:
-  enable: true
+  enable: false
   title : "Amazing Team"
   content : "We provide a wide range of creative services adipisicing elit. Autem maxime rem modi eaque, voluptate. Beatae officiis neque"
   team_member:

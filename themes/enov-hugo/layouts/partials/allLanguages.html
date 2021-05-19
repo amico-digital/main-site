@@ -4,13 +4,13 @@
 <div class="btn-group" role="group" aria-label="Basic example">
 	<a href ="{{ .Permalink }}">
         {{ if eq "ua" .Lang}}
-        <img src="https://www.countryflags.io/ua/flat/16.png">
+        <img alt="{{.Lang}}" src="https://www.countryflags.io/ua/flat/16.png">
         {{ end }}
         {{ if eq "en" .Lang}}
-        <img src="https://www.countryflags.io/us/flat/16.png">
+        <img alt="{{.Lang}}" src="https://www.countryflags.io/us/flat/16.png">
         {{ end }}
         {{ if eq "ru" .Lang}}
-        <img src="https://www.countryflags.io/ru/flat/16.png">
+        <img alt="{{.Lang}}" src="https://www.countryflags.io/ru/flat/16.png">
         {{ end }}
         {{ .Lang }}
     </a>

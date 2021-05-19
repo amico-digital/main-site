@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "http://e84315.hostua5.fornex.host"
+baseURL = "https://test.digitalamico.com"
 title = "AMICO DIGITAL"
 theme = "enov-hugo"
 # post pagination
@@ -19,25 +19,13 @@ home = ["HTML", "RSS", "JSON"]
 
 # CSS Plugins
 [[params.plugins.css]]
-link = "plugins/bootstrap/bootstrap.min.css"
-[[params.plugins.css]]
-link = "plugins/themify/css/themify-icons.css"
-[[params.plugins.css]]
-link = "plugins/magnific-popup/magnific-popup.css"
-[[params.plugins.css]]
-link = "plugins/slick/slick.css"
-[[params.plugins.css]]
 link = "plugins/aos/aos.css"
 
 # JS Plugins
 [[params.plugins.js]]
-link = "plugins/jquery/jquery.js"
+link = "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"
 [[params.plugins.js]]
-link = "plugins/bootstrap/bootstrap.min.js"
-[[params.plugins.js]]
-link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
-[[params.plugins.js]]
-link = "plugins/slick/slick.min.js"
+link = "https://ajax.aspnetcdn.com/ajax/bootstrap/4.6.0/bootstrap.min.js"
 [[params.plugins.js]]
 link = "plugins/shuffle/shuffle.min.js"
 [[params.plugins.js]]
@@ -111,24 +99,19 @@ logo = "images/about/key-vision1.png"
 
 #################### social icon ######################################
 [[params.social]]
-name = "Facebook"
-icon = "ti-facebook"
-link = "#"
+name = "Telegram"
+icon = "/images/icons/telegram.svg"
+link = "https://telegram.me/AmicoDigital"
 
 [[params.social]]
-name = "Twitter"
-icon = "ti-twitter-alt"
-link = "#"
+name = "Viber"
+icon = "/images/icons/viber.svg"
+link = "viber://pa?chatURI=+380954929724"
 
 [[params.social]]
-name = "Vimeo"
-icon = "ti-vimeo-alt"
-link = "#"
-
-[[params.social]]
-name = "Github"
-icon = "ti-github"
-link = "#"
+name = "FB"
+icon = "/images/icons/messenger.svg"
+link = "http://m.me/AmicoDigital"
 
 ########################### English language ###########################
 [Languages.en]

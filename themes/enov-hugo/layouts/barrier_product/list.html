@@ -3,27 +3,69 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
 {{ partial "page-title-small.html" . }}
-
+<style>
+	.carousel-control-next,
+	.carousel-control-prev /*, .carousel-indicators */ {
+		filter: invert(100%);
+	}
+</style>
 <div class="container template_card">
 	<div class="row">
-		<div class="col-sm-6 col-xs-12 text-center card_main_img">
-			<img src="../../img/card_products/b-max.png" alt="WAD-B-MAX">
-		</div>
-		<div class="col-sm-6 col-xs-12">
-			<h2>Краткое описание  </h2>
-			<p class="fs16">Трёхканальный модуль искрозащиты.<br> Предназначен для защиты наружных цепей электронного оборудования от высоковольтных импульсных перегрузок, возникающих при ударе молнии. <br>Применяется для защиты интерфейсов RS-485, RS-422, RS-232 и устройств в линиях УСПД и УСД.</p>
-			<p class="text-center"><a href="https://akonwad.ru/test"><button type="button" class="btn btn-secondary w-60">Взять на тест</button></a></p>
-			<p class="text-center"><button type="button" class="btn btn-warning w-60 orange_button" data-toggle="modal" data-target=".bd-example-modal-lg">Заказать</button></p>
-			<h2>Сферы применения</h2>
-			<div class="row icon">
-				<div class="col-sm-3"><img src="../../img/segmentation/1.svg" alt=""></div>
-				<div class="col-sm-3"><img src="../../img/segmentation/2.svg" alt=""></div>
-				<div class="col-sm-3"><img src="../../img/segmentation/3.svg" alt=""></div>
-				<div class="col-sm-3"><img src="../../img/segmentation/4.svg" alt=""></div>
+		<div class="col-sm-12 col-lg-6">
+			<div id="carousel" class="carousel slide" data-ride="carousel" >
+				<ol class="carousel-indicators">
+				  <li data-target="#carousel" data-slide-to="0" class="active"></li>
+				  <li data-target="#carousel" data-slide-to="1"></li>
+				  <li data-target="#carousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<picture>
+						<source srcset="/images/products/barrier1-small.webp" media="(max-width: 560px)" type="image/webp">
+						<source srcset="/images/products/barrier1-small.jpg" media="(max-width: 560px)">
+						<source srcset="/images/products/barrier1.webp" type="image/webp">
+						<img class="d-block w-100" src="/images/products/barrier1.jpg" alt="First slide">
+					 </picture>					
+				  </div>
+				  <div class="carousel-item">
+					<picture>
+						<source srcset="/images/products/barrier2-small.webp" media="(max-width: 560px)" type="image/webp">
+						<source srcset="/images/products/barrier2-small.jpg" media="(max-width: 560px)">
+						<source srcset="/images/products/barrier2.webp" type="image/webp">
+						<img class="d-block w-100" src="/images/products/barrier2.jpg" alt="First slide">
+					 </picture>	
+				  </div>
+				  <div class="carousel-item">
+					<picture>
+						<source srcset="/images/products/barrier1-small.webp" media="(max-width: 560px)" type="image/webp">
+						<source srcset="/images/products/barrier1-small.jpg" media="(max-width: 560px)">
+						<source srcset="/images/products/barrier1.webp" type="image/webp">
+						<img class="d-block w-100" src="/images/products/barrier1.jpg" alt="First slide">
+					 </picture>	
+				  </div>
+				</div>
+				<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+				  <span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="sr-only">Next</span>
+				</a>
 			</div>
 		</div>
+		<div class="col-sm-12 col-lg-6">
+			<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">Краткое описание</h2>
+			<p class="fs16">Бар'єр іскрозахисту є двоканальним пристроєм. Канал «Живлення» призначений для живлення напругою + 24В постійного струму одного пристрою, встановленого у вибухонебезпечній зоні. Канал «Сигнальний» призначений для прийому/передачі сигналів цифрового інтерфейсу RS-485. Бар'єр відповідає вимогам ДСТУ EN 60079-0:2017 і ДСТУ EN 60079-11:2017, має вихідні іскробезпечні електричні кола рівня «Іа» і маркування вибухозахисту II (1) G [Ex ia Ga] IIB та призначений для установки за межами вибухонебезпечних зон.</p>
+			<p class="text-center"><button type="button" class="btn btn-warning w-60 orange_button" data-toggle="modal" data-target=".bd-example-modal-lg">Заказать</button></p>
+			
+		</div>		
 	</div>
-	<h2>Технические характеристики</h2>
+	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">Сферы применения</h2>
+			<div class="row icon">
+				
+			</div>
+	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">Технические характеристики</h2>
 	<div class="row">
 		<div class="col-sm">
 			<table class="table">
@@ -38,16 +80,18 @@
 			</table>
 		</div>
 	</div>
-		<h2>Техническая документация</h2>
+		<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">Техническая документация</h2>
 	<div class="row card_documents">
-		<div class="col-sm-4 text-center"><a href="../../download/teh_op/teh_op_b-max.pdf" target="_blank"><i class="ti-zip" aria-hidden="true"></i><br><p>Техническое описание</p></a></div>	</div>
-	<h2>Примеры паспорта</h2>
-	<div class="row card_documents">
-		<div class="col-sm-4 text-center">
-      <a href="../../download/passport/WAD-B-MAX/WAD-B-MAX barrier 1-3_12V-40mA.doc" target="_blank">
-        <i class="ti-zip" style="font-size: 50px;" aria-hidden="true"></i><br><p>Паспорт WAD-B-MAX barrier 1-3_12V-40mA.doc</p></a>
-      </div><div class="col-sm-4 text-center"><a href="../../download/passport/WAD-B-MAX/WAD-B-MAX barrier 1-3_12V-80mA.doc" target="_blank"><i class="fas fa-file-word" aria-hidden="true"></i><br><p>Паспорт WAD-B-MAX barrier 1-3_12V-80mA.doc</p></a></div><div class="col-sm-4 text-center"><a href="../../download/passport/WAD-B-MAX/WAD-B-MAX barrier 1-3_24V-80mA.doc" target="_blank"><i class="fas fa-file-word" aria-hidden="true"></i><br><p>Паспорт WAD-B-MAX barrier 1-3_24V-80mA.doc</p></a></div><div class="col-sm-4 text-center"><a href="../../download/passport/WAD-B-MAX/WAD-B-MAX barrier 1-3_5V-80mA.doc" target="_blank"><i class="fas fa-file-word" aria-hidden="true"></i><br><p>Паспорт WAD-B-MAX barrier 1-3_5V-80mA.doc</p></a></div>	</div>
-	<h2>Комплект поставки</h2>
+		<div class="col-sm-3 text-center">
+			<a href="/docs/barrier_to.pdf" target="_blank">
+			<img src="/images/icons/pdf.svg" aria-hidden="true"></i><br><p>Техническое описание</p></a>
+		</div>
+		<div class="col-sm-3 text-center">
+			<a href="/docs/barrier_passport.pdf" target="_blank">
+			<img src="/images/icons/pdf.svg" style="font-size: 50px;" aria-hidden="true"></i><br><p>Паспорт</p></a>
+      	</div>
+	</div>
+	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">Комплект поставки</h2>
 	<table class="table">
 	  <thead>
 		<tr>
