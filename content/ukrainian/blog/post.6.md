@@ -5,7 +5,7 @@ draft: false
 description: "this is meta description"
 bg_image: "images/bg/banner-1.webp"
 image: "images/blog/2.webp"
-author: "themefisher"
+author: "Mark Din"
 categories: ["Creative"]
 tags: [ "Company", "HTML"]
 type: "post"

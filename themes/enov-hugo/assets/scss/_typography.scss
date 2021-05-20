@@ -61,6 +61,11 @@ h6,.h6 {
   font-size: 14px;
 }
 
+span.reverse {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
 
 @include mobile-xs{
     h1, .h1 {

@@ -20,6 +20,8 @@ home = ["HTML", "RSS", "JSON"]
 # CSS Plugins
 [[params.plugins.css]]
 link = "plugins/aos/aos.css"
+[[params.plugins.css]]
+link = "https://ajax.aspnetcdn.com/ajax/bootstrap/4.6.0/css/bootstrap.min.css"
 
 # JS Plugins
 [[params.plugins.js]]
@@ -49,17 +51,16 @@ logo = "images/logo.svg"
 top_header = true
 # Meta data
 description = "This is meta description"
-author = "Themefisher"
+author = "Ievgen Gudyma"
 # contact info
 address = "Україна, м.Миколаїв, вул. Спаська, будинок 1/7"
 phone = "+380979798320"
-email = "info@digitalamico.com"
 # contact form action
 contact_form_action = "https://formspree.io/f/mpzkqbpq"
 # Google Analitycs
 google_analitycs_id = "" # your id
 # search
-search = true
+search = false
 
 # Preloader
 [params.preloader]
@@ -69,7 +70,7 @@ preloader = "" # use jpg, png, svg or gif format.
 # Navigation button
 [params.navigation_button]
 enable = true
-label = "get a quote"
+label = "Замовити"
 link = "contact"
 
 ######################### Clients logo ################################
@@ -109,14 +110,14 @@ icon = "/images/icons/viber.svg"
 link = "viber://pa?chatURI=+380954929724"
 
 [[params.social]]
-name = "FB"
+name = "Messenger"
 icon = "/images/icons/messenger.svg"
 link = "http://m.me/AmicoDigital"
 
 ########################### English language ###########################
 [Languages.en]
 languageName = "En"
-languageCode = "en-us"
+languageCode = "en-US"
 contentDir = "content/english"
 weight = 2
 home = "Home"
@@ -186,34 +187,31 @@ weight = 4
 ########################### Ukraine language ############################
 [Languages.ua]
 languageName = "UA"
-languageCode = "ua-ua"
+languageCode = "uk-UA"
 contentDir = "content/ukrainian"
 weight = 1
-home = "Головна"
+home = ""
 
 # main menu
 [[Languages.ua.menu.main]]
 weight = 2
-name = "О нас"
+name = "Про компанію"
 hasChildren = true
 
   [[Languages.ua.menu.main]]
-  parent = "О нас"
-  name = "Про компанію"
+  parent = "Про компанію"
+  name = "Історія компанії"
   URL = "about"
 
   [[Languages.ua.menu.main]]
-  parent = "О нас"
+  parent = "Про компанію"
   name = "Наші проекти"
   URL = "project"
 
-[[Languages.ua.menu.main]]
-name = "Блог"
-URL = "blog"
-weight = 3
+
 
 [[Languages.ua.menu.main]]
-weight = 4
+weight = 3
 name = "Продукти"
 hasChildren = true
 
@@ -226,6 +224,11 @@ hasChildren = true
   parent = "Продукти"
   name = "Бар'єр"
   URL = "barrier_product"
+
+[[Languages.ua.menu.main]]
+name = "Блог"
+URL = "blog"
+weight = 4
   
 [[Languages.ua.menu.main]]
 name = "Контакти"
@@ -251,7 +254,7 @@ weight = 3
 ########################### Russian language ############################
 [Languages.ru]
 languageName = "RU"
-languageCode = "ru-ru"
+languageCode = "ru-RU"
 contentDir = "content/russian"
 weight = 3
 home = "Главная"

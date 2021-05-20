@@ -1,5 +1,12 @@
+.no-webp .slider {
+  background-image: url("/images/bg/slider-1.jpg"); 
+}
+
+.webp .slider{
+  background-image: url("/images/bg/slider-1.webp");
+  
+}
 .slider{
-  background: url("../images/bg/slider-1.webp") no-repeat;
   background-size: cover;
   background-position: 10% 0%;
   padding:220px 0 200px 0;
@@ -20,9 +27,7 @@
       color:rgba(255,255,255,.85);
       font-size: 15px;
     }
-
 }
-
 
 .letter-spacing{
   letter-spacing: 1px;

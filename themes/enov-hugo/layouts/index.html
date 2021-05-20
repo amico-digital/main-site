@@ -5,7 +5,7 @@
 <!-- Slider Start -->
 {{ if $data.homepage.banner.enable }}
 {{ with $data.homepage.banner }}
-<section class="slider">
+<section class="slider">  
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-9 col-md-12">
@@ -14,13 +14,13 @@
           <h1 class="animated fadeInUp mb-5 text-white">{{ .title | markdownify }}</h1>
           {{ if .button_solid.enable }}
           {{ with .button_solid }}
-          <a href="{{ .link | absLangURL }}" class="btn btn-main animated fadeInUp mr-1 mb-2 mb-lg-0">{{ .label }}<i class="btn-icon ti-angle-right ml-2"></i></a>
+          <a href="{{ .link | absLangURL }}" class="btn btn-main animated fadeInUp mr-1 mb-2 mb-lg-0">{{ .label }}</a>
           {{ end }}
           {{ end }}
 
           {{ if .button_border.enable }}
           {{ with .button_border }}
-          <a href="{{ .link | absLangURL }}" class="btn btn-solid-border animated fadeInUp">{{ .label }}</a>
+          <a href="{{ .link | absLangURL }}" class="btn btn-solid-border animated fadeInUp mr-1 mb-2 mb-lg-0">{{ .label }}</a>
           {{ end }}
           {{ end }}
         </div>
@@ -37,8 +37,8 @@
   <div class="container">
     <div class="row align-items-center bg-primary p-4 p-sm-5 rounded">
       <div class="col-lg-8">
-        <h3 class="mb-2 text-white">{{ .title | markdownify }}</h3>
-        <p>{{ .content | markdownify }}</p>
+        <p class="h3 mb-2 text-white">{{ .title | markdownify }}</p>
+        <p class="text-white">{{ .content | markdownify }}</p>
       </div>
       {{ if .button.enable }}
       {{ with .button }}
@@ -73,7 +73,7 @@
       </div>
       <div class="col-lg-6">
         <div class="about-item pl-3 mt-4 mt-lg-0">
-          <h2 class="mb-4 font-secondary">{{ .title | markdownify }}</h2>
+          <p class="h2 mb-4 font-secondary">{{ .title | markdownify }}</p>
           <p class="mb-5">{{ .content | markdownify }}</p>
           {{ if .button.enable }}
           {{ with .button }}
@@ -99,7 +99,7 @@
       {{ $delay := mul $index 100 }}
       <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="counter-item text-center mb-5 mb-lg-0 " data-aos="fade-up" data-aos-delay="{{ $delay }}">
-          <h3 class="mb-0"><span class="counter-stat" data-count="{{ .count }}">0</span> {{ .unit }}</h3>
+          <p class="h3 mb-0"><span class="counter-stat" data-count="{{ .count }}">0</span> {{ .unit }}</p>
           <p class="text-dark">{{ .title }}</p>
         </div>
       </div>
@@ -119,7 +119,7 @@
     <div class="row justify-content-center">
       <div class="col-lg-6 text-center">
         <div class="section-title">
-          <h2 class="mb-4">{{ .title | markdownify }}</h2>
+          <p class="h2 mb-4">{{ .title | markdownify }}</p>
           <p>{{ .content | markdownify }}</p>
         </div>
       </div>
@@ -132,7 +132,7 @@
       <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="card mb-4 p-5 text-center" data-aos="fade-up" data-aos-delay="{{ $delay }}">
           <i class="{{ .icon }} text-color text-lg"></i>
-          <h4 class="mb-3 mt-4">{{ .title | markdownify }}</h4>
+          <p class="h4 mb-3 mt-4">{{ .title | markdownify }}</p>
           <p>{{ .content | markdownify }}</p>
         </div>
       </div>
@@ -164,9 +164,16 @@
     <div class="row">
       <div class="col-lg-7 offset-lg-5">
         <div class="cta-item p-5 position-relative ml-4">
-          <a  href="{{ .video_link | safeURL }}" class="videoplay mr-3 text-white popup-youtube"><i class="ti-control-play"></i></a>
+          <a aria-label="Youtube video" href="{{ .video_link | safeURL }}" class="videoplay mr-3 text-white popup-youtube">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="40" height="40">
+            <path style="fill: white;" d="M256,0C114.617,0,0,114.615,0,256s114.617,256,256,256s256-114.615,256-256S397.383,0,256,0z M344.48,269.57l-128,80
+              c-2.59,1.617-5.535,2.43-8.48,2.43c-2.668,0-5.34-0.664-7.758-2.008C195.156,347.172,192,341.82,192,336V176
+              c0-5.82,3.156-11.172,8.242-13.992c5.086-2.836,11.305-2.664,16.238,0.422l128,80c4.676,2.93,7.52,8.055,7.52,13.57
+              S349.156,266.641,344.48,269.57z"/>
+          </a>
           <div class="cta-content-block">
-            <h2 class="mt-2 mb-4 font-secondary">{{ .title | markdownify }}</h2>
+            <p class="h4 mt-2 mb-4 font-secondary">{{ .title | markdownify }}</p>
             <p>{{ .content | markdownify }}</p>
           </div>
         </div>
@@ -186,7 +193,7 @@
     <div class="row justify-content-center">
       <div class="col-lg-6 text-center">
         <div class="section-title">
-          <h2 class="content-title mb-4">{{ .title | markdownify }}</h2>
+          <p class="h2 content-title mb-4">{{ .title | markdownify }}</p>
           <p>{{ .content | markdownify }}</p>
         </div>
       </div>
@@ -206,7 +213,7 @@
               <span class="text-uppercase text-sm letter-spacing"><i class="ti-time mr-1"></i>
                 {{ .PublishDate.Format "January 02, 2006" }}</span>
             </div>
-            <h3 class="mb-2 mt-2"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h3>
+            <p class="h3 mb-2 mt-2"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></p>
             <p class="mb-4">{{ .Summary }}</p>
             <a href="{{ .Permalink }}" class="btn btn-main">{{ i18n "read_more" }}</a>
           </div>
