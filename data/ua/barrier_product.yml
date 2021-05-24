@@ -1,0 +1,177 @@
+########################### short info ############################
+info:
+  enable : true
+  mainIMG :
+      title : "Image"
+      jpeg : "/images/products/barrier1.jpg" 
+      webp : "/images/products/barrier1.webp" 
+      jpegSM : "/images/products/barrier1-small.jpg" 
+      webpSM : "/images/products/barrier1-small.webp"
+
+  images : 
+    - title : "Image 2"
+      jpeg : "/images/products/barrier2.jpg" 
+      webp : "/images/products/barrier2.webp" 
+      jpegSM : "/images/products/barrier2-small.jpg" 
+      webpSM : "/images/products/barrier2-small.webp"
+
+    - title : "Image 3"
+      jpeg : "/images/products/barrier3.jpg" 
+      webp : "/images/products/barrier3.webp" 
+      jpegSM : "/images/products/barrier3-small.jpg" 
+      webpSM : "/images/products/barrier3-small.webp"
+
+  title: "Короткий опис"
+  paragraphs:
+    # 
+    - content : "Двоканальний бар'єр іскрозахисту з функцію автоматичного відновлення після спрацювання."
+      
+    # 
+    - content : "Канал «Живлення» призначений для живлення одного первинного перетворювача з вихідним токовим сигналом 0-5 мА / 0-20 мА / 4-20 мА постійного струму, або для живлення напругою + 24В постійного струму одного пристрою, встановленого у вибухонебезпечній зоні."
+      
+    # service item loop
+    - content : "Канал «Сигнальний» призначений для прийому/передачі сигналів цифрових інтерфейсів RS-485 / RS-422 або для передачі дискретних сигналів від датчиків із виходом «сухий контакт» амплітудою до 10В постійного струму."
+      
+    # service item loop
+    - content : "Бар'єр відповідає вимогам ДСТУ EN 60079-0:2017 і ДСТУ EN 60079-11:2017, має вихідні іскробезпечні електричні кола рівня «Іа» і маркування вибухозахисту EX II (1) G [Ex ia Ga] IIB та призначений для установки за межами вибухонебезпечних зон."
+    
+
+######################### usage #####################################
+usage:
+  enable : true
+  title: "Сфери призначення"
+  content: "Пристрій застосовується в системах вимірювання та контролю, автоматичного регулювання, сигналізації, протиаварійного захисту і управління технологічними процесами на вибухонебезпечних і / або пожежонебезпечних ділянках виробництв нафтогазового комплексу, металургії, теплоенергетики, хімічної та нафтохімічної, харчової та інших галузях промисловості, де можуть бути вибухонебезпечні суміші газів, парів, а також легкозаймисті та вибухові речовини (пил, порошок)."
+  images : 
+    - link : "/images/icons/027-oilfield.svg"
+    - link : "/images/icons/054-oil.svg"
+    - link : "/images/icons/078-factory.svg"
+    - link : "/images/icons/044-tank-truck.svg"
+    - link : "/images/icons/079-silo-1.svg"
+    - link : "/images/icons/025-coal.svg"
+    - link : "/images/icons/071-nuclear-plant.svg"
+
+
+
+
+######################## parameters #################################
+parameters:
+  enable : true
+  title: "Техничні характеристики"
+  header : 
+    - title : "Параметр"
+    - title : "Канал \"Живлення\""
+    - title : "Канал \"Сигнальний\""
+  single:
+    - title : "Маркування вибухозахисту "
+      value : "Ex II (1) G [Ex ia Ga] IIB"
+    - title : "Відповідність стандартам "
+      value : "ДСТУ EN 60079-0:2017 і ДСТУ EN 60079- 11:2017 "
+    - title : "Ступінь захисту"
+      value : "IP20"
+    - title : "Робочій діапазон температур"
+      value : "-20...+60 °С"
+    - title : "Відносна вологість"
+      value : "< 80 %"
+    - title : "Тип монтажу"
+      value : "Кріплення на DIN-рейку 35 мм"
+    - title : "Габарити"
+      value : "111х99х17,6 мм"
+    - title : "Вага"
+      value : "100г"
+    - title : "Корпус і клеми"
+      value : "Phoenix Contact (Німеччина); литі гвинтові затискні клеми; переріз проводу: 0.2-2.5 мм2"
+  double:
+    - title : "Кількість каналів"
+      value1 : "1"
+      value2 : "1"
+    - title : "Напруга холостого ходу Uхх, не більше"
+      value1 : "25 В"
+      value2 : "10 В"
+    - title : "Струм навантаження Iн, не більше"
+      value1 : "50 мА"
+      value2 : "40 мА"
+    - title : "Опір каналу"
+      value1 : "210 Ом"
+      value2 : "190 Ом"
+    - title : "Сумарна ємність кабелю і навантаження "
+      value1 : "0,4 мкФ"
+      value2 : "3,5 мкФ"
+    - title : "Сумарна індуктивність кабелю і навантаження "
+      value1 : "1 мГн"
+      value2 : "4,5 мГн"
+    - title : "Максимальна напруга на виході барьера в аварійному режимі Uo, не більше"
+      value1 : "27 В"
+      value2 : "12.75 В"
+    - title : "Максимальний струм на виході барьера в аварійному режимі Io, не більше"
+      value1 : "165 мА"
+      value2 : "90 мА"
+    
+
+  
+
+######################## tech docs #################################
+tech:
+  enable : true
+  title : "Технічна документація"
+  docs:
+    # step loop
+    - title : "Руководство по эксплуатации"
+      icon : "/images/icons/pdf.svg"
+      link : "/docs/barrierManualRU.pdf" 
+
+    # step loop
+    - title : "Настанова з екстпуатації"
+      icon : "/images/icons/pdf.svg"
+      link : "/docs/barrierManualUA.pdf" 
+      
+    # step loop
+    - title : "Паспорт"
+      icon : "/images/icons/pdf.svg"
+      link : "/docs/barrierPassport.pdf"
+
+######################## norm docs #################################
+norm:
+  enable : true
+  title : "Нормативна документація"
+  docs:
+    # step loop
+    - title : "Сертификат типу"
+      icon : "/images/icons/pdf.svg"
+      link : "/docs/barrierCertB.pdf" 
+
+######################## connections #################################
+connections:
+  enable : true
+  button : "Подивитися"
+  docs:
+    # 
+    - title : "Схема підключення 1"
+      jpeg : "/images/products/barrier-connection-1.jpg" 
+      webp : "/images/products/barrier-connection-1.webp" 
+      jpegSM : "/images/products/barrier-connection-1-small.jpg" 
+      webpSM : "/images/products/barrier-connection-1-small.webp" 
+
+    # 
+    - title : "Схема підключення 2"
+      jpeg : "/images/products/barrier-connection-2.jpg" 
+      webp : "/images/products/barrier-connection-2.webp" 
+      jpegSM : "/images/products/barrier-connection-2-small.jpg" 
+      webpSM : "/images/products/barrier-connection-2-small.webp"
+      
+    
+
+######################## bundle #################################
+bundle:
+  enable : true
+  title : "Комплект поставки"
+  header : 
+    - title : "#"
+    - title : "Назва"
+    - title : "Кількість шт."
+  data :
+    - title : "Бар’єр іскрозахисту БИЗоН-2Ex-24.12"
+      count: 1
+    - title : "Паспорт"
+      count: 1
+    - title : "Настанова з експлуатації"
+      count: 1

@@ -7,42 +7,45 @@
 	.carousel-control-next,
 	.carousel-control-prev /*, .carousel-indicators */ {
 		filter: invert(100%);
+	}	
+	.table td{
+		vertical-align: middle;		
 	}
+	.table-center{
+		text-align: center;		
+	}
+		
 </style>
 <div class="container template_card">
 	<div class="row">
+		<!-- service step -->
+		{{ if $data.barrier_product.info.enable }}		
 		<div class="col-sm-12 col-lg-6">
-			<div id="carousel" class="carousel slide" data-ride="carousel" >
-				<ol class="carousel-indicators">
-				  <li data-target="#carousel" data-slide-to="0" class="active"></li>
-				  <li data-target="#carousel" data-slide-to="1"></li>
-				  <li data-target="#carousel" data-slide-to="2"></li>
-				</ol>
+			
+			<div id="carousel" class="carousel slide" data-ride="carousel" >				
 				<div class="carousel-inner">
-				  <div class="carousel-item active">
+				{{ with $data.barrier_product.info.mainIMG }}
+				<div class="carousel-item active">
 					<picture>
-						<source srcset="/images/products/barrier1-small.webp" media="(max-width: 560px)" type="image/webp">
-						<source srcset="/images/products/barrier1-small.jpg" media="(max-width: 560px)">
-						<source srcset="/images/products/barrier1.webp" type="image/webp">
-						<img class="d-block w-100" src="/images/products/barrier1.jpg" alt="First slide">
+						<source srcset="{{ .webpSM }}" media="(max-width: 560px)" type="image/webp">
+						<source srcset="{{ .jpegSM }}" media="(max-width: 560px)">
+						<source srcset="{{ .webp }}" type="image/webp">
+						<img class="d-block w-100" src="{{ .jpeg }}" alt="{{ .title }}">
+					</picture>					
+				</div>
+				{{ end }}
+				{{ range $index, $element:= $data.barrier_product.info.images }}
+      			{{ $delay := mul $index 100 }}
+				  <div class="carousel-item">
+					<picture>
+						<source srcset="{{ .webpSM }}" media="(max-width: 560px)" type="image/webp">
+						<source srcset="{{ .jpegSM }}" media="(max-width: 560px)">
+						<source srcset="{{ .webp }}" type="image/webp">
+						<img class="d-block w-100" src="{{ .jpeg }}" alt="{{ .title }}">
 					 </picture>					
 				  </div>
-				  <div class="carousel-item">
-					<picture>
-						<source srcset="/images/products/barrier2-small.webp" media="(max-width: 560px)" type="image/webp">
-						<source srcset="/images/products/barrier2-small.jpg" media="(max-width: 560px)">
-						<source srcset="/images/products/barrier2.webp" type="image/webp">
-						<img class="d-block w-100" src="/images/products/barrier2.jpg" alt="First slide">
-					 </picture>	
-				  </div>
-				  <div class="carousel-item">
-					<picture>
-						<source srcset="/images/products/barrier3-small.webp" media="(max-width: 560px)" type="image/webp">
-						<source srcset="/images/products/barrier3-small.jpg" media="(max-width: 560px)">
-						<source srcset="/images/products/barrier3.webp" type="image/webp">
-						<img class="d-block w-100" src="/images/products/barrier3.jpg" alt="First slide">
-					 </picture>	
-				  </div>
+				{{ end }}
+				  
 				</div>
 				<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
 				  <span class="carousel-control-prev-icon" aria-hidden="false"></span>
@@ -55,319 +58,162 @@
 			</div>
 		</div>
 		<div class="col-sm-12 col-lg-6">
-			<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">Короткий опис	</h2>		
-			<p style="text-indent: 1.5em;">	Призначений для захисту електричних кіл живлення і сигнальних кіл вимірювальних перетворювачів, які встановлені у вибухонебезпечних зонах.<br/></p>
-			<p style="text-indent: 1.5em;">	Канал «Живлення» призначений для живлення одного первинного перетворювача з вихідним токовим сигналом 0-5 мА / 0-20 мА / 4-20 мА постійного струму, або для живлення напругою + 24В постійного струму одного пристрою, встановленого у вибухонебезпечній зоні.</p>
-			<p style="text-indent: 1.5em;">	Канал «Сигнальний» призначений для прийому/передачі сигналів цифрових інтерфейсів RS-485 / RS-422 або для передачі дискретних сигналів від датчиків із виходом «сухий контакт» амплітудою до 10В постійного струму.</p>
-			<p style="text-indent: 1.5em;">	Бар'єр відповідає вимогам ДСТУ EN 60079-0:2017 і ДСТУ EN 60079-11:2017, має вихідні іскробезпечні електричні кола рівня «Іа» і маркування вибухозахисту EX II (1) G [Ex ia Ga] IIB та призначений для установки за межами вибухонебезпечних зон.</p>
+			{{ with $data.barrier_product.info }}
+			<p class="lead " style="margin: 20px 10px; font-size: 3.5vh;">{{ .title | markdownify }}</p>
+			{{ range $index, $element:= $data.barrier_product.info.paragraphs }}
+      		{{ $delay := mul $index 100 }}
+			<p style="margin: 0px; text-indent: 1.5em;">{{ .content | markdownify }}</p>			
+			{{ end }}
+			<p class="text-center"><button type="button" class="btn btn-warning w-60 orange_button" style="margin: 20px ;" data-toggle="modal" data-target=".bd-example-modal-lg">Замовити</button></p>
+		</div>
+		
+		
+		{{ end }}
+		{{ end }}
+		<!-- /service step -->
 			
-			<p class="text-center"><button type="button" class="btn btn-warning w-60 orange_button" data-toggle="modal" data-target=".bd-example-modal-lg">Замовити</button></p>
-			
-		</div>		
 	</div>
-	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">Сфери призначення </h2>
-		<p style="text-indent: 1.5em;">Пристрій застосовується в системах вимірювання та контролю, автоматичного регулювання, сигналізації, протиаварійного захисту і управління технологічними процесами на вибухонебезпечних і / або пожежонебезпечних ділянках виробництв нафтогазового комплексу, металургії, теплоенергетики, хімічної та нафтохімічної, харчової та інших галузях промисловості, де можуть бути вибухонебезпечні суміші газів, парів, а також легкозаймисті та вибухові речовини (пил, порошок). 
-			</p>
+	{{ if $data.barrier_product.usage.enable }}
+	{{ with $data.barrier_product.usage }}
+	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
+		<p style="text-indent: 1.5em;">{{ .content | markdownify }}</p>
 			<div class="d-flex flex-row">
+				{{ range $index, $element:= $data.barrier_product.usage.images }}
+      			{{ $delay := mul $index 100 }}
 				<div class="p-2">
-					<img src="/images/icons/027-oilfield.svg" width="50" height="50"/>
+					<img src="{{ .link }}" width="50" height="50"/>
 				</div>
-				<div class="p-2">
-					<img src="/images/icons/054-oil.svg" width="50" height="50"/>
-				</div>
-				<div class="p-2">
-					<img src="/images/icons/078-factory.svg" width="50" height="50"/>
-				</div>
-				<div class="p-2">
-					<img src="/images/icons/044-tank-truck.svg" width="50" height="50"/>
-				</div>
-				<div class="p-2">
-					<img src="/images/icons/079-silo-1.svg" width="50" height="50"/>
-				</div>
-				<div class="p-2">
-					<img src="/images/icons/025-coal.svg" width="50" height="50"/>
-				</div>
-				<div class="p-2">
-					<img src="/images/icons/071-nuclear-plant.svg" width="50" height="50"/>
-				</div>
+				{{ end }}				
 			</div>
-	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">Технічні характеристики</h2>
-	<div class="row">
-		<div class="col-sm">
-			
+	{{ end }}
+	{{ end }}
+
+	{{ if $data.barrier_product.parameters.enable }}
+	{{ with $data.barrier_product.parameters }}
+	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
+	<div class="row">		
+		<div class="col-sm">			
 			<table class="table">
 			  <thead>
 				<tr class="fs16">
-				  <th scope="col">Параметр</th>
-				  <th scope="col">Канал &laquo;Живлення</th>
-				  <th scope="col">Канал &laquo;Сигнальний&raquo;</th>
+					{{ range $index, $element:= $data.barrier_product.parameters.header }}
+      				{{ $delay := mul $index 100 }}
+					<th class="table-center" scope="col">{{ .title }}</th>
+					{{ end }}				 
 				</tr>
 			  </thead>
-			  <tbody>
+			  <tbody >	
+				{{ range $index, $element:= $data.barrier_product.parameters.double }}
+				{{ $delay := mul $index 100 }}			
 				<tr>
-					<td>
-						
-							Кількість каналів
-						
-					</td>
-					<td >
-						
-							1
-						
-					</td>
-					<td >
-						
-							1
-						
-					</td>
+					<td>{{ .title }}</td>
+					<td class="table-center">{{ .value1 }}</td>
+					<td class="table-center">{{ .value2 }}</td>
+				</tr>	
+				{{ end }}			
+				{{ range $index, $element:= $data.barrier_product.parameters.single }}
+				{{ $delay := mul $index 100 }}				
+				<tr >
+					<td >{{ .title }}</td>
+					<td colspan="2" class="table-center">{{ .value }}</td>
 				</tr>
-				<tr>
-					<td >
-						
-							Тип каналів
-						
-					</td>
-					<td >
-						<p>
-							Шунт-діодний, без гальванічної розв’язки
-						</p>
-						<p>
-							вхідних і вихідних кіл
-							<strong>
-								. Має функцію автоматичного відновлення
-							</strong>
-							<strong> </strong>
-							<strong>після спрацювання.</strong>
-						</p>
-					</td>
-					<td >
-						<p>
-							Шунт-діодний, без гальванічної розв’язки
-						</p>
-						
-							вхідних і вихідних кіл. Має функцію автоматичного
-							відновлення після спрацювання.
-						
-					</td>
-				</tr>
-				<tr>
-					<td >
-						
-							Напруга холостого ходу Uхх, не більше
-						
-					</td>
-					<td >
-						
-							25 В
-						
-					</td>
-					<td >
-						
-							10 В
-						
-					</td>
-				</tr>
-				<tr>
-					<td >
-						
-							Струм навантаження Iн, не більше
-						
-					</td>
-					<td >
-						
-							50 мА
-						
-					</td>
-					<td >
-						
-							40 мА
-						
-					</td>
-				</tr>
-				<tr>
-					<td >
-						
-							Опір каналу
-						
-					</td>
-					<td >
-						
-							210 Ом +/-5%
-						
-					</td>
-					<td >
-						
-							190 Ом +/-5%
-						
-					</td>
-				</tr>
-				<tr>
-					<td >
-						
-							Сумарна ємність кабелю і навантаження
-						
-					</td>
-					<td >
-						
-							0,4 мкФ
-						
-					</td>
-					<td >
-						
-							3,5 мкФ
-						
-					</td>
-				</tr>
-				<tr>
-					<td >
-						
-							Сумарна індуктивність кабелю і навантаження
-						
-					</td>
-					<td >
-						
-							1 мГн
-						
-					</td>
-					<td >
-						
-							4,5 мГн
-						
-					</td>
-				</tr>
-				<tr>
-					<td >
-						
-							Ступінь захисту
-						
-					</td>
-					<td  colspan="2">
-						
-							IP20
-						
-					</td>
-				</tr>
-				<tr>
-					<td >
-						
-							Робочій діапазон температур
-						
-					</td>
-					<td  colspan="2">
-						
-							-20...+60 °С
-						
-					</td>
-				</tr>
-				<tr>
-					<td >
-						
-							Габарити
-						
-					</td>
-					<td  colspan="2">
-						
-							111х99х17,6 мм
-						
-					</td>
-				</tr>
-				<tr>
-					<td >
-						
-							Вага
-						
-					</td>
-					<td  colspan="2">
-						
-							100г
-						
-					</td>
-				</tr>
-				<tr>
-					<td >
-						
-							Корпус і клемми
-						
-					</td>
-					<td colspan="2">
-						
-							Phoenix Contact (Німеччина); литі гвинтові затискні
-							клеми; переріз проводу: 0.2-2.5 мм2
-						
-					</td>
-				</tr>
+				{{ end }}				
 			</tbody>
 			</table>
 		</div>
 	</div>
-	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">Технічна документація</h2>
-	<div class="row card_documents">
-		<div class="col-sm-3 text-center">
-			<a href="/docs/barrierManualRU.pdf" target="_blank">
-			<img src="/images/icons/pdf.svg" aria-hidden="true"></i><br><p>Руководство по эксплуатации</p></a>
-		</div>
-		<div class="col-sm-3 text-center">
-			<a href="/docs/barrierManualUA.pdf" target="_blank">
-			<img src="/images/icons/pdf.svg" aria-hidden="true"></i><br><p>Настанова з екстпуатації</p></a>
-		</div>
-		<div class="col-sm-3 text-center">
-			<a href="/docs/barrierPassport.pdf" target="_blank">
-			<img src="/images/icons/pdf.svg" style="font-size: 50px;" aria-hidden="true"></i><br><p>Паспорт</p></a>
-      	</div>
+	{{ end }}
+	{{ end }}
+
+	{{ if $data.barrier_product.tech.enable }}
+	{{ with $data.barrier_product.tech }}	
+	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
+	<div class="row card_documents">			
+		{{ range $index, $element:= $data.barrier_product.tech.docs }}
+      	{{ $delay := mul $index 100 }}
+		  	<div class="col-sm-3 text-center">
+				<a href="{{ .link | markdownify }}" target="_blank">
+				<img src="{{ .icon | markdownify }}" aria-hidden="true"></i><br><p>{{ .title | markdownify }}</p></a>
+			</div>			
+		{{ end }}			
 	</div>
-	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">Нормативна документація</h2>
-	<div class="row card_documents">
-		<div class="col-sm-3 text-center">
-			<a href="/docs/barrierCertB.pdf" target="_blank">
-			<img src="/images/icons/pdf.svg" aria-hidden="true"></i><br><p>Сертифікат типу</p></a>
-		</div>		
+	{{ end }}
+	{{ end }}
+
+	{{ if $data.barrier_product.norm.enable }}
+	{{ with $data.barrier_product.norm }}
+	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
+	<div class="row card_documents">			
+		{{ range $index, $element:= $data.barrier_product.norm.docs }}
+      	{{ $delay := mul $index 100 }}
+		  	<div class="col-sm-3 text-center">
+				<a href="{{ .link | markdownify }}" target="_blank">
+				<img src="{{ .icon | markdownify }}" aria-hidden="true"></i><br><p>{{ .title | markdownify }}</p></a>
+			</div>			
+		{{ end }}			
 	</div>
+	{{ end }}
+	{{ end }}
+
+	{{ if $data.barrier_product.connections.enable }}
+	{{ with $data.barrier_product.connections }}
 	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">Схеми підключення</h2>
-	<div class="row card_documents">
-		<div class="col-sm-12 col-lg-6">	
-			<picture>
-				<source srcset="/images/products/barrier-connection-1-small.webp" media="(max-width: 560px)" type="image/webp">
-				<source srcset="/images/products/barrier-connection-1-small.jpg" media="(max-width: 560px)">
-				<source srcset="/images/products/barrier-connection-1.webp" type="image/webp">
-				<img class="d-block w-100" src="/images/products/barrier-connection-1.jpg" alt="Connection 1">
-			 </picture>	
+	<div class="row shuffle-wrapper portfolio-gallery">
+		{{ range $index, $element:= $data.barrier_product.connections.docs }}
+      	{{ $delay := mul $index 100 }}
+		<div class="col-sm-6 col-lg-3 shuffle-item">
+			<div class="position-relative rounded inner-box">
+			<div class="image position-relative">
+				<picture>
+					<source srcset="{{ .webpSM | markdownify }}" media="(max-width: 560px)" type="image/webp">
+					<source srcset="{{ .jpegSM | markdownify }}" media="(max-width: 560px)">
+					<source srcset="{{ .webp | markdownify }}" type="image/webp">
+					<img class="d-block w-100" src="{{ .jpeg | markdownify }}" alt="{{ .title | markdownify }}">
+				 </picture>	
+				<div class="overlay-box">
+				<div class="overlay-inner">
+					<div class="overlay-content text-center">
+					<h3 class="mb-2">Схема підключення 1</h3>					
+					<a href="{{ .jpeg | markdownify }}" class="portfolio-image popup-gallery btn btn-light btn-sm"
+						title="{{ .title | markdownify }}">{{ i18n "view_project" }}</a>
+					</div>
+				</div>
+				</div>
+			</div>
+			</div>
 		</div>
-		<div class="col-sm-12 col-lg-6">	
-			<picture>
-				<source srcset="/images/products/barrier-connection-2-small.webp" media="(max-width: 560px)" type="image/webp">
-				<source srcset="/images/products/barrier-connection-2-small.jpg" media="(max-width: 560px)">
-				<source srcset="/images/products/barrier-connection-2.webp" type="image/webp">
-				<img class="d-block w-100" src="/images/products/barrier-connection-2.jpg" alt="Connection 2">
-			 </picture>	
-		</div>
+		{{ end }}
+		
+	{{ end }}
+	{{ end }}		
 	</div>
-	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">Комплект поставки</h2>
+
+	{{ if $data.barrier_product.bundle.enable }}
+	{{ with $data.barrier_product.bundle }}
+	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
 	<table class="table">
 	  <thead>
 		<tr>
-		  <th scope="col">#</th>
-		  <th scope="col">Назва</th>
-		  <th scope="col">Кількість шт.</th>
+			{{ range $index, $element:= $data.barrier_product.bundle.header }}
+      		{{ $delay := mul $index 100 }}
+			  <th scope="col">{{ .title | markdownify }}</th>
+			{{ end }}		  
 		</tr>
 	  </thead>
 	  <tbody>
-	  	<tr>
-		  <th scope="row">1</th>
-		  <td>Бар’єр іскрозахисту БИЗоН-2Ex-24.12</td>
-		  <td>1</td>
-		</tr>
-		<tr>
-		  <th scope="row">2</th>
-		  <td>Паспорт</td>
-		  <td>1</td>
-		</tr>
-		<tr>
-		  <th scope="row">2</th>
-		  <td>Настанова з експлуатації</td>
-		  <td>1</td>
-		 </tr>
-		</tbody>
+		{{ range $index, $element:= $data.barrier_product.bundle.data }}
+		{{ $delay := mul $index 100 }}
+			<tr>
+				{{ $cnt := add $index 1 }}
+				<td scope="row">{{ $cnt }}</th>
+				<td>{{ .title | markdownify }}</td>
+				<td>{{ .count | markdownify }}</td>
+		  	</tr>
+	  	{{ end }}		  	
+	   </tbody>
 	</table>
+	{{ end }}
+	{{ end }}
 </div>
 
 {{ end }}
