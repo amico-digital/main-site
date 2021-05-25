@@ -1,22 +1,18 @@
 ---
-title: "Skill to grow business rapidly"
-date: 2019-09-16T10:30:13+06:00
+title: "З Новим роком!"
+date: 2021-01-01T10:30:13+06:00
 draft: false
 description: "this is meta description"
-bg_image: "images/bg/banner-1.webp"
-image: "images/blog/3.webp"
-author: "Mark Din"
-categories: [ "Digital"]
-tags: [ "marketing", "Agency"]
+bg_image: "images/bg/news-banner.jpg"
+image: "images/blog/newYear2021.jpg"
+author: ""
+categories: ["Holydays"]
+tags: ["Holydays"]
 type: "post"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur?
-Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui.
-Laboriosam autem, nam voluptate in beatae.
+> Вітаємо з Новим 2021 роком !
 
-> A brand for a company is like a reputation for a person. You earn reputation by trying to do hard things well.
-
-#### The same is true as we experience the emotional sensation of stress from our first instances of social rejection ridicule. We quickly learn to fear and thus automatically.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, rerum beatae repellat tenetur incidunt quisquam libero dolores laudantium. Nesciunt quis itaque quidem, voluptatem autem eos animi laborum iusto expedita sapiente.
+Щиро вдячні Вам за цьогорічну співпрацю, нам приємно бути партнерами Вашого успіху!
+Хай  Новорічні та Різдв’яні свята будуть початком нових ідей, досягнень, цікавих подій і зустрічей, стануть продовженням успішних задумів та справ!
+Тепла Вам та радості в родинному колі, вірних друзів, вдячних пацієнтів (клієнтів)!

@@ -19,12 +19,12 @@
 <div class="container template_card">
 	<div class="row">
 		<!-- service step -->
-		{{ if $data.barrier_product.info.enable }}		
+		{{ if $data.sensorLPG.info.enable }}		
 		<div class="col-sm-12 col-lg-6">
 			
 			<div id="carousel" class="carousel slide" data-ride="carousel" >				
 				<div class="carousel-inner">
-				{{ with $data.barrier_product.info.mainIMG }}
+				{{ with $data.sensorLPG.info.mainIMG }}
 				<div class="carousel-item active">
 					<picture>
 						<source srcset="{{ .webpSM }}" media="(max-width: 560px)" type="image/webp">
@@ -34,7 +34,7 @@
 					</picture>					
 				</div>
 				{{ end }}
-				{{ range $index, $element:= $data.barrier_product.info.images }}
+				{{ range $index, $element:= $data.sensorLPG.info.images }}
       			{{ $delay := mul $index 100 }}
 				  <div class="carousel-item">
 					<picture>
@@ -58,9 +58,9 @@
 			</div>
 		</div>
 		<div class="col-sm-12 col-lg-6">
-			{{ with $data.barrier_product.info }}
+			{{ with $data.sensorLPG.info }}
 			<p class="lead " style="margin: 20px 10px; font-size: 3.5vh;">{{ .title | markdownify }}</p>
-			{{ range $index, $element:= $data.barrier_product.info.paragraphs }}
+			{{ range $index, $element:= $data.sensorLPG.info.paragraphs }}
       		{{ $delay := mul $index 100 }}
 			<p style="margin: 0px; text-indent: 1.5em;">{{ .content | markdownify }}</p>			
 			{{ end }}
@@ -73,12 +73,12 @@
 		<!-- /service step -->
 			
 	</div>
-	{{ if $data.barrier_product.usage.enable }}
-	{{ with $data.barrier_product.usage }}
+	{{ if $data.sensorLPG.usage.enable }}
+	{{ with $data.sensorLPG.usage }}
 	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
 		<p style="text-indent: 1.5em;">{{ .content | markdownify }}</p>
 			<div class="d-flex flex-row">
-				{{ range $index, $element:= $data.barrier_product.usage.images }}
+				{{ range $index, $element:= $data.sensorLPG.usage.images }}
       			{{ $delay := mul $index 100 }}
 				<div class="p-2">
 					<img src="{{ .link }}" width="50" height="50"/>
@@ -88,22 +88,22 @@
 	{{ end }}
 	{{ end }}
 
-	{{ if $data.barrier_product.parameters.enable }}
-	{{ with $data.barrier_product.parameters }}
+	{{ if $data.sensorLPG.parameters.enable }}
+	{{ with $data.sensorLPG.parameters }}
 	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
 	<div class="row">		
 		<div class="col-sm">			
 			<table class="table">
 			  <thead>
 				<tr class="fs16">
-					{{ range $index, $element:= $data.barrier_product.parameters.header }}
+					{{ range $index, $element:= $data.sensorLPG.parameters.header }}
       				{{ $delay := mul $index 100 }}
 					<th class="table-center" scope="col">{{ .title }}</th>
 					{{ end }}				 
 				</tr>
 			  </thead>
 			  <tbody >	
-				{{ range $index, $element:= $data.barrier_product.parameters.double }}
+				{{ range $index, $element:= $data.sensorLPG.parameters.double }}
 				{{ $delay := mul $index 100 }}			
 				<tr>
 					<td>{{ .title }}</td>
@@ -111,7 +111,7 @@
 					<td class="table-center">{{ .value2 }}</td>
 				</tr>	
 				{{ end }}			
-				{{ range $index, $element:= $data.barrier_product.parameters.single }}
+				{{ range $index, $element:= $data.sensorLPG.parameters.single }}
 				{{ $delay := mul $index 100 }}				
 				<tr >
 					<td >{{ .title }}</td>
@@ -125,11 +125,11 @@
 	{{ end }}
 	{{ end }}
 
-	{{ if $data.barrier_product.tech.enable }}
-	{{ with $data.barrier_product.tech }}	
+	{{ if $data.sensorLPG.tech.enable }}
+	{{ with $data.sensorLPG.tech }}	
 	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
 	<div class="row card_documents">			
-		{{ range $index, $element:= $data.barrier_product.tech.docs }}
+		{{ range $index, $element:= $data.sensorLPG.tech.docs }}
       	{{ $delay := mul $index 100 }}
 		  	<div class="col-sm-3 text-center">
 				<a href="{{ .link | markdownify }}" target="_blank">
@@ -140,11 +140,11 @@
 	{{ end }}
 	{{ end }}
 
-	{{ if $data.barrier_product.norm.enable }}
-	{{ with $data.barrier_product.norm }}
+	{{ if $data.sensorLPG.norm.enable }}
+	{{ with $data.sensorLPG.norm }}
 	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
 	<div class="row card_documents">			
-		{{ range $index, $element:= $data.barrier_product.norm.docs }}
+		{{ range $index, $element:= $data.sensorLPG.norm.docs }}
       	{{ $delay := mul $index 100 }}
 		  	<div class="col-sm-3 text-center">
 				<a href="{{ .link | markdownify }}" target="_blank">
@@ -155,11 +155,11 @@
 	{{ end }}
 	{{ end }}
 
-	{{ if $data.barrier_product.connections.enable }}
-	{{ with $data.barrier_product.connections }}
+	{{ if $data.sensorLPG.connections.enable }}
+	{{ with $data.sensorLPG.connections }}
 	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">Схеми підключення</h2>
 	<div class="row shuffle-wrapper portfolio-gallery">
-		{{ range $index, $element:= $data.barrier_product.connections.docs }}
+		{{ range $index, $element:= $data.sensorLPG.connections.docs }}
       	{{ $delay := mul $index 100 }}
 		<div class="col-sm-6 col-lg-3 shuffle-item">
 			<div class="position-relative rounded inner-box">
@@ -188,20 +188,20 @@
 	{{ end }}		
 	</div>
 
-	{{ if $data.barrier_product.bundle.enable }}
-	{{ with $data.barrier_product.bundle }}
+	{{ if $data.sensorLPG.bundle.enable }}
+	{{ with $data.sensorLPG.bundle }}
 	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
 	<table class="table">
 	  <thead>
 		<tr>
-			{{ range $index, $element:= $data.barrier_product.bundle.header }}
+			{{ range $index, $element:= $data.sensorLPG.bundle.header }}
       		{{ $delay := mul $index 100 }}
 			  <th scope="col">{{ .title | markdownify }}</th>
 			{{ end }}		  
 		</tr>
 	  </thead>
 	  <tbody>
-		{{ range $index, $element:= $data.barrier_product.bundle.data }}
+		{{ range $index, $element:= $data.sensorLPG.bundle.data }}
 		{{ $delay := mul $index 100 }}
 			<tr>
 				{{ $cnt := add $index 1 }}

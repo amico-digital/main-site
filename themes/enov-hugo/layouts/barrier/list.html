@@ -1,0 +1,219 @@
+{{ define "main" }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ partial "page-title-small.html" . }}
+<style>
+	.carousel-control-next,
+	.carousel-control-prev /*, .carousel-indicators */ {
+		filter: invert(100%);
+	}	
+	.table td{
+		vertical-align: middle;		
+	}
+	.table-center{
+		text-align: center;		
+	}
+		
+</style>
+<div class="container template_card">
+	<div class="row">
+		<!-- service step -->
+		{{ if $data.barrier.info.enable }}		
+		<div class="col-sm-12 col-lg-6">
+			
+			<div id="carousel" class="carousel slide" data-ride="carousel" >				
+				<div class="carousel-inner">
+				{{ with $data.barrier.info.mainIMG }}
+				<div class="carousel-item active">
+					<picture>
+						<source srcset="{{ .webpSM }}" media="(max-width: 560px)" type="image/webp">
+						<source srcset="{{ .jpegSM }}" media="(max-width: 560px)">
+						<source srcset="{{ .webp }}" type="image/webp">
+						<img class="d-block w-100" src="{{ .jpeg }}" alt="{{ .title }}">
+					</picture>					
+				</div>
+				{{ end }}
+				{{ range $index, $element:= $data.barrier.info.images }}
+      			{{ $delay := mul $index 100 }}
+				  <div class="carousel-item">
+					<picture>
+						<source srcset="{{ .webpSM }}" media="(max-width: 560px)" type="image/webp">
+						<source srcset="{{ .jpegSM }}" media="(max-width: 560px)">
+						<source srcset="{{ .webp }}" type="image/webp">
+						<img class="d-block w-100" src="{{ .jpeg }}" alt="{{ .title }}">
+					 </picture>					
+				  </div>
+				{{ end }}
+				  
+				</div>
+				<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+				  <span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+		<div class="col-sm-12 col-lg-6">
+			{{ with $data.barrier.info }}
+			<p class="lead " style="margin: 20px 10px; font-size: 3.5vh;">{{ .title | markdownify }}</p>
+			{{ range $index, $element:= $data.barrier.info.paragraphs }}
+      		{{ $delay := mul $index 100 }}
+			<p style="margin: 0px; text-indent: 1.5em;">{{ .content | markdownify }}</p>			
+			{{ end }}
+			<p class="text-center"><button type="button" class="btn btn-warning w-60 orange_button" style="margin: 20px ;" data-toggle="modal" data-target=".bd-example-modal-lg">Замовити</button></p>
+		</div>
+		
+		
+		{{ end }}
+		{{ end }}
+		<!-- /service step -->
+			
+	</div>
+	{{ if $data.barrier.usage.enable }}
+	{{ with $data.barrier.usage }}
+	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
+		<p style="text-indent: 1.5em;">{{ .content | markdownify }}</p>
+			<div class="d-flex flex-row">
+				{{ range $index, $element:= $data.barrier.usage.images }}
+      			{{ $delay := mul $index 100 }}
+				<div class="p-2">
+					<img src="{{ .link }}" width="50" height="50"/>
+				</div>
+				{{ end }}				
+			</div>
+	{{ end }}
+	{{ end }}
+
+	{{ if $data.barrier.parameters.enable }}
+	{{ with $data.barrier.parameters }}
+	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
+	<div class="row">		
+		<div class="col-sm">			
+			<table class="table">
+			  <thead>
+				<tr class="fs16">
+					{{ range $index, $element:= $data.barrier.parameters.header }}
+      				{{ $delay := mul $index 100 }}
+					<th class="table-center" scope="col">{{ .title }}</th>
+					{{ end }}				 
+				</tr>
+			  </thead>
+			  <tbody >	
+				{{ range $index, $element:= $data.barrier.parameters.double }}
+				{{ $delay := mul $index 100 }}			
+				<tr>
+					<td>{{ .title }}</td>
+					<td class="table-center">{{ .value1 }}</td>
+					<td class="table-center">{{ .value2 }}</td>
+				</tr>	
+				{{ end }}			
+				{{ range $index, $element:= $data.barrier.parameters.single }}
+				{{ $delay := mul $index 100 }}				
+				<tr >
+					<td >{{ .title }}</td>
+					<td colspan="2" class="table-center">{{ .value }}</td>
+				</tr>
+				{{ end }}				
+			</tbody>
+			</table>
+		</div>
+	</div>
+	{{ end }}
+	{{ end }}
+
+	{{ if $data.barrier.tech.enable }}
+	{{ with $data.barrier.tech }}	
+	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
+	<div class="row card_documents">			
+		{{ range $index, $element:= $data.barrier.tech.docs }}
+      	{{ $delay := mul $index 100 }}
+		  	<div class="col-sm-3 text-center">
+				<a href="{{ .link | markdownify }}" target="_blank">
+				<img src="{{ .icon | markdownify }}" aria-hidden="true"></i><br><p>{{ .title | markdownify }}</p></a>
+			</div>			
+		{{ end }}			
+	</div>
+	{{ end }}
+	{{ end }}
+
+	{{ if $data.barrier.norm.enable }}
+	{{ with $data.barrier.norm }}
+	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
+	<div class="row card_documents">			
+		{{ range $index, $element:= $data.barrier.norm.docs }}
+      	{{ $delay := mul $index 100 }}
+		  	<div class="col-sm-3 text-center">
+				<a href="{{ .link | markdownify }}" target="_blank">
+				<img src="{{ .icon | markdownify }}" aria-hidden="true"></i><br><p>{{ .title | markdownify }}</p></a>
+			</div>			
+		{{ end }}			
+	</div>
+	{{ end }}
+	{{ end }}
+
+	{{ if $data.barrier.connections.enable }}
+	{{ with $data.barrier.connections }}
+	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">Схеми підключення</h2>
+	<div class="row shuffle-wrapper portfolio-gallery">
+		{{ range $index, $element:= $data.barrier.connections.docs }}
+      	{{ $delay := mul $index 100 }}
+		<div class="col-sm-6 col-lg-3 shuffle-item">
+			<div class="position-relative rounded inner-box">
+			<div class="image position-relative">
+				<picture>
+					<source srcset="{{ .webpSM | markdownify }}" media="(max-width: 560px)" type="image/webp">
+					<source srcset="{{ .jpegSM | markdownify }}" media="(max-width: 560px)">
+					<source srcset="{{ .webp | markdownify }}" type="image/webp">
+					<img class="d-block w-100" src="{{ .jpeg | markdownify }}" alt="{{ .title | markdownify }}">
+				 </picture>	
+				<div class="overlay-box">
+				<div class="overlay-inner">
+					<div class="overlay-content text-center">
+					<h3 class="mb-2">Схема підключення 1</h3>					
+					<a href="{{ .jpeg | markdownify }}" class="portfolio-image popup-gallery btn btn-light btn-sm"
+						title="{{ .title | markdownify }}">{{ i18n "view_project" }}</a>
+					</div>
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		{{ end }}
+		
+	{{ end }}
+	{{ end }}		
+	</div>
+
+	{{ if $data.barrier.bundle.enable }}
+	{{ with $data.barrier.bundle }}
+	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
+	<table class="table">
+	  <thead>
+		<tr>
+			{{ range $index, $element:= $data.barrier.bundle.header }}
+      		{{ $delay := mul $index 100 }}
+			  <th scope="col">{{ .title | markdownify }}</th>
+			{{ end }}		  
+		</tr>
+	  </thead>
+	  <tbody>
+		{{ range $index, $element:= $data.barrier.bundle.data }}
+		{{ $delay := mul $index 100 }}
+			<tr>
+				{{ $cnt := add $index 1 }}
+				<td scope="row">{{ $cnt }}</th>
+				<td>{{ .title | markdownify }}</td>
+				<td>{{ .count | markdownify }}</td>
+		  	</tr>
+	  	{{ end }}		  	
+	   </tbody>
+	</table>
+	{{ end }}
+	{{ end }}
+</div>
+
+{{ end }}
