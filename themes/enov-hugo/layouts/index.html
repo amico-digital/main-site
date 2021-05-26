@@ -206,10 +206,16 @@
       <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
         <div class="shadow-sm-2 blog-item bg-white rounded" data-aos="fade-up" data-aos-delay="{{ $delay }}"
           data-aos-duration="500">
-          <img src="{{ .Params.Image | absURL }}" class="img-fluid rounded-top lozad" alt="{{ .Title | markdownify }}">
+          <center>
+          <picture>
+            <source srcset="{{ .Params.Image_webp_sm }}" media="(max-width: 560px)" type="image/webp">
+            <source srcset="{{ .Params.Image_sm }}" media="(max-width: 560px)">
+            <source srcset="{{ .Params.Image_webp }}" type="image/webp">
+            <img src="{{ .Params.Image | absURL }}" alt="{{ .Title | markdownify }}" class="img-fluid mb-4 rounded" style="max-height: 60vh;">
+          </picture>
+          </center>
           <div class="p-4">
-            <div class="d-flex w-100 justify-content-between">
-              <span><i class="ti-user mr-1"></i><a href="{{ `author/` | relLangURL }}{{ .Params.Author | urlize }}">{{ .Params.Author | title }}</a></span>
+            <div class="d-flex w-100 justify-content-between">              
               <span class="text-uppercase text-sm letter-spacing"><i class="ti-time mr-1"></i>
                 {{ .PublishDate.Format "January 02, 2006" }}</span>
             </div>

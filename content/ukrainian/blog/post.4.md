@@ -4,7 +4,10 @@ date: 2020-09-13T10:30:13+06:00
 draft: false
 description: "this is meta description"
 bg_image: "images/bg/news-banner.jpg"
-image: "images/blog/gas.jpg"
+image: "/images/blog/gas.jpg"
+image_webp: "/images/blog/gas.webp"
+image_sm: "/images/blog/gas-sm.jpg"
+image_webp_sm: "/images/blog/gas-sm.webp"
 author: ""
 categories: ["Holydays"]
 tags: ["Holydays"]

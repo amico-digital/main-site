@@ -16,13 +16,16 @@
                 {{ end }}
               </div>
               <h2 class="mt-1 mb-3 text-center">{{ .Title | markdownify }}</h2>
-              <div class="blog-item-meta text-center mb-5">
-                <span class="text-uppercase text-sm mr-3 letter-spacing"><i class="ti-user mr-1"></i> <a
-                    href="{{ `author/` | relLangURL }}{{ .Params.Author | urlize }}">{{ .Params.Author | title }}</a></span>
+              <div class="blog-item-meta text-center mb-5">                
                 <span class="text-uppercase text-sm letter-spacing"><i class="ti-time mr-1"></i>
-                  {{ .PublishDate.Format "January 02, 2006" }}</span>
+                  {{ .PublishDate.Format "02/01/2006" }}</span>
               </div>
-              <img src="{{ .Params.Image | absURL }}" alt="{{ .Title | markdownify }}" class="img-fluid rounded">
+              <picture>
+                <source srcset="{{ .Params.Image_webp_sm }}" media="(max-width: 560px)" type="image/webp">
+                <source srcset="{{ .Params.Image_sm }}" media="(max-width: 560px)">
+                <source srcset="{{ .Params.Image_webp }}" type="image/webp">
+                <img src="{{ .Params.Image | absURL }}" alt="{{ .Title | markdownify }}" class="img-fluid mb-4 rounded" >
+              </picture>
               <div class="contant">
                 {{.Content}}
               </div>

@@ -249,6 +249,11 @@ input[type="tel"] {
   line-height: 42px;
 }
 
+.text-hd {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
 .text-lg {
   font-size: 80px;
 }
@@ -283,8 +288,8 @@ a:focus {
 
 
 .page-title {
-  padding-top: 220px;
-  padding-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 10px;
   @extend .overly-2;
 
   h1 {
@@ -345,6 +350,10 @@ a:focus {
 }
 
 @include mobile {
+
+  .text-hd {
+  font-size: 20px; 
+}
 
   .content-title {
     font-size: 28px;

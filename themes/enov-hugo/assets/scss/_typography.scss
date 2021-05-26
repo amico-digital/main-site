@@ -74,3 +74,13 @@ span.reverse {
       line-height: 48px;
   }
 }
+
+@include mobile{
+  body {  
+  font-size: 14px; 
+
+}
+  .table td, .table th {
+    padding: 0.15rem;
+    }
+}

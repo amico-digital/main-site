@@ -4,7 +4,10 @@ date: 2020-07-24T10:30:13+06:00
 draft: false
 description: "this is meta description"
 bg_image: "images/bg/news-banner.jpg"
-image: "images/blog/pcb1.jpg"
+image: "/images/blog/certEx-sensor.jpg"
+image_webp: "/images/blog/certEx-sensor.webp"
+image_sm: "/images/blog/certEx-sensor-sm.jpg"
+image_webp_sm: "/images/blog/certEx-sensor-sm.webp"
 author: ""
 categories: ["Certification"]
 tags: ["Level Sensor", "Certificate", "Ex"]

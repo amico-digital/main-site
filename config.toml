@@ -10,7 +10,7 @@ summaryLength = "10"
 disqusShortname = "enov" # get your shortname form here : https://disqus.com
 defaultContentLanguage = "ua"
 # disable language
-disableLanguages = [] # desable language from here
+disableLanguages = ["en", "ru"] # desable language from here
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
@@ -25,19 +25,17 @@ link = "https://ajax.aspnetcdn.com/ajax/bootstrap/4.6.0/css/bootstrap.min.css"
 
 # JS Plugins
 [[params.plugins.js]]
-link = "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"
-[[params.plugins.js]]
-link = "https://ajax.aspnetcdn.com/ajax/bootstrap/4.6.0/bootstrap.min.js"
-[[params.plugins.js]]
 link = "plugins/shuffle/shuffle.min.js"
 [[params.plugins.js]]
 link = "plugins/aos/aos.js"
 [[params.plugins.js]]
 link = "plugins/search/fuse.min.js"
 [[params.plugins.js]]
-link = "plugins/search/mark.js"
-[[params.plugins.js]]
 link = "plugins/search/search.js"
+[[params.plugins.js]]
+link = "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"
+[[params.plugins.js]]
+link = "https://ajax.aspnetcdn.com/ajax/bootstrap/4.6.0/bootstrap.min.js"
   
 ############################## navigation ###############################
 
@@ -215,7 +213,7 @@ hasChildren = true
 
   [[Languages.ua.menu.main]]
   parent = "Продукти"
-  name = "Рівнемір LPG"
+  name = "Рівнемір для газів (LPG)"
   URL = "sensor-lpg"
 
   [[Languages.ua.menu.main]]

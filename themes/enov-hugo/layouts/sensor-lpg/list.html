@@ -62,9 +62,9 @@
 			<p class="lead " style="margin: 20px 10px; font-size: 3.5vh;">{{ .title | markdownify }}</p>
 			{{ range $index, $element:= $data.sensorLPG.info.paragraphs }}
       		{{ $delay := mul $index 100 }}
-			<p style="margin: 0px; text-indent: 1.5em;">{{ .content | markdownify }}</p>			
+			<p style="margin: 0px; text-indent: 1.5em; text-align: justify;">{{ .content | markdownify }}</p>			
 			{{ end }}
-			<p class="text-center"><button type="button" class="btn btn-warning w-60 orange_button" style="margin: 20px ;" data-toggle="modal" data-target=".bd-example-modal-lg">Замовити</button></p>
+			<p class="text-center"><button type="button" class="btn btn-warning w-60 orange_button" style="margin: 20px ;" data-toggle="modal" data-target=".bd-example-modal-lg">Отримати комерційну пропозицію</button></p>
 		</div>
 		
 		
@@ -76,8 +76,12 @@
 	{{ if $data.sensorLPG.usage.enable }}
 	{{ with $data.sensorLPG.usage }}
 	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
-		<p style="text-indent: 1.5em;">{{ .content | markdownify }}</p>
-			<div class="d-flex flex-row">
+		<p style="text-indent: 1.5em; text-align: justify;">{{ .content | markdownify }}</p>
+		{{ range $index, $element:= $data.sensorLPG.usage.usages }}
+      	{{ $delay := mul $index 100 }}
+			<p class="text-black" style="margin: 0px; text-indent: 1.5em; ">{{ .content | markdownify }}</p>
+		{{end}}
+			<div class="d-flex flex-wrap">
 				{{ range $index, $element:= $data.sensorLPG.usage.images }}
       			{{ $delay := mul $index 100 }}
 				<div class="p-2">
@@ -85,6 +89,19 @@
 				</div>
 				{{ end }}				
 			</div>
+	{{ end }}
+	{{ end }}
+
+	{{ if $data.sensorLPG.standart.enable }}
+	{{ with $data.sensorLPG.standart }}
+	<div class="col-sm-12 col-lg-12">
+	<style type="text/css">ul{color: #000000;}</style>
+	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
+		{{ range $index, $element:= $data.sensorLPG.standart.paragraphs }}
+      	{{ $delay := mul $index 100 }}
+			<p style="margin: 0px; text-indent: 1.5em; text-align: justify;">{{ .content | markdownify }}</p>
+		{{end}}
+	</div>
 	{{ end }}
 	{{ end }}
 
@@ -184,9 +201,9 @@
 		</div>
 		{{ end }}
 		
-	{{ end }}
-	{{ end }}		
 	</div>
+	{{ end }}
+	{{ end }}	
 
 	{{ if $data.sensorLPG.bundle.enable }}
 	{{ with $data.sensorLPG.bundle }}

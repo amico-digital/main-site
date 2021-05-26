@@ -20,7 +20,7 @@
 	<div class="row">
 		<!-- service step -->
 		{{ if $data.barrier.info.enable }}		
-		<div class="col-sm-12 col-lg-6">
+		<div class="align-self-center col-sm-12 col-lg-6">
 			
 			<div id="carousel" class="carousel slide" data-ride="carousel" >				
 				<div class="carousel-inner">
@@ -62,9 +62,10 @@
 			<p class="lead " style="margin: 20px 10px; font-size: 3.5vh;">{{ .title | markdownify }}</p>
 			{{ range $index, $element:= $data.barrier.info.paragraphs }}
       		{{ $delay := mul $index 100 }}
-			<p style="margin: 0px; text-indent: 1.5em;">{{ .content | markdownify }}</p>			
+			<p style="margin: 0px; text-indent: 1.5em; text-align: justify;">{{ .content | markdownify }}</p>			
 			{{ end }}
-			<p class="text-center"><button type="button" class="btn btn-warning w-60 orange_button" style="margin: 20px ;" data-toggle="modal" data-target=".bd-example-modal-lg">Замовити</button></p>
+			<p class="text-center"><button type="button" class="btn btn-info w-60" style="margin: 20px ;" data-toggle="modal" data-target=".bd-example-modal-lg">Отримати на тест</button></p>
+			<p class="text-center"><button type="button" class="btn btn-warning w-60 orange_button" data-toggle="modal" data-target=".bd-example-modal-lg">Отримати комерційну пропозицію</button></p>
 		</div>
 		
 		
@@ -76,8 +77,8 @@
 	{{ if $data.barrier.usage.enable }}
 	{{ with $data.barrier.usage }}
 	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
-		<p style="text-indent: 1.5em;">{{ .content | markdownify }}</p>
-			<div class="d-flex flex-row">
+		<p style="text-indent: 1.5em; text-align: justify;">{{ .content | markdownify }}</p>
+			<div class="d-flex flex-wrap">
 				{{ range $index, $element:= $data.barrier.usage.images }}
       			{{ $delay := mul $index 100 }}
 				<div class="p-2">
@@ -91,11 +92,10 @@
 	{{ if $data.barrier.parameters.enable }}
 	{{ with $data.barrier.parameters }}
 	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
-	<div class="row">		
-		<div class="col-sm">			
+				
 			<table class="table">
 			  <thead>
-				<tr class="fs16">
+				<tr class="fs14">
 					{{ range $index, $element:= $data.barrier.parameters.header }}
       				{{ $delay := mul $index 100 }}
 					<th class="table-center" scope="col">{{ .title }}</th>
@@ -120,8 +120,7 @@
 				{{ end }}				
 			</tbody>
 			</table>
-		</div>
-	</div>
+	
 	{{ end }}
 	{{ end }}
 
@@ -182,15 +181,15 @@
 			</div>
 			</div>
 		</div>
-		{{ end }}
+		{{ end }}	
 		
-	{{ end }}
-	{{ end }}		
 	</div>
+	{{ end }}
+	{{ end }}	
 
 	{{ if $data.barrier.bundle.enable }}
 	{{ with $data.barrier.bundle }}
-	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
+	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>	
 	<table class="table">
 	  <thead>
 		<tr>
@@ -205,13 +204,14 @@
 		{{ $delay := mul $index 100 }}
 			<tr>
 				{{ $cnt := add $index 1 }}
-				<td scope="row">{{ $cnt }}</th>
+				<td scope="row">{{ $cnt }}</td>
 				<td>{{ .title | markdownify }}</td>
 				<td>{{ .count | markdownify }}</td>
 		  	</tr>
 	  	{{ end }}		  	
 	   </tbody>
 	</table>
+
 	{{ end }}
 	{{ end }}
 </div>

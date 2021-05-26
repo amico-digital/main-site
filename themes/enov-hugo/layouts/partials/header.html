@@ -120,16 +120,16 @@ path:nth-child(6) {
   transform: translateX(9px) translateY(1px) rotate(45deg);
 }
 </style>
-  <nav class="navbar navbar-expand-lg  main-nav py-3" id="navbar">
+  <nav class="navbar navbar-expand-lg  main-nav" id="navbar">
     <div class="container">
       <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}">
         <img alt="AMICO DIGITAL Logo" src="/images/logo.svg"/>
       </a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navigation"
         aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="container" onclick="this.classList.toggle('active')">
+        <div onclick="this.classList.toggle('active')">
           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
-                <g stroke-width="6.5" stroke-linecap="round">
+                <g stroke-width="8" stroke-linecap="butt">
                   <path
                     d="M72 82.286h28.75"
                     fill="#009100"
@@ -179,7 +179,7 @@ path:nth-child(6) {
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
-              {{ .Name }} +
+              {{ .Name }}
             </a>
             <div class="dropdown-menu">
               {{ range .Children }}
@@ -200,14 +200,7 @@ path:nth-child(6) {
               {{ partial "allLanguages.html" . }}
             </li>
           </ul>
-        </div>
-        {{ if .Site.Params.navigation_button.enable }}
-        <div class="text-center text-lg-left">
-          <a href="{{ .Site.Params.navigation_button.link | absLangURL }}"
-            class="quote-btn ml-4 bg-primary text-white rounded-btn letter-spacing text-uppercase">{{ .Site.Params.navigation_button.label }}
-            <i class="ti-angle-right"></i></a>
-        </div>
-        {{ end }}
+        </div>        
       </div>
     </div>
   </nav>

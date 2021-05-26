@@ -10,11 +10,15 @@
     <h5 class="text-center mb-4">{{ i18n "latest_post" }}</h5>
     {{ range first 3 ( where .Site.RegularPages "Type" "post" )}}
     <div class="media border-bottom py-3">
-      <a href="{{ .Permalink }}"><img class="post-thumb-sm mr-4 rounded" src="{{ .Params.Image | absURL }}"
-          alt="{{ .Title | markdownify }}"></a>
+      <a href="{{ .Permalink }}">
+        <picture>
+          <source srcset="{{ .Params.Image_webp_sm }}" type="image/webp">          
+          <img src="{{ .Params.Image_sm | absURL }}" alt="{{ .Title | markdownify }}" class="post-thumb-sm mr-4 rounded">
+        </picture>
+      </a>
       <div class="media-body">
         <h6 class="my-2"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h6>
-        <span class="text-sm text-muted">{{ .PublishDate.Format "02 Jan 2006" }}</span>
+        <span class="text-sm text-muted">{{ .PublishDate.Format "02/01/2006" }}</span>
       </div>
     </div>
     {{ end }}

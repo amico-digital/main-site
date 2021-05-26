@@ -115,12 +115,12 @@ tech:
   title : "Технічна документація"
   docs:
     # step loop
-    - title : "Руководство по эксплуатации"
+    - title : "Руководство по эксплуатации (RU)"
       icon : "/images/icons/pdf.svg"
       link : "/docs/barrierManualRU.pdf" 
 
     # step loop
-    - title : "Настанова з експлуатації"
+    - title : "Настанова з експлуатації (UA)"
       icon : "/images/icons/pdf.svg"
       link : "/docs/barrierManualUA.pdf" 
       
@@ -141,7 +141,7 @@ norm:
 
 ######################## connections #################################
 connections:
-  enable : true
+  enable : false
   button : "Подивитися"
   docs:
     # 
