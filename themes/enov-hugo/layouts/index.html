@@ -68,7 +68,10 @@
     <div class="row">
       <div class="col-lg-6">
         <div class="about-img mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
-          <img src="{{ .image | absURL }}" alt="" class="img-fluid lozad">
+          <picture>            
+            <source srcset="{{ .image | absURL  }}" type="image/webp">
+            <img src="{{ .image_jpg | absURL  }}" alt="{{ .Title | markdownify }}" class="img-fluid lozad" style="max-height: 60vh;">
+          </picture>          
         </div>
       </div>
       <div class="col-lg-6">
@@ -97,7 +100,7 @@
     <div class="row">
       {{ range $index, $element := .funfact_item }}
       {{ $delay := mul $index 100 }}
-      <div class="col-lg-3 col-md-6 col-sm-6">
+      <div class="col-lg-4 col-md-4 col-sm-6">
         <div class="counter-item text-center mb-5 mb-lg-0 " data-aos="fade-up" data-aos-delay="{{ $delay }}">
           <p class="h3 mb-0"><span class="counter-stat" data-count="{{ .count }}">0</span> {{ .unit }}</p>
           <p class="text-dark">{{ .title }}</p>
@@ -119,8 +122,7 @@
     <div class="row justify-content-center">
       <div class="col-lg-6 text-center">
         <div class="section-title">
-          <p class="h2 mb-4">{{ .title | markdownify }}</p>
-          <p>{{ .content | markdownify }}</p>
+          <p class="h2 mb-4">{{ .title | markdownify }}</p>          
         </div>
       </div>
     </div>
@@ -130,10 +132,10 @@
       {{ range $index, $element:=  first 6 $data.service.services }}
       {{ $delay := mul $index 100 }}
       <div class="col-lg-4 col-md-6 col-sm-6">
-        <div class="card mb-4 p-5 text-center" data-aos="fade-up" data-aos-delay="{{ $delay }}">
-          <i class="{{ .icon }} text-color text-lg"></i>
-          <p class="h4 mb-3 mt-4">{{ .title | markdownify }}</p>
-          <p>{{ .content | markdownify }}</p>
+        <div class="card mb-4 p-5 " data-aos="fade-up" data-aos-delay="{{ $delay }}" style="height: 95%;" >
+          <center><img src="{{ .icon | absURL }}" alt="{{ .title }}" class="img-fluid" width="50" height="50"></center>
+          <p class="h4 mb-3 mt-4 text-center">{{ .title | markdownify }}</p>
+          <p class="text-justify">{{ .content | markdownify }}</p>
         </div>
       </div>
       {{ end }}
@@ -203,9 +205,9 @@
     <div class="row">
       {{ range $index, $element:= first 3 ( where .Site.RegularPages "Type" "post" )}}
       {{ $delay:= mul $index 100 }}
-      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" >
         <div class="shadow-sm-2 blog-item bg-white rounded" data-aos="fade-up" data-aos-delay="{{ $delay }}"
-          data-aos-duration="500">
+          data-aos-duration="500" style="height: 100%;">
           <center>
           <picture>
             <source srcset="{{ .Params.Image_webp_sm }}" media="(max-width: 560px)" type="image/webp">

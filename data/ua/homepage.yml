@@ -1,20 +1,20 @@
 ################################## Banner #################################
 banner:
   enable : true
-  subtitle : "Prepare for new future"
-  title : "Побудова систем комерційного обліку"
+  subtitle : "Все буде діджитал"
+  title : "Побудова систем обліку рідин, нафтопродуктів та скраплених газів"
 
   # solid button
   button_solid:
     enable : true
-    label : "Рівнеміри"
-    link : "pricing"
+    label : "Рівнемір для рідин"
+    link : "sensor"
 
   # border button
   button_border:
     enable : true
-    label : "Наші проекти"
-    link : "service"
+    label : "Рівнемір для газів"
+    link : "sensor-lpg"
 
 ######################## Banner call to action ############################
 banner_cta:
@@ -25,78 +25,73 @@ banner_cta:
   button:
     enable : true
     label : "Детальніше"
-    link : "about"
+    link : "barrier"
 
 ########################## feature ########################################
 feature:
   enable : true
-  title : "Ми надаємо найкращі рішення для вирішення бізнес-проблем наших клієнтів"
+  title : "Ми пропонуємо Клієнтам та Партнерам оптимальний набір якісних інструментів для вимірювання та автоматизації"
   feature_item:
     # feature item loop
     - title : "Найсучасніщі рішення"
       icon : "ti-wand" # icon pack : https://themify.me/themify-icons
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, aspernatur."
+      content : "Ми прагнемо покращувати, оптимізувати та полегшувати виконання завдань Клієнтів. "
       
     # feature item loop
     - title : "Тільки сертифіковане обладнання"
       icon : "ti-medall" # icon pack : https://themify.me/themify-icons
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, aspernatur."
+      content : "Багаторазово перевіряємо та залучаємо для підтвердження акредитовані лабораторії, випробувальні центри"
 
 ######################## About #######################################
 about:
   enable : true
-  image : "images/about/home-8.webp"
-  title : "Forget about <br> design limits! Build and customize your portfolio"
-  content : "We provide consulting services in the area of IFRS and management reporting, helping companies
-            to reach their highest level. We optimize business processes, making them easier."
+  image : "images/about/pexels-photo-6801648.webp"
+  image_jpg : "images/about/pexels-photo-6801648.jpeg"
+  title : "Ми є розробником та виробником продукції. "
+  content : "Ми використовуємо принцип – «Від концепту – до впровадження». Маємо власний склад, потужності на території України та постачальників для швидкого та якісного виконання замовлень. "
   button:
     enable : true
-    label : "Get started"
-    link : "pricing"
+    label : "Детальніше"
+    link : "about"
 
 ##################### Funfacts ######################################
 funfacts:
   enable : true
   funfact_item:
     # fanfacts item loop
-    - title : "Project Done"
+    - title : "Каналів вимірювання рівня"
       icon : "ti-check" # themify icon pack: https://themify.me/themify-icons
-      count : "1730"
+      count : "1100"
       unit : "+"
       
     # fanfacts item loop
-    - title : "User Worldwide"
+    - title : "Клієнтів"
       icon : "ti-flag" # themify icon pack: https://themify.me/themify-icons
-      count : "125"
-      unit : "M"
-      
-    # fanfacts item loop
-    - title : "Availble Country"
-      icon : "ti-layers" # themify icon pack: https://themify.me/themify-icons
-      count : "40"
-      unit : ""
-      
-    # fanfacts item loop
-    - title : "Award Winner"
-      icon : "ti-medall" # themify icon pack: https://themify.me/themify-icons
-      count : "10"
+      count : "50"
       unit : "+"
+      
+    # fanfacts item loop
+    - title : "Країни поставки"
+      icon : "ti-layers" # themify icon pack: https://themify.me/themify-icons
+      count : "3"
+      unit : ""      
+    
 
 ######################### Service #####################################
 service:
   enable : true
-  title : "Total Solution in one"
-  content : "We provide a wide range of creative services adipisicing elit. Autem maxime rem modi eaque, voluptate. Beatae officiis neque"
+  title : "Наші переваги"
+  content : "Ми вирішуємо проблеми, що ставлять наші Замовники шляхом розробки інженерних рішень та інструментів."
   # service item comes from "data/**/service.yml" file
 
 ######################### pricing #####################################
 pricing:
-  enable : true
+  enable : false
   # pricing item comes from "data/**/pricing.yml" file
 
 ######################### pricing #####################################
 resume:
-  enable : true
+  enable : false
   # pricing item comes from "data/**/resume.yml" file
 
 ############################# Team ##################################
@@ -234,7 +229,7 @@ team:
 
 ################################### promo video ##########################
 promo_video:
-  enable : true
+  enable : false
   title : "See How we work!"
   video_thumbnail : "images/bg/contact-bg-min-1.webp"
   video_link : "https://www.youtube.com/watch?v=jrkvirglgaQ"
@@ -243,6 +238,6 @@ promo_video:
 ############################## blog ####################################
 blog:
   enable: true
-  title : "Latest News & Articles"
-  content : "Don’t just take our words for it. Our clients are our biggest supporters. Would you like to know what they think about us?"
+  title : "Останні новини"
+  content : ""
   # blog post comes from "content/**/blog" folder.

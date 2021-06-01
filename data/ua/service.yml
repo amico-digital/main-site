@@ -1,54 +1,39 @@
 ########################## services ############################
 services:
   # service item loop
-  - title : "Web development"
-    icon : "ti-desktop" # themify icon pack: https://themify.me/themify-icons
-    content : "A digital agency isn't here to replace your internal team, we're here to partner"
+  - title : "Ми є розробником та виробником продукції."
+    icon : "/images/icons/develop.svg" 
+    content : "Більшість інженерних рішень є унікальними та розроблені нашими фахівцями виходячи із практичного досвіду. Рішення спрямовані на досягнення конкретного результату. "
     
   # service item loop
-  - title : "Interface Design"
-    icon : "ti-layers" # themify icon pack: https://themify.me/themify-icons
-    content : "A digital agency isn't here to replace your internal team, we're here to partner"
+  - title : "Підтримка та сервісне обслуговування"
+    icon : "/images/icons/support.svg" # themify icon pack: https://themify.me/themify-icons
+    content : "Самостійно виконуємо підтримку користувачам та сервісне обслуговування продукції та рішень на всіх етапах життєвого шляху."
     
   # service item loop
-  - title : "Business Consulting"
-    icon : "ti-bar-chart" # themify icon pack: https://themify.me/themify-icons
-    content : "A digital agency isn't here to replace your internal team, we're here to partner"
+  - title : "Наш підхід"
+    icon : "/images/icons/time.svg" # themify icon pack: https://themify.me/themify-icons
+    content : "Ми використовуємо отриманий досвід користувачів для покращення продуктів. Тому основним принципом діяль- ності є Відкритість та Парт- нерство заради сталого розвитку. "
     
   # service item loop
-  - title : "Branding"
-    icon : "ti-vector" # themify icon pack: https://themify.me/themify-icons
-    content : "A digital agency isn't here to replace your internal team, we're here to partner"
+  - title : "Якість продукції"
+    icon : "/images/icons/stamp.svg" # themify icon pack: https://themify.me/themify-icons
+    content : "Гарантуємо якість продукції. Багаторазово перевіряємо її та залучаємо для підтвердження акредитовані лабораторії, випробувальні центри (див. сертифікати та документацію). "
     
   # service item loop
-  - title : "App development"
-    icon : "ti-android" # themify icon pack: https://themify.me/themify-icons
-    content : "A digital agency isn't here to replace your internal team, we're here to partner"
+  - title : "Партнерство"
+    icon : "/images/icons/partners.svg" # themify icon pack: https://themify.me/themify-icons
+    content : "Зацікавлені у довгостроковому Партнерстві. Виконуємо роботи на належному рівні та поставляємо якісну продукцію. Ми користуємось принципом – «Зростаючи разом – ми досягнемо більшого».  "
     
   # service item loop
-  - title : "Content creation"
-    icon : "ti-pencil-alt" # themify icon pack: https://themify.me/themify-icons
-    content : "A digital agency isn't here to replace your internal team, we're here to partner"
-    
-  # service item loop
-  - title : "Business Consulting"
-    icon : "ti-bar-chart" # themify icon pack: https://themify.me/themify-icons
-    content : "A digital agency isn't here to replace your internal team, we're here to partner"
-    
-  # service item loop
-  - title : "Branding"
-    icon : "ti-vector" # themify icon pack: https://themify.me/themify-icons
-    content : "A digital agency isn't here to replace your internal team, we're here to partner"
-    
-  # service item loop
-  - title : "App development"
-    icon : "ti-android" # themify icon pack: https://themify.me/themify-icons
-    content : "A digital agency isn't here to replace your internal team, we're here to partner"
+  - title : "Пропозиції"
+    icon : "/images/icons/list.svg" # themify icon pack: https://themify.me/themify-icons
+    content : "Ми завжди раді розглянути будь-які пропозиції щодо кооперації, готові відповісти на Ваші запитання. "
 
 
 ######################### pricing #####################################
 pricing:
-  enable : true
+  enable : false
   # pricing item comes from "pricing.yml" file
 
 ######################## Service step #################################

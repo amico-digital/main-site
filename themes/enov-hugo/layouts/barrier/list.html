@@ -59,7 +59,7 @@
 		</div>
 		<div class="col-sm-12 col-lg-6">
 			{{ with $data.barrier.info }}
-			<p class="lead " style="margin: 20px 10px; font-size: 3.5vh;">{{ .title | markdownify }}</p>
+			<p class="lead product-section">{{ .title | markdownify }}</p>
 			{{ range $index, $element:= $data.barrier.info.paragraphs }}
       		{{ $delay := mul $index 100 }}
 			<p style="margin: 0px; text-indent: 1.5em; text-align: justify;">{{ .content | markdownify }}</p>			
@@ -76,22 +76,34 @@
 	</div>
 	{{ if $data.barrier.usage.enable }}
 	{{ with $data.barrier.usage }}
-	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
+	<h2 class="lead product-section">{{ .title | markdownify }}</h2>
 		<p style="text-indent: 1.5em; text-align: justify;">{{ .content | markdownify }}</p>
 			<div class="d-flex flex-wrap">
 				{{ range $index, $element:= $data.barrier.usage.images }}
       			{{ $delay := mul $index 100 }}
 				<div class="p-2">
-					<img src="{{ .link }}" width="50" height="50"/>
+					<img src="{{ .link }}" width="50" height="50" alt="{{ .link }}"/>
 				</div>
 				{{ end }}				
 			</div>
 	{{ end }}
 	{{ end }}
 
+	{{ if $data.barrier.standart.enable }}
+	{{ with $data.barrier.standart }}	
+	<style type="text/css">ul{color: #000000;}</style>
+	<h2 class="lead product-section">{{ .title | markdownify }}</h2>
+		{{ range $index, $element:= $data.barrier.standart.paragraphs }}
+      	{{ $delay := mul $index 100 }}
+			<p style="margin: 10px 0px; text-indent: 1.5em; text-align: justify;">{{ .content | markdownify }}</p>
+		{{end}}
+	
+	{{ end }}
+	{{ end }}
+
 	{{ if $data.barrier.parameters.enable }}
 	{{ with $data.barrier.parameters }}
-	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
+	<h2 class="lead product-section">{{ .title | markdownify }}</h2>
 				
 			<table class="table">
 			  <thead>
@@ -126,7 +138,7 @@
 
 	{{ if $data.barrier.tech.enable }}
 	{{ with $data.barrier.tech }}	
-	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
+	<h2 class="lead product-section" >{{ .title | markdownify }}</h2>
 	<div class="row card_documents">			
 		{{ range $index, $element:= $data.barrier.tech.docs }}
       	{{ $delay := mul $index 100 }}
@@ -141,7 +153,7 @@
 
 	{{ if $data.barrier.norm.enable }}
 	{{ with $data.barrier.norm }}
-	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
+	<h2 class="lead product-section">{{ .title | markdownify }}</h2>
 	<div class="row card_documents">			
 		{{ range $index, $element:= $data.barrier.norm.docs }}
       	{{ $delay := mul $index 100 }}
@@ -156,7 +168,7 @@
 
 	{{ if $data.barrier.connections.enable }}
 	{{ with $data.barrier.connections }}
-	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">Схеми підключення</h2>
+	<h2 class="lead product-section" >Схеми підключення</h2>
 	<div class="row shuffle-wrapper portfolio-gallery">
 		{{ range $index, $element:= $data.barrier.connections.docs }}
       	{{ $delay := mul $index 100 }}
@@ -189,7 +201,7 @@
 
 	{{ if $data.barrier.bundle.enable }}
 	{{ with $data.barrier.bundle }}
-	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>	
+	<h2 class="lead product-section">{{ .title | markdownify }}</h2>	
 	<table class="table">
 	  <thead>
 		<tr>

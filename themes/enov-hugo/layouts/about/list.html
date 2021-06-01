@@ -4,10 +4,11 @@
 
 {{ partial "page-title.html" . }}
 
+
 <!-- about -->
 {{ if $data.about.about.enable }}
 {{ with $data.about.about }}
-<section class="section about-2 position-relative">
+<section class="about-2 position-relative">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-10 col-md-10 text-center">
@@ -20,7 +21,11 @@
       {{ range $index, $element:= .about_item }}
       {{ $delay:= mul $index 200 }}
       <div class="col-lg-4 mb-4 mb-lg-0 col-md-6" data-aos="fade-up" data-aos-delay="{{ $delay }}">
-        <img src="{{ .image | absURL }}" alt="{{ .title | markdownify }}" class="img-fluid rounded">
+        <picture>            
+            <source srcset="{{ .image | absURL  }}" type="image/webp">
+            <img src="{{ .image_jpg | absURL  }}" alt="{{ .Title | markdownify }}" class="img-fluid rounded" >
+          </picture>
+        
         <div class="about-info-item mt-4">
           <h3 class="mb-3">{{ .title | markdownify }}</h3>
           <p>{{ .content | markdownify }}</p>
@@ -34,6 +39,38 @@
 {{ end }}
 <!-- /about -->
 
+<!-- info -->
+{{ if $data.about.info.enable }}
+{{ with $data.about.info }}
+  <div class="container text-justify">
+    <p class="display-4 text-center"  style="margin-top: 30px;">{{ .first_header | markdownify }}</p>
+    {{ range $index, $element := .first_paragraphs }}
+    {{ $delay := mul $index 100 }}
+    <p>{{ .content | markdownify }}</p>
+    {{ end }}
+
+    <p class="display-4 text-center"  style="margin-top: 30px;">{{ .second_header | markdownify }}</p>
+    {{ range $index, $element := .second_paragraphs }}
+    {{ $delay := mul $index 100 }}
+    <p>{{ .content | markdownify }}</p>
+    {{ end }}
+    <p >{{ .text1 }} <a href="{{  .sensor_link }}"><u>{{.sensor_text}}</u></a> та <a href="{{.sensor_lpg_link}}"><u>{{.sensor_lpg_text}}</u></a>{{.text2}} <a href="{{.sadco_link}}" rel="nofollow"><u>{{.sadco_text}}</u></a>{{.text3}}</p>
+    <p >{{.text4}}<a href="{{.barrier_link}}"><u>{{.barrier_text}}</u></a>{{.text5}}</p>
+    <p >{{.text6}}<a href="{{.contact_link}}"><u>{{.contact_text}}</u></a> </p>
+
+    <p class="display-4 text-center"  style="margin-top: 30px;">{{ .third_header | markdownify }}</p>
+    {{ range $index, $element := .third_paragraphs }}
+    {{ $delay := mul $index 100 }}
+    <p>{{ .content | markdownify }}</p>
+    {{ end }}
+  </div>
+{{ end }}
+{{ end }}
+<!-- /info -->
+
+
+
+
 <!-- section Counter Start -->
 {{ if $data.about.funfacts.enable }}
 {{ with $data.homepage.funfacts }}
@@ -42,7 +79,7 @@
     <div class="row">
       {{ range $index, $element := .funfact_item }}
       {{ $delay := mul $index 100 }}
-      <div class="col-lg-3 col-md-6 col-sm-6">
+      <div class="col-lg-4 col-md-4 col-sm-6">
         <div class="counter-item mb-5 mb-lg-0 " data-aos="fade-up" data-aos-delay="{{ $delay }}">
           <i class="{{ .icon }} text-white text-md float-left"></i>
           <div class="pl-5 ml-2">
@@ -58,6 +95,37 @@
 {{ end }}
 {{ end }}
 <!-- section Counter End  -->
+
+<!--  Section Services Start -->
+{{ if $data.homepage.service.enable }}
+<section class="section service bg-gray">
+  <div class="container">
+    {{ with $data.homepage.service }}
+    <div class="row justify-content-center">
+      <div class="col-lg-6 text-center">
+        <div class="section-title">
+          <p class="h2 mb-4">{{ .title | markdownify }}</p>          
+        </div>
+      </div>
+    </div>
+    {{ end }}
+
+    <div class="row justify-content-center">
+      {{ range $index, $element:=  first 6 $data.service.services }}
+      {{ $delay := mul $index 100 }}
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="card mb-4 p-5 " data-aos="fade-up" data-aos-delay="{{ $delay }}" style="height: 95%;" >
+          <center><img src="{{ .icon | absURL }}" alt="{{ .title }}" class="img-fluid" width="50" height="50"></center>
+          <p class="h4 mb-3 mt-4 text-center">{{ .title | markdownify }}</p>
+          <p class="text-justify">{{ .content | markdownify }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+<!--  Section Services End -->
 
 <!-- team -->
 {{ if $data.about.team.enable }}

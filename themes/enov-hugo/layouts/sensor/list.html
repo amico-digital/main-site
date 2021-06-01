@@ -59,7 +59,7 @@
 		</div>
 		<div class="col-sm-12 col-lg-6">
 			{{ with $data.sensor.info }}
-			<p class="lead " style="margin: 20px 10px; font-size: 3.5vh;">{{ .title | markdownify }}</p>
+			<p class="lead product-section">{{ .title | markdownify }}</p>
 			{{ range $index, $element:= $data.sensor.info.paragraphs }}
       		{{ $delay := mul $index 100 }}
 			<p style="margin: 0px; text-indent: 1.5em; text-align: justify;">{{ .content | markdownify }}</p>			
@@ -75,7 +75,7 @@
 	</div>
 	{{ if $data.sensor.usage.enable }}
 	{{ with $data.sensor.usage }}
-	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
+	<h2 class="lead product-section">{{ .title | markdownify }}</h2>
 	<style type="text/css">ul{color: #000000;}</style>
 		<p style="text-indent: 1.5em; text-align: justify;">{{ .content | markdownify }}</p>
 		{{ range $index, $element:= $data.sensor.usage.usages }}
@@ -86,7 +86,7 @@
 				{{ range $index, $element:= $data.sensor.usage.images }}
       			{{ $delay := mul $index 100 }}
 				<div class="p-2">
-					<img src="{{ .link }}" width="50" height="50"/>
+					<img src="{{ .link }}" width="50" height="50" alt="{{ .link }}"/>
 				</div>
 				{{ end }}				
 			</div>
@@ -94,21 +94,20 @@
 	{{ end }}
 
 	{{ if $data.sensor.standart.enable }}
-	{{ with $data.sensor.standart }}
-	<div class="col-sm-12 col-lg-12">
+	{{ with $data.sensor.standart }}	
 	<style type="text/css">ul{color: #000000;}</style>
-	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
+	<h2 class="lead product-section">{{ .title | markdownify }}</h2>
 		{{ range $index, $element:= $data.sensor.standart.paragraphs }}
       	{{ $delay := mul $index 100 }}
-			<p style="margin: 0px; text-indent: 1.5em; text-align: justify;">{{ .content | markdownify }}</p>
+			<p style="margin: 10px 0px; text-indent: 1.5em; text-align: justify;">{{ .content | markdownify }}</p>
 		{{end}}
-	</div>
+	
 	{{ end }}
 	{{ end }}
 
 	{{ if $data.sensor.parameters.enable }}
 	{{ with $data.sensor.parameters }}
-	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
+	<h2 class="lead product-section">{{ .title | markdownify }}</h2>
 	<div class="row">		
 		<div class="col-sm">			
 			<table class="table">
@@ -145,7 +144,7 @@
 
 	{{ if $data.sensor.tech.enable }}
 	{{ with $data.sensor.tech }}	
-	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
+	<h2 class="lead product-section">{{ .title | markdownify }}</h2>
 	<div class="row card_documents">			
 		{{ range $index, $element:= $data.sensor.tech.docs }}
       	{{ $delay := mul $index 100 }}
@@ -160,7 +159,7 @@
 
 	{{ if $data.sensor.norm.enable }}
 	{{ with $data.sensor.norm }}
-	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
+	<h2 class="lead product-section">{{ .title | markdownify }}</h2>
 	<div class="row card_documents">			
 		{{ range $index, $element:= $data.sensor.norm.docs }}
       	{{ $delay := mul $index 100 }}
@@ -175,7 +174,7 @@
 
 	{{ if $data.sensor.connections.enable }}
 	{{ with $data.sensor.connections }}
-	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">Схеми підключення</h2>
+	<h2 class="lead product-section">Схеми підключення</h2>
 	<div class="row shuffle-wrapper portfolio-gallery">
 		{{ range $index, $element:= $data.sensor.connections.docs }}
       	{{ $delay := mul $index 100 }}
@@ -209,7 +208,7 @@
 
 	{{ if $data.sensor.bundle.enable }}
 	{{ with $data.sensor.bundle }}
-	<h2 class="lead" style="margin: 30px 10px; font-size: 4vh;">{{ .title | markdownify }}</h2>
+	<h2 class="lead product-section">{{ .title | markdownify }}</h2>
 	<table class="table">
 	  <thead>
 		<tr>

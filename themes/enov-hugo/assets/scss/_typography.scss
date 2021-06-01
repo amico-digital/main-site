@@ -66,6 +66,11 @@ span.reverse {
   direction: rtl;
 }
 
+.product-section
+{
+  margin: 30px 0px 15px 0px; 
+  font-size: 4vh;
+}
 
 @include mobile-xs{
     h1, .h1 {

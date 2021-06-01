@@ -3,23 +3,13 @@ info:
   enable : екгу
   mainIMG :
       title : "Image"
-      jpeg : "/images/products/barrier1.jpg" 
-      webp : "/images/products/barrier1.webp" 
-      jpegSM : "/images/products/barrier1-small.jpg" 
-      webpSM : "/images/products/barrier1-small.webp"
+      jpeg : "/images/products/sensor1.png" 
+      webp : "/images/products/sensor1.webp" 
+      jpegSM : "/images/products/sensor1.png" 
+      webpSM : "/images/products/sensor1.webp"
 
   images : 
-    - title : "Image 2"
-      jpeg : "/images/products/barrier2.jpg" 
-      webp : "/images/products/barrier2.webp" 
-      jpegSM : "/images/products/barrier2-small.jpg" 
-      webpSM : "/images/products/barrier2-small.webp"
-
-    - title : "Image 3"
-      jpeg : "/images/products/barrier3.jpg" 
-      webp : "/images/products/barrier3.webp" 
-      jpegSM : "/images/products/barrier3-small.jpg" 
-      webpSM : "/images/products/barrier3-small.webp"
+   
 
   title: "Короткий опис"
   paragraphs:
@@ -32,7 +22,7 @@ info:
 ######################### usage #####################################
 usage:
   enable : true
-  title: "Сфери призначення"
+  title: "Сфери застосування"
   content: "Рівнемір може використовуватися для комерційного обліку, технологічного контролю, безперервного моніторингу стану резервуарних парків, або окремих резервуарів з наступними продуктами: "
   usages : 
   - content : "* скраплених вуглеводневих газів LPG (пропан, бутан, СПБТ)"

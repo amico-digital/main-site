@@ -21,11 +21,13 @@ home = ["HTML", "RSS", "JSON"]
 [[params.plugins.css]]
 link = "plugins/aos/aos.css"
 [[params.plugins.css]]
-link = "https://ajax.aspnetcdn.com/ajax/bootstrap/4.6.0/css/bootstrap.min.css"
+link = "plugins/bootstrap/bootstrap.min.css"
 
 # JS Plugins
 [[params.plugins.js]]
-link = "plugins/shuffle/shuffle.min.js"
+link = "plugins/jquery/jquery.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
 [[params.plugins.js]]
 link = "plugins/aos/aos.js"
 [[params.plugins.js]]
@@ -33,9 +35,7 @@ link = "plugins/search/fuse.min.js"
 [[params.plugins.js]]
 link = "plugins/search/search.js"
 [[params.plugins.js]]
-link = "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"
-[[params.plugins.js]]
-link = "https://ajax.aspnetcdn.com/ajax/bootstrap/4.6.0/bootstrap.min.js"
+link = "plugins/shuffle/shuffle.min.js"
   
 ############################## navigation ###############################
 
@@ -54,7 +54,7 @@ author = "Ievgen Gudyma"
 address = "Україна, м.Миколаїв, вул. Спаська, будинок 1/7"
 phone = "+380979798320"
 # contact form action
-contact_form_action = "https://formspree.io/f/mpzkqbpq"
+contact_form_action = "https://formspree.io/f/xoqydkap"
 # Google Analitycs
 google_analitycs_id = "" # your id
 # search
@@ -105,7 +105,7 @@ link = "https://telegram.me/AmicoDigital"
 [[params.social]]
 name = "Viber"
 icon = "/images/icons/viber.svg"
-link = "viber://pa?chatURI=+380954929724"
+link = "viber://contact?number=%2B380979798320"
 
 [[params.social]]
 name = "Messenger"
@@ -194,17 +194,8 @@ home = ""
 [[Languages.ua.menu.main]]
 weight = 2
 name = "Про компанію"
-hasChildren = true
-
-  [[Languages.ua.menu.main]]
-  parent = "Про компанію"
-  name = "Історія компанії"
-  URL = "about"
-
-  [[Languages.ua.menu.main]]
-  parent = "Про компанію"
-  name = "Наші проекти"
-  URL = "project"
+URL = "about"
+hasChildren = false
 
 [[Languages.ua.menu.main]]
 weight = 3
@@ -238,18 +229,18 @@ weight = 5
 
 # footer menu
 [[Languages.ua.menu.footer]]
-name = "Сервіс"
-URL = "service"
+name = "Бар'єр іскрозахисту"
+URL = "barrier"
 weight = 1
 
 [[Languages.ua.menu.footer]]
-name = "О нас"
-URL = "about"
+name = "Рівнемір для рідин"
+URL = "sensor"
 weight = 2
 
 [[Languages.ua.menu.footer]]
-name = "Блог"
-URL = "blog"
+name = "Рівнемір для газів"
+URL = "sensorLPG"
 weight = 3
 
 ########################### Russian language ############################
