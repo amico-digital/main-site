@@ -24,3 +24,11 @@
   translation: Усі
 - id: view_project
   translation: Подивитися
+- id: address
+  translation: Україна, м.Миколаїв, вул. Спаська, будинок 1/7
+- id: directions
+  translation: Прокласти маршрут
+- id: guaranteeText
+  translation: "Отримати на тест"
+- id: commercialText
+  translation: "Отримати комерційну пропозицію"

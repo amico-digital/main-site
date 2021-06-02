@@ -1,11 +1,5 @@
 <div class="sidebar-wrap mt-5 mt-lg-0">
-  <div class="sidebar-widget search mb-5">
-    <form action="{{ `search/` | relLangURL }}">
-      <input id="search-query" name="s" type="search" class="form-control" placeholder="search">
-      <button type="submit" class="btn btn-dark btn-block mt-2">{{ i18n "search" }}</button>
-    </form>
-  </div>
-
+  
   <div class="sidebar-widget latest-post mb-4">
     <h5 class="text-center mb-4">{{ i18n "latest_post" }}</h5>
     {{ range first 3 ( where .Site.RegularPages "Type" "post" )}}

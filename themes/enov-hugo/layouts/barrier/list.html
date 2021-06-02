@@ -64,8 +64,8 @@
       		{{ $delay := mul $index 100 }}
 			<p style="margin: 0px; text-indent: 1.5em; text-align: justify;">{{ .content | markdownify }}</p>			
 			{{ end }}
-			<p class="text-center"><button type="button" class="btn btn-info w-60" style="margin: 20px ;" data-toggle="modal" data-target=".bd-example-modal-lg">Отримати на тест</button></p>
-			<p class="text-center"><button type="button" class="btn btn-warning w-60 orange_button" data-toggle="modal" data-target=".bd-example-modal-lg">Отримати комерційну пропозицію</button></p>
+			<p class="text-center"><button type="button" class="btn btn-info w-60" style="margin: 20px ;" data-toggle="modal" data-target=".bd-example-modal-lg" onclick="window.open('{{.guaranteeLetter}}')" >{{ i18n "guaranteeText" }}</button></p>
+			<p class="text-center"><button type="button" class="btn btn-warning w-60 orange_button" data-toggle="modal" data-target=".bd-example-modal-lg" onclick="window.open('{{.commercialOffer}}')" >{{ i18n "commercialText" }}</button></p>
 		</div>
 		
 		

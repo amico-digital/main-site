@@ -24,3 +24,7 @@
   translation: All
 - id: view_project
   translation: view project
+- id: address
+  translation: Ukraine, Mykolaiv, Spasska st., 1/7
+- id: directions
+  translation: Take directions

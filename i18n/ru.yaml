@@ -17,10 +17,18 @@
 - id: company
   translation: Компания
 - id: quick_links
-  translation: Quick Links
+  translation: Карта сайта
 - id: follow_us
-  translation: Follow us
+  translation: Cвязаться с нами
 - id: all
   translation: All
 - id: view_project
   translation: view project
+- id: address
+  translation: Украина, г. Николаев, ул. Спаская, дом 1/7
+- id: directions
+  translation: Проложить маршрут
+- id: guaranteeText
+  translation: "Получить на тест"
+- id: commercialText
+  translation: "Получить коммерческое предложение"

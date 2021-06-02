@@ -1,0 +1,186 @@
+########################### short info ############################
+info:
+  enable : true
+  mainIMG :
+      title : "Image"
+      jpeg : "/images/products/barrier1.jpg" 
+      webp : "/images/products/barrier1.webp" 
+      jpegSM : "/images/products/barrier1-small.jpg" 
+      webpSM : "/images/products/barrier1-small.webp"
+
+  images : 
+    - title : "Image 2"
+      jpeg : "/images/products/barrier2.jpg" 
+      webp : "/images/products/barrier2.webp" 
+      jpegSM : "/images/products/barrier2-small.jpg" 
+      webpSM : "/images/products/barrier2-small.webp"
+
+    - title : "Image 3"
+      jpeg : "/images/products/barrier3.jpg" 
+      webp : "/images/products/barrier3.webp" 
+      jpegSM : "/images/products/barrier3-small.jpg" 
+      webpSM : "/images/products/barrier3-small.webp"
+
+  title: "Короткое описание"
+  paragraphs:
+    # 
+    - content : "Двухканальный барьер искрозащиты с функцией автоматического восстановления после срабатывания. Предназначен для обеспечения искробезопасности электрических цепей питания и сигнальных цепей преобразователей, установленных во взрывоопасных зонах."
+      
+    # 
+    - content : "Канал «Питание» предназначен для питания одного первичного преобразователя с выходным токовым сигналом 0-5 мА / 0-20 мА / 4-20 мА постоянного тока, или для питания напряжением + 24В постоянного тока одного устройства, установленного во взрывоопасной зоне."
+      
+    # service item loop
+    - content : "Канал «Сигнальный» предназначен для приема / передачи сигналов цифровых интерфейсов RS-485 / RS-422 или для передачи дискретных сигналов от датчиков с выходом «сухой контакт» амплитудой до 10В постоянного тока."
+      
+    # service item loop
+    - content : "Барьер соответствует требованиям ДСТУ EN 60079-0:2017 і ДСТУ EN 60079-11:2017, имеет выходные искробезопасные электрические цепи уровня «iа» и маркировку взрывозащиты EX II (1) G [Ex ia Ga] IIB и предназначен для установки вне взрывоопасных зон."
+  
+  guaranteeLetter: "/docs/guaranteeLetter.docx"  
+  commercialOffer: "/docs/questionnaire.docx"   
+
+######################### usage #####################################
+usage:
+  enable : true
+  title: "Сферы применения"
+  content: "Устройство применяется в системах измерения и контроля, автоматического регулирования, сигнализации, противоаварийной защиты и управления технологическими процессами на взрывоопасных и / или пожароопасных участках производств нефтегазового комплекса, металлургии, теплоэнергетики, химической и нефтехимической, пищевой и других отраслях промышленности, где могут быть взрывоопасные смеси газов , паров, а также легковоспламеняющиеся и взрывчатые вещества (пыль, порошок)."
+  images : 
+    - link : "/images/icons/027-oilfield.svg"
+    - link : "/images/icons/054-oil.svg"
+    - link : "/images/icons/078-factory.svg"
+    - link : "/images/icons/044-tank-truck.svg"
+    - link : "/images/icons/079-silo-1.svg"
+    - link : "/images/icons/025-coal.svg"
+    - link : "/images/icons/071-nuclear-plant.svg"
+
+
+########################### standart ############################
+standart:
+  enable : true
+  title: "Соответствие стандартам"
+  paragraphs:    
+    - content : "Барьер искрозащиты БИЗоН 2Ex.24.12 соответствует следующим нормам и национальным стандартам:"   
+    - content : "* Технічний регламент обладнання та захисних систем, призначених для використання в потенційно вибухонебезпечних середовищах (затверджено постановою Кабінету Міністрів України від 28 грудня 2016 р., № 1055). "
+
+
+######################## parameters #################################
+parameters:
+  enable : true
+  title: "Технические характеристики"
+  header : 
+    - title : "Параметр"
+    - title : "Канал \"Питания\""
+    - title : "Канал \"Сигнальный\""
+  single:
+    - title : "Маркировка взрывозащиты"
+      value : "Ex II (1) G [Ex ia Ga] IIB"
+    - title : "Соответствие стандартам"
+      value : "ДСТУ EN 60079-0:2017 і ДСТУ EN 60079- 11:2017 "
+    - title : "Степень защиты"
+      value : "IP20"
+    - title : "Рабочий диапазон температур"
+      value : "-20...+60 °С"
+    - title : "Относительная влажность"
+      value : "< 80 %"
+    - title : "Тип монтажа"
+      value : "Крепление на DIN-рейку 35 мм"
+    - title : "Габариты"
+      value : "111х99х17,6 мм"
+    - title : "Вес"
+      value : "100г"
+    - title : "Корпус и клемы"
+      value : "Phoenix Contact (Германия); литые винтовые зажимные клемы; сечение провода: 0.2-2.5 мм2"
+  double:
+    - title : "Количество каналов"
+      value1 : "1"
+      value2 : "1"
+    - title : "Напряжение холостого хода Uхх, не более"
+      value1 : "25 В"
+      value2 : "10 В"
+    - title : "Ток нагрузки Iн, не более"
+      value1 : "50 мА"
+      value2 : "40 мА"
+    - title : "Сопротивление канала"
+      value1 : "210 Ом"
+      value2 : "190 Ом"
+    - title : "Сумарная еммкость кабеля и нагрузки"
+      value1 : "0,4 мкФ"
+      value2 : "3,5 мкФ"
+    - title : "Сумарная индуктивность кабеля и нагрузки"
+      value1 : "1 мГн"
+      value2 : "4,5 мГн"
+    - title : "Максимальное напряжение на выходе барьера в аварийном режиме Uo, не более"
+      value1 : "27 В"
+      value2 : "12.75 В"
+    - title : "Максимальній ток на віходе барьера в аварийном режиме Io, не более"
+      value1 : "165 мА"
+      value2 : "90 мА"
+    
+
+  
+
+######################## tech docs #################################
+tech:
+  enable : true
+  title : "Техническая документация"
+  docs:
+    # step loop
+    - title : "Руководство по эксплуатации (RU)"
+      icon : "/images/icons/pdf.svg"
+      link : "/docs/barrierManualRU.pdf" 
+
+    # step loop
+    - title : "Настанова з експлуатації (UA)"
+      icon : "/images/icons/pdf.svg"
+      link : "/docs/barrierManualUA.pdf" 
+      
+    # step loop
+    - title : "Паспорт"
+      icon : "/images/icons/pdf.svg"
+      link : "/docs/barrierPassport.pdf"
+
+######################## norm docs #################################
+norm:
+  enable : true
+  title : "Сертификаты"
+  docs:
+    # step loop
+    - title : "Сертификат экспертизы типа"
+      icon : "/images/icons/pdf.svg"
+      link : "/docs/barrierCertB.pdf" 
+
+######################## connections #################################
+connections:
+  enable : false
+  button : "Подивитися"
+  docs:
+    # 
+    - title : "Схема підключення 1"
+      jpeg : "/images/products/barrier-connection-1.jpg" 
+      webp : "/images/products/barrier-connection-1.webp" 
+      jpegSM : "/images/products/barrier-connection-1-small.jpg" 
+      webpSM : "/images/products/barrier-connection-1-small.webp" 
+
+    # 
+    - title : "Схема підключення 2"
+      jpeg : "/images/products/barrier-connection-2.jpg" 
+      webp : "/images/products/barrier-connection-2.webp" 
+      jpegSM : "/images/products/barrier-connection-2-small.jpg" 
+      webpSM : "/images/products/barrier-connection-2-small.webp"
+      
+    
+
+######################## bundle #################################
+bundle:
+  enable : true
+  title : "Комплект поставки"
+  header : 
+    - title : "#"
+    - title : "Название"
+    - title : "Количество шт."
+  data :
+    - title : "Барьер искрозащиты БИЗоН-2Ex-24.12"
+      count: 1
+    - title : "Паспорт"
+      count: 1
+    - title : "Руководство по эксплуатации"
+      count: 1

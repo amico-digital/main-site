@@ -10,7 +10,7 @@ summaryLength = "10"
 disqusShortname = "enov" # get your shortname form here : https://disqus.com
 defaultContentLanguage = "ua"
 # disable language
-disableLanguages = ["en", "ru"] # desable language from here
+disableLanguages = ["en"] # desable language from here
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
@@ -117,44 +117,40 @@ link = "http://m.me/AmicoDigital"
 languageName = "En"
 languageCode = "en-US"
 contentDir = "content/english"
-weight = 2
-home = "Home"
+weight = 1
+home = ""
 
 # main menu
 [[Languages.en.menu.main]]
 weight = 2
-name = "About"
-hasChildren = true
-
-  [[Languages.en.menu.main]]
-  parent = "About"
-  name = "About company"
-  URL = "about"
-
-  [[Languages.en.menu.main]]
-  parent = "About"
-  name = "Portfolio"
-  URL = "project"  
+name = "About us"
+URL = "about"
+hasChildren = false
 
 [[Languages.en.menu.main]]
-name = "Blog"
-URL = "blog"
 weight = 3
-
-[[Languages.en.menu.main]]
-weight = 4
-name = "Pages"
+name = "Products"
 hasChildren = true
 
   [[Languages.en.menu.main]]
-  parent = "Pages"
-  name = "Barier"
+  parent = "Products"
+  name = "Level sensor LPG"
+  URL = "sensor-lpg"
+
+  [[Languages.en.menu.main]]
+  parent = "Products"
+  name = "Level sensor for liquids"
+  URL = "sensor"
+
+  [[Languages.en.menu.main]]
+  parent = "Products"
+  name = "IS Barrier"
   URL = "barrier"
 
-  [[Languages.en.menu.main]]
-  parent = "Pages"
-  name = "Level Sensor"
-  URL = "product"
+[[Languages.en.menu.main]]
+name = "News"
+URL = "blog"
+weight = 4
   
 [[Languages.en.menu.main]]
 name = "Contact"
@@ -163,24 +159,19 @@ weight = 5
 
 # footer menu
 [[Languages.en.menu.footer]]
-name = "service"
-URL = "service"
+name = "Бар'єр іскрозахисту"
+URL = "barrier"
 weight = 1
 
 [[Languages.en.menu.footer]]
-name = "about"
-URL = "about"
+name = "Рівнемір для рідин"
+URL = "sensor"
 weight = 2
 
 [[Languages.en.menu.footer]]
-name = "blog"
-URL = "blog"
+name = "Рівнемір для газів"
+URL = "sensorLPG"
 weight = 3
-
-[[Languages.en.menu.footer]]
-name = "pricing"
-URL = "pricing"
-weight = 4
 
 ########################### Ukraine language ############################
 [Languages.ua]
@@ -248,44 +239,41 @@ weight = 3
 languageName = "RU"
 languageCode = "ru-RU"
 contentDir = "content/russian"
-weight = 3
-home = "Главная"
+address = "Украина"
+weight = 1
+home = ""
 
 # main menu
 [[Languages.ru.menu.main]]
 weight = 2
-name = "О нас"
-hasChildren = true
-
-  [[Languages.ru.menu.main]]
-  parent = "О нас"
-  name = "О компании"
-  URL = "about"
-
-  [[Languages.ru.menu.main]]
-  parent = "О нас"
-  name = "Наши проекти"
-  URL = "project"
+name = "Про Компанию"
+URL = "about"
+hasChildren = false
 
 [[Languages.ru.menu.main]]
-name = "Блог"
-URL = "blog"
 weight = 3
-
-[[Languages.ru.menu.main]]
-weight = 4
 name = "Продукты"
 hasChildren = true
 
   [[Languages.ru.menu.main]]
   parent = "Продукты"
-  name = "Уровнемер"
-  URL = "product"
+  name = "Уровнемер для газов (LPG)"
+  URL = "sensor-lpg"
 
   [[Languages.ru.menu.main]]
-  parent = "Продукти"
+  parent = "Продукты"
+  name = "Уровнемер для жидкостей"
+  URL = "sensor"
+
+  [[Languages.ru.menu.main]]
+  parent = "Продукты"
   name = "Барьер искрозащиты"
   URL = "barrier"
+
+[[Languages.ru.menu.main]]
+name = "Новости"
+URL = "blog"
+weight = 4
   
 [[Languages.ru.menu.main]]
 name = "Контакты"
@@ -294,16 +282,16 @@ weight = 5
 
 # footer menu
 [[Languages.ru.menu.footer]]
-name = "Сервис"
-URL = "service"
+name = "Барьер искрозащиты"
+URL = "barrier"
 weight = 1
 
 [[Languages.ru.menu.footer]]
-name = "О нас"
-URL = "about"
+name = "Уровнемер для жидкостей"
+URL = "sensor"
 weight = 2
 
 [[Languages.ru.menu.footer]]
-name = "Блог"
-URL = "blog"
+name = "Уровнемер для газов"
+URL = "sensorLPG"
 weight = 3

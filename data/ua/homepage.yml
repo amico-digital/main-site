@@ -30,10 +30,10 @@ banner_cta:
 ########################## feature ########################################
 feature:
   enable : true
-  title : "Ми пропонуємо Клієнтам та Партнерам оптимальний набір якісних інструментів для вимірювання та автоматизації"
+  title : "Ми пропонуємо оптимальний набір якісних інструментів для вимірювання та автоматизації"
   feature_item:
     # feature item loop
-    - title : "Найсучасніщі рішення"
+    - title : "Сучасні рішення"
       icon : "ti-wand" # icon pack : https://themify.me/themify-icons
       content : "Ми прагнемо покращувати, оптимізувати та полегшувати виконання завдань Клієнтів. "
       
@@ -47,7 +47,7 @@ about:
   enable : true
   image : "images/about/pexels-photo-6801648.webp"
   image_jpg : "images/about/pexels-photo-6801648.jpeg"
-  title : "Ми є розробником та виробником продукції. "
+  title : "Ми є розробником та виробником продукції"
   content : "Ми використовуємо принцип – «Від концепту – до впровадження». Маємо власний склад, потужності на території України та постачальників для швидкого та якісного виконання замовлень. "
   button:
     enable : true
@@ -232,7 +232,7 @@ promo_video:
   enable : false
   title : "See How we work!"
   video_thumbnail : "images/bg/contact-bg-min-1.webp"
-  video_link : "https://www.youtube.com/watch?v=jrkvirglgaQ"
+  video_link : ""
   content: "Our mission is to produce the highest quality work for everyclient, on every project"
 
 ############################## blog ####################################
