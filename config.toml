@@ -20,8 +20,6 @@ home = ["HTML", "RSS", "JSON"]
 # CSS Plugins
 [[params.plugins.css]]
 link = "plugins/aos/aos.css"
-[[params.plugins.css]]
-link = "plugins/bootstrap/bootstrap.min.css"
 
 # JS Plugins
 [[params.plugins.js]]
@@ -30,17 +28,8 @@ link = "plugins/jquery/jquery.js"
 link = "plugins/bootstrap/bootstrap.min.js"
 [[params.plugins.js]]
 link = "plugins/aos/aos.js"
-[[params.plugins.js]]
-link = "plugins/search/fuse.min.js"
-[[params.plugins.js]]
-link = "plugins/search/search.js"
-[[params.plugins.js]]
-link = "plugins/shuffle/shuffle.min.js"
-  
+
 ############################## navigation ###############################
-
-
-
 
 #################### default parameters ################################
 [params]
@@ -52,7 +41,7 @@ description = "This is meta description"
 author = "Ievgen Gudyma"
 # contact info
 address = "Україна, м.Миколаїв, вул. Спаська, будинок 1/7"
-phone = "+380979798320"
+phone = "+38(097)9798320"
 # contact form action
 contact_form_action = "https://formspree.io/f/xoqydkap"
 # Google Analitycs
@@ -135,17 +124,17 @@ hasChildren = true
   [[Languages.en.menu.main]]
   parent = "Products"
   name = "Level sensor LPG"
-  URL = "sensor-lpg"
+  URL = "level-sensor-lpg"
 
   [[Languages.en.menu.main]]
   parent = "Products"
   name = "Level sensor for liquids"
-  URL = "sensor"
+  URL = "level-sensor"
 
   [[Languages.en.menu.main]]
   parent = "Products"
   name = "IS Barrier"
-  URL = "barrier"
+  URL = "is-barrier"
 
 [[Languages.en.menu.main]]
 name = "News"
@@ -160,17 +149,17 @@ weight = 5
 # footer menu
 [[Languages.en.menu.footer]]
 name = "Бар'єр іскрозахисту"
-URL = "barrier"
+URL = "is-barrier"
 weight = 1
 
 [[Languages.en.menu.footer]]
 name = "Рівнемір для рідин"
-URL = "sensor"
+URL = "level-sensor"
 weight = 2
 
 [[Languages.en.menu.footer]]
 name = "Рівнемір для газів"
-URL = "sensorLPG"
+URL = "level-sensor-lpg"
 weight = 3
 
 ########################### Ukraine language ############################
@@ -178,13 +167,12 @@ weight = 3
 languageName = "UA"
 languageCode = "uk-UA"
 contentDir = "content/ukrainian"
-weight = 1
-home = ""
+
 
 # main menu
 [[Languages.ua.menu.main]]
 weight = 2
-name = "Про компанію"
+name = "Про нас"
 URL = "about"
 hasChildren = false
 
@@ -196,17 +184,17 @@ hasChildren = true
   [[Languages.ua.menu.main]]
   parent = "Продукти"
   name = "Рівнемір для газів (LPG)"
-  URL = "sensor-lpg"
+  URL = "level-sensor-lpg"
 
   [[Languages.ua.menu.main]]
   parent = "Продукти"
   name = "Рівнемір для рідин"
-  URL = "sensor"
+  URL = "level-sensor"
 
   [[Languages.ua.menu.main]]
   parent = "Продукти"
   name = "Бар'єр іскрозахисту"
-  URL = "barrier"
+  URL = "is-barrier"
 
 [[Languages.ua.menu.main]]
 name = "Новини"
@@ -221,17 +209,17 @@ weight = 5
 # footer menu
 [[Languages.ua.menu.footer]]
 name = "Бар'єр іскрозахисту"
-URL = "barrier"
+URL = "is-barrier"
 weight = 1
 
 [[Languages.ua.menu.footer]]
 name = "Рівнемір для рідин"
-URL = "sensor"
+URL = "level-sensor"
 weight = 2
 
 [[Languages.ua.menu.footer]]
 name = "Рівнемір для газів"
-URL = "sensorLPG"
+URL = "level-sensor-lpg"
 weight = 3
 
 ########################### Russian language ############################
@@ -246,7 +234,7 @@ home = ""
 # main menu
 [[Languages.ru.menu.main]]
 weight = 2
-name = "Про Компанию"
+name = "О нас"
 URL = "about"
 hasChildren = false
 
@@ -258,17 +246,17 @@ hasChildren = true
   [[Languages.ru.menu.main]]
   parent = "Продукты"
   name = "Уровнемер для газов (LPG)"
-  URL = "sensor-lpg"
+  URL = "level-sensor-lpg"
 
   [[Languages.ru.menu.main]]
   parent = "Продукты"
   name = "Уровнемер для жидкостей"
-  URL = "sensor"
+  URL = "level-sensor"
 
   [[Languages.ru.menu.main]]
   parent = "Продукты"
   name = "Барьер искрозащиты"
-  URL = "barrier"
+  URL = "is-barrier"
 
 [[Languages.ru.menu.main]]
 name = "Новости"
@@ -283,15 +271,15 @@ weight = 5
 # footer menu
 [[Languages.ru.menu.footer]]
 name = "Барьер искрозащиты"
-URL = "barrier"
+URL = "is-barrier"
 weight = 1
 
 [[Languages.ru.menu.footer]]
 name = "Уровнемер для жидкостей"
-URL = "sensor"
+URL = "level-sensor"
 weight = 2
 
 [[Languages.ru.menu.footer]]
 name = "Уровнемер для газов"
-URL = "sensorLPG"
+URL = "level-sensor-lpg"
 weight = 3

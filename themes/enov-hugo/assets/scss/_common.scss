@@ -161,7 +161,7 @@ input[type="tel"] {
 
 //  Section Title
 .section {
-  padding: 100px 0;
+  padding: 5vh 0;
 }
 
 
@@ -350,6 +350,11 @@ a:focus {
 }
 
 @include mobile {
+
+  .section
+  {
+    padding: 2vh 0;
+  }
 
   .text-hd {
   font-size: 20px; 

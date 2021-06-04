@@ -5,7 +5,7 @@
       <div class="col-lg-3 ml-auto col-sm-6">
         <div class="widget">
           <a class="d-block mb-4" href="{{ .Site.BaseURL | relLangURL }}">
-            <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" class="img-fluid">
+            <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" class="img-fluid" height="35" width="120">
           </a>
           <a
               class=' text-white
@@ -53,22 +53,14 @@
           <p class="h4 text-capitalize mb-4 text-white">{{ i18n "follow_us" }}</p>
           <ul class="list-unstyled footer-socials">
             {{ range .Site.Params.social }}
-            <li><a href="{{ .link | safeURL }}"><img alt="{{ .name }}" src="{{ .icon }}" style="padding: 5px;"></i>{{ .name }}</a></li>
+            <li><a href="{{ .link | safeURL }}">
+              <img alt="{{ .name }}" src="{{ .icon }}" height="20" width="20" ></i>  {{ .name }}</a></li>
             {{ end }}
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="footer-btm pt-4 pb-3">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <div class="copyright">
-            <p>{{ .Site.Params.copyright | markdownify }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </footer>
 

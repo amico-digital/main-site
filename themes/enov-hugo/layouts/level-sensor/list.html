@@ -19,12 +19,12 @@
 <div class="container template_card">
 	<div class="row">
 		<!-- service step -->
-		{{ if $data.barrier.info.enable }}		
+		{{ if $data.sensor.info.enable }}		
 		<div class="align-self-center col-sm-12 col-lg-6">
 			
 			<div id="carousel" class="carousel slide" data-ride="carousel" >				
 				<div class="carousel-inner">
-				{{ with $data.barrier.info.mainIMG }}
+				{{ with $data.sensor.info.mainIMG }}
 				<div class="carousel-item active">
 					<picture>
 						<source srcset="{{ .webpSM }}" media="(max-width: 560px)" type="image/webp">
@@ -34,7 +34,7 @@
 					</picture>					
 				</div>
 				{{ end }}
-				{{ range $index, $element:= $data.barrier.info.images }}
+				{{ range $index, $element:= $data.sensor.info.images }}
       			{{ $delay := mul $index 100 }}
 				  <div class="carousel-item">
 					<picture>
@@ -58,14 +58,13 @@
 			</div>
 		</div>
 		<div class="col-sm-12 col-lg-6">
-			{{ with $data.barrier.info }}
+			{{ with $data.sensor.info }}
 			<p class="lead product-section">{{ .title | markdownify }}</p>
-			{{ range $index, $element:= $data.barrier.info.paragraphs }}
+			{{ range $index, $element:= $data.sensor.info.paragraphs }}
       		{{ $delay := mul $index 100 }}
 			<p style="margin: 0px; text-indent: 1.5em; text-align: justify;">{{ .content | markdownify }}</p>			
 			{{ end }}
-			<p class="text-center"><button type="button" class="btn btn-info w-60" style="margin: 20px ;" data-toggle="modal" data-target=".bd-example-modal-lg" onclick="window.open('{{.guaranteeLetter}}')" >{{ i18n "guaranteeText" }}</button></p>
-			<p class="text-center"><button type="button" class="btn btn-warning w-60 orange_button" data-toggle="modal" data-target=".bd-example-modal-lg" onclick="window.open('{{.commercialOffer}}')" >{{ i18n "commercialText" }}</button></p>
+			<p class="text-center"><button type="button" class="btn btn-warning w-60 orange_button" style="margin: 20px ;" data-toggle="modal" data-target=".bd-example-modal-lg" onclick="window.open('{{.commercialOffer}}')">{{ i18n "commercialText" }}</button></p>
 		</div>
 		
 		
@@ -74,12 +73,17 @@
 		<!-- /service step -->
 			
 	</div>
-	{{ if $data.barrier.usage.enable }}
-	{{ with $data.barrier.usage }}
+	{{ if $data.sensor.usage.enable }}
+	{{ with $data.sensor.usage }}
 	<h2 class="lead product-section">{{ .title | markdownify }}</h2>
+	<style type="text/css">ul{color: #000000;}</style>
 		<p style="text-indent: 1.5em; text-align: justify;">{{ .content | markdownify }}</p>
+		{{ range $index, $element:= $data.sensor.usage.usages }}
+      	{{ $delay := mul $index 100 }}
+			<p class="text-black" style="margin: 0px; text-indent: 1.5em; ">{{ .content | markdownify }}</p>
+		{{end}}
 			<div class="d-flex flex-wrap">
-				{{ range $index, $element:= $data.barrier.usage.images }}
+				{{ range $index, $element:= $data.sensor.usage.images }}
       			{{ $delay := mul $index 100 }}
 				<div class="p-2">
 					<img src="{{ .link }}" width="50" height="50" alt="{{ .link }}"/>
@@ -89,11 +93,11 @@
 	{{ end }}
 	{{ end }}
 
-	{{ if $data.barrier.standart.enable }}
-	{{ with $data.barrier.standart }}	
+	{{ if $data.sensor.standart.enable }}
+	{{ with $data.sensor.standart }}	
 	<style type="text/css">ul{color: #000000;}</style>
 	<h2 class="lead product-section">{{ .title | markdownify }}</h2>
-		{{ range $index, $element:= $data.barrier.standart.paragraphs }}
+		{{ range $index, $element:= $data.sensor.standart.paragraphs }}
       	{{ $delay := mul $index 100 }}
 			<p style="margin: 10px 0px; text-indent: 1.5em; text-align: justify;">{{ .content | markdownify }}</p>
 		{{end}}
@@ -101,21 +105,22 @@
 	{{ end }}
 	{{ end }}
 
-	{{ if $data.barrier.parameters.enable }}
-	{{ with $data.barrier.parameters }}
+	{{ if $data.sensor.parameters.enable }}
+	{{ with $data.sensor.parameters }}
 	<h2 class="lead product-section">{{ .title | markdownify }}</h2>
-				
+	<div class="row">		
+		<div class="col-sm">			
 			<table class="table">
 			  <thead>
-				<tr class="fs14">
-					{{ range $index, $element:= $data.barrier.parameters.header }}
+				<tr class="fs16">
+					{{ range $index, $element:= $data.sensor.parameters.header }}
       				{{ $delay := mul $index 100 }}
 					<th class="table-center" scope="col">{{ .title }}</th>
 					{{ end }}				 
 				</tr>
 			  </thead>
 			  <tbody >	
-				{{ range $index, $element:= $data.barrier.parameters.double }}
+				{{ range $index, $element:= $data.sensor.parameters.double }}
 				{{ $delay := mul $index 100 }}			
 				<tr>
 					<td>{{ .title }}</td>
@@ -123,7 +128,7 @@
 					<td class="table-center">{{ .value2 }}</td>
 				</tr>	
 				{{ end }}			
-				{{ range $index, $element:= $data.barrier.parameters.single }}
+				{{ range $index, $element:= $data.sensor.parameters.single }}
 				{{ $delay := mul $index 100 }}				
 				<tr >
 					<td >{{ .title }}</td>
@@ -132,45 +137,46 @@
 				{{ end }}				
 			</tbody>
 			</table>
-	
-	{{ end }}
-	{{ end }}
-
-	{{ if $data.barrier.tech.enable }}
-	{{ with $data.barrier.tech }}	
-	<h2 class="lead product-section" >{{ .title | markdownify }}</h2>
-	<div class="row card_documents">			
-		{{ range $index, $element:= $data.barrier.tech.docs }}
-      	{{ $delay := mul $index 100 }}
-		  	<div class="col-sm-3 text-center">
-				<a href="{{ .link | markdownify }}" target="_blank">
-				<img src="{{ .icon | markdownify }}" aria-hidden="true"></i><br><p>{{ .title | markdownify }}</p></a>
-			</div>			
-		{{ end }}			
+		</div>
 	</div>
 	{{ end }}
 	{{ end }}
 
-	{{ if $data.barrier.norm.enable }}
-	{{ with $data.barrier.norm }}
+	{{ if $data.sensor.tech.enable }}
+	{{ with $data.sensor.tech }}	
 	<h2 class="lead product-section">{{ .title | markdownify }}</h2>
 	<div class="row card_documents">			
-		{{ range $index, $element:= $data.barrier.norm.docs }}
+		{{ range $index, $element:= $data.sensor.tech.docs }}
       	{{ $delay := mul $index 100 }}
 		  	<div class="col-sm-3 text-center">
 				<a href="{{ .link | markdownify }}" target="_blank">
-				<img src="{{ .icon | markdownify }}" aria-hidden="true"></i><br><p>{{ .title | markdownify }}</p></a>
+				<img src="{{ .icon | markdownify }}" width="50" height="75" aria-hidden="true"></i><br><p>{{ .title | markdownify }}</p></a>
 			</div>			
 		{{ end }}			
 	</div>
 	{{ end }}
 	{{ end }}
 
-	{{ if $data.barrier.connections.enable }}
-	{{ with $data.barrier.connections }}
-	<h2 class="lead product-section" >Схеми підключення</h2>
+	{{ if $data.sensor.norm.enable }}
+	{{ with $data.sensor.norm }}
+	<h2 class="lead product-section">{{ .title | markdownify }}</h2>
+	<div class="row card_documents">			
+		{{ range $index, $element:= $data.sensor.norm.docs }}
+      	{{ $delay := mul $index 100 }}
+		  	<div class="col-sm-3 text-center">
+				<a href="{{ .link | markdownify }}" target="_blank">
+				<img src="{{ .icon | markdownify }}" width="50" height="75" aria-hidden="true"></i><br><p>{{ .title | markdownify }}</p></a>
+			</div>			
+		{{ end }}			
+	</div>
+	{{ end }}
+	{{ end }}
+
+	{{ if $data.sensor.connections.enable }}
+	{{ with $data.sensor.connections }}
+	<h2 class="lead product-section">Схеми підключення</h2>
 	<div class="row shuffle-wrapper portfolio-gallery">
-		{{ range $index, $element:= $data.barrier.connections.docs }}
+		{{ range $index, $element:= $data.sensor.connections.docs }}
       	{{ $delay := mul $index 100 }}
 		<div class="col-sm-6 col-lg-3 shuffle-item">
 			<div class="position-relative rounded inner-box">
@@ -193,37 +199,37 @@
 			</div>
 			</div>
 		</div>
-		{{ end }}	
+		{{ end }}
+		
 		
 	</div>
 	{{ end }}
 	{{ end }}	
 
-	{{ if $data.barrier.bundle.enable }}
-	{{ with $data.barrier.bundle }}
-	<h2 class="lead product-section">{{ .title | markdownify }}</h2>	
+	{{ if $data.sensor.bundle.enable }}
+	{{ with $data.sensor.bundle }}
+	<h2 class="lead product-section">{{ .title | markdownify }}</h2>
 	<table class="table">
 	  <thead>
 		<tr>
-			{{ range $index, $element:= $data.barrier.bundle.header }}
+			{{ range $index, $element:= $data.sensor.bundle.header }}
       		{{ $delay := mul $index 100 }}
 			  <th scope="col">{{ .title | markdownify }}</th>
 			{{ end }}		  
 		</tr>
 	  </thead>
 	  <tbody>
-		{{ range $index, $element:= $data.barrier.bundle.data }}
+		{{ range $index, $element:= $data.sensor.bundle.data }}
 		{{ $delay := mul $index 100 }}
 			<tr>
 				{{ $cnt := add $index 1 }}
-				<td scope="row">{{ $cnt }}</td>
+				<td scope="row">{{ $cnt }}</th>
 				<td>{{ .title | markdownify }}</td>
 				<td>{{ .count | markdownify }}</td>
 		  	</tr>
 	  	{{ end }}		  	
 	   </tbody>
 	</table>
-
 	{{ end }}
 	{{ end }}
 </div>
