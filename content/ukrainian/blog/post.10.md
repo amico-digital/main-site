@@ -1,8 +1,8 @@
 ---
-title: "АМІКО Діджитал прийнято до Морського Кластеру України"
+title: "АМІКО Діджитал приєдналося до Морського Кластеру України"
 date: 2021-05-28T17:30:13+06:00
 draft: false
-description: "АМІКО Діджитал прийняли до Морського Кластеру України"
+description: "Новини: АМІКО Діджитал приєдналося до Морського Кластеру України"
 bg_image: "images/bg/news-banner.jpg"
 image: "/images/blog/mku_cert_photo.jpg"
 image_webp: "/images/blog/mku_cert_photo.webp"

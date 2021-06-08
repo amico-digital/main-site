@@ -21,7 +21,8 @@
               -->&shy;&#x61;la&#x6d;&#x69;co&#x2E;&#99;o&#x6D;
               
               </a>
-          <p class="mt-4 mb-3">{{ i18n "address" }}</p>
+          <p class="mt-4 mb-0">{{ i18n "footer_address1" | markdownify }}</p>
+          <p class="mt-0">{{ i18n "footer_address2"}}</p>
           <a href="tel:{{ .Site.Params.phone }}"><span class="text-white h4">{{ .Site.Params.phone }}</span></a>
         </div>
       </div>

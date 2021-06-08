@@ -26,9 +26,17 @@
   translation: view project
 - id: address
   translation: Украина, г. Николаев, ул. Спаская, дом 1/7
+- id: footer_address1
+  translation: Украина, г. Николаев,
+- id: footer_address2
+  translation: ул. Спаская, дом 1/7
 - id: directions
   translation: Проложить маршрут
 - id: guaranteeText
   translation: "Получить на тест"
 - id: commercialText
   translation: "Получить коммерческое предложение"
+- id: title
+  translation: "AMICO DIGITAL - уровнемеры, измерительные системы"
+- id: meta_description
+  translation: "AMICO Digital разрабатывает и изготавливает датчики уровня и другое оборудование и программное обеспечение для систем автоматического управления технологическими процессами."

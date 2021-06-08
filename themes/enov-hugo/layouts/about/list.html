@@ -54,7 +54,7 @@
     {{ $delay := mul $index 100 }}
     <p>{{ .content | markdownify }}</p>
     {{ end }}
-    <p >{{ .text1 }} <a href="{{  .sensor_link }}"><u>{{.sensor_text}}</u></a> та <a href="{{.sensor_lpg_link}}"><u>{{.sensor_lpg_text}}</u></a>{{.text2}} <a href="{{.sadco_link}}" rel="nofollow"><u>{{.sadco_text}}</u></a>{{.text3}}</p>
+    <p >{{ .text1 }} <a href="{{  .sensor_link }}"><u>{{.sensor_text}}</u></a><a href="{{.sensor_lpg_link}}"><u>{{.sensor_lpg_text}}</u></a>{{.text2}} <a href="{{.sadco_link}}" rel="nofollow"><u>{{.sadco_text}}</u></a>{{.text3}}</p>
     <p >{{.text4}}<a href="{{.barrier_link}}"><u>{{.barrier_text}}</u></a>{{.text5}}</p>
     <p >{{.text6}}<a href="{{.contact_link}}"><u>{{.contact_text}}</u></a> </p>
 

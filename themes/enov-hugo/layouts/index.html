@@ -208,12 +208,13 @@
       <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" >
         <div class="shadow-sm-2 blog-item bg-white rounded p-3" data-aos="fade-up" data-aos-delay="{{ $delay }}"
           data-aos-duration="500" style="height: 100%;">    
-          <center>      
+          <center>  
+          <a href="{{ .Permalink }}">    
             <picture class="align-self-center">
               <source srcset="{{ .Params.Image_webp_sm }}" type="image/webp">
               <img src="{{ .Params.Image_sm | absURL }}" alt="{{ .Title | markdownify }}" class="img-fluid mb-4 rounded" style="max-height: 20vh;"  width="auto" height="auto">
             </picture>
-       
+          </a>
             <h3 class="mb-1"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h3>
             <div class="blog-item-meta">   
               <span class="text-uppercase text-sm letter-spacing"><i class="ti-time mr-1"></i>

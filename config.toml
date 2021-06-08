@@ -1,6 +1,7 @@
 ######################## default configuration ####################
-baseURL = "https://test.digitalamico.com"
-title = "AMICO DIGITAL"
+disableHugoGeneratorInject = true
+baseURL = "https://digitalamico.com"
+title = "AMICO DIGITAL - рівнеміри та вимірювальні системи"
 theme = "enov-hugo"
 # post pagination
 paginate = "6"
@@ -11,9 +12,9 @@ disqusShortname = "enov" # get your shortname form here : https://disqus.com
 defaultContentLanguage = "ua"
 # disable language
 disableLanguages = ["en"] # desable language from here
-
 [outputs]
 home = ["HTML", "RSS", "JSON"]
+
 
 ######################### Plugins #############################
 
@@ -37,7 +38,8 @@ logo = "images/logo.svg"
 # top header
 top_header = true
 # Meta data
-description = "This is meta description"
+keywords = "АМІКО Діджитал, рівнемір, рівнеміри, системи обліку рідин, АМИКО Диджитал, уровнемер, уровнемеры, системы учета"
+description = "AMICO Digital розроблює та виготовляє датчики рівня та інше обладнання і програмне забезпечення для інтеграції у системи автоматичного керування технологічними процесами."
 author = "Ievgen Gudyma"
 # contact info
 address = "Україна, м.Миколаїв, вул. Спаська, будинок 1/7"
@@ -45,9 +47,11 @@ phone = "+38(097)9798320"
 # contact form action
 contact_form_action = "https://formspree.io/f/xoqydkap"
 # Google Analitycs
-google_analitycs_id = "" # your id
+google_analitycs_id = "G-VGD15TRLZ4" # your id
 # search
 search = false
+# bootstrap css
+bootstrap = "/plugins/bootstrap/bootstrap.min.css"
 
 # Preloader
 [params.preloader]
@@ -227,7 +231,7 @@ weight = 3
 languageName = "RU"
 languageCode = "ru-RU"
 contentDir = "content/russian"
-address = "Украина"
+title = "AMICO DIGITAL - уровнемеры, измерительные системы"
 weight = 1
 home = ""
 

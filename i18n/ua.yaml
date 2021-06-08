@@ -26,9 +26,17 @@
   translation: Подивитися
 - id: address
   translation: Україна, м.Миколаїв, вул. Спаська, будинок 1/7
+- id: footer_address1
+  translation: Україна, м.Миколаїв,
+- id: footer_address2
+  translation: вул. Спаська, будинок 1/7
 - id: directions
   translation: Прокласти маршрут
 - id: guaranteeText
   translation: "Отримати на тест"
 - id: commercialText
   translation: "Отримати комерційну пропозицію"
+- id: title
+  translation: "AMICO DIGITAL - рівнеміри та вимірювальні системи"
+- id: meta_description
+  translation: "AMICO Digital розроблює та виготовляє датчики рівня та інше обладнання і програмне забезпечення для інтеграції у системи автоматичного керування технологічними процесами."
