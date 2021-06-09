@@ -11,7 +11,7 @@ info:
   images : 
     
 
-  title: "Короткое описание"
+  title: "Overview"
   paragraphs:
     # 
     - content : "Уровнемер для жидкостей «MIRA+» предназначен для непрерывного измерения уровня и температуры жидкостей в резервуарах. Может использоваться для сигнализации докритических и критических значений параметров (например, приближение к заданному верхнему/нижнему уровню продукта), контроля межфазного уровня. Имеет степень защиты «Искробезопасная электрическая цепь» и может располагаться во взрывоопасных зонах помещений и открытых промышленных площадок классов 0,1,2."
@@ -22,7 +22,7 @@ info:
 ######################### usage #####################################
 usage:
   enable : true
-  title: "Область применения"
+  title: "Scope"
   content: "Уровнемер может использоваться для коммерческого учета, технологического контроля, непрерывного мониторинга состояния различных резервуарных парков со следующими продуктами:"
   usages : 
   - content : "* жидкие нефтепродукты (бензины, дизельное топливо, биодизель, керосин, нефть, мазут и др.)"
@@ -40,9 +40,9 @@ usage:
 ########################### standart ############################
 standart:
   enable : true
-  title: "Соответствие стандартам"
+  title: "Conformance"
   paragraphs:    
-    - content : "Уровнемер для жидкостей «MIRA+» соответствует следующим нормам и национальным стандартам:"
+    - content : "Level sensor for liquids «MIRA+» meets the requirements:"
     - content : "* Технічний регламент законодавчо регульованих засобів вимірювальної техніки (затверджено постановою Кабінету Міністрів України від 13 січня 2016 р, №94)."
     - content : "* Технічний регламент з електромагнітної сумісності обладнання (затверджено постановою Кабінету Міністрів України від 16 грудня 2015 р, №1077). "
     - content : "* Технічний регламент обладнання та захисних систем, призначених для використання в потенційно вибухонебезпечних середовищах (затверджено постановою Кабінету Міністрів України від 28 грудня 2016 р., № 1055). "
@@ -50,94 +50,92 @@ standart:
 ######################## parameters #################################
 parameters:
   enable : true
-  title: "Технические характеристики"
+  title: "Technical data"
   header : 
-    - title : "Параметр"
-    - title : "Значение параметра"   
+    - title : "Parameter"
+    - title : "Value"  
   single:
-    - title : "Рабочий диапазон измерения уровня"
-      value : "0 ... 18 м"
-    - title : "Максимально допустимая основная погрешность измерения температуры продукта"
-      value : "± 1 мм"
-    - title : "Количество точек измерения температуры вдоль волновода"
+    - title : "Level measurement range"
+      value : "0 ... 18 m"
+    - title : "Max. permissible measurement error"
+      value : "± 1 mm"
+    - title : "Number of temperature measurement points"
       value : "1 … 7 "
-    - title : "Диапазон измерения температуры среды"
+    - title : "Process temperature"
       value : "-40 … +85 °С"
-    - title : "Максимально допустимая основная погрешность измерения средней температуры продукта"
+    - title : "Max. temperature measurement error"
       value : ""
-    - title : "в диапазоне -20…+55°С "
-      value : "±0,5 °С"
-    - title : "в диапазоне -40…+85°С "
-      value : "±1,5 °С"
-    - title : "Единицы измерения"
-      value : "мм, °С "
-    - title : "Выходной сигнал, интерфейс"
+    - title : "in range -20 … +55°С "
+      value : "±0.5 °С"
+    - title : "in range -40 … +85°С "
+      value : "±1.5 °С"
+    - title : "Measurement units"
+      value : "mm, °С "
+    - title : "Output signal, interface"
       value : "Modbus RTU, RS-485 " 
-    - title : "Номинальное значение напряжения питания, DC"
-      value : "24 В" 
-    - title : "Номинальный потребляемый ток в нормальном режиме эксплуатации, не более"
-      value : "35 мА" 
-    - title : "Диапазон значений напряжения питания на клемах уровнемера, DC"
-      value : "13 ... 26.5 В" 
-    - title : "Диапазон значений тока питания, DC "
-      value : "30 ... 45 мА" 
-    - title : "Потребяемая мощность, DC, не более"
-      value : "1.15 Вт" 
-    - title : "Маркировка взрывозащиты"
+    - title : "Nominal voltage, DC"
+      value : "24 V" 
+    - title : "Nominal current"
+      value : "35 mА" 
+    - title : "Voltage range, DC"
+      value : "13 ... 26.5 V" 
+    - title : "Current range"
+      value : "30 ... 45 mА" 
+    - title : "Max power consumption"
+      value : "1.15 W" 
+    - title : "Explosion-proof marking"
       value : "Ex II 1G Ex ia IIB T4 Ga"
-    - title : "Входные параметры искробезопасных цепей уровнемера"
-      value : "Ui = 27.0 В, Ii = 260 мА, Pi = 1.15 Вт, Ci = 0.36 мкФ, Li = 50 мкГн"
-    - title : "Кабельный ввод"
-      value : "По умолчанию: кабельный ввод М20х1.5 \nПрисутствует отверстие с резьбой для кабельной магистрали или кабельного уплотнения G ¾ "
-    - title : "Кабель "
-      value : "«витая пара», 0.5..1 мм2 "
-    - title : "Присоединение к резервуару"
-      value : "Фланец, ДУ125 (Min ДУ 100) "
-    - title : "Степень защиты, обеспечиваемая кожухом (код IP)"
+    - title : "Safety-related data in accordance with ATEX"
+      value : "Ui = 27.0 V, Ii = 260 mА, Pi = 1.15 W, Ci = 0.36 uF, Li = 50 uH"
+    - title : "Cable"
+      value : "twisted pair, 0.5 ... 1 mm2 "
+    - title : "Tank connection"
+      value : "Flange, ДУ125 (Min ДУ 100) "
+    - title : "Degree of protection"
       value : "IP67 "
-    - title : "Материалы, контактирующие с продуктом"
-      value : "Нержавеющая сталь 12Х18Н10Т или аналог, PTFE "
-    - title : "Масса прибора, не более "
-      value : "20 кг"
-    - title : "Допустимая боковая нагрузка на зонд"
-      value : "5 Нм"
-    - title : "Температура окружающей среды, Ta"
+    - title : "Materials in contact with product"
+      value : "Stainless steel 12Х18Н10Т or counterpart, PTFE "
+    - title : "Net weight (max) "
+      value : "20 kg"
+    - title : "Permissible lateral load (waveguide)"
+      value : "5 Nm"
+    - title : "Ambient temperature (operation), Ta"
       value : "-25 ... +55 °С"
-    - title : "Избыточное давление процесса (давление измеряемой среды)"
-      value : "-0.1 ... 0.1 МПа"
-    - title : "Относительная влажность окружающей среды"
-      value : "до 100 %, без конденсации "
-    - title : "Режим работы"
-      value : "круглосуточно "
+    - title : "Process pressure"
+      value : "-0.1 ... 0.1 МPа"
+    - title : "Max. permissible relative humidity (operation)"
+      value : "< 100 %, non-condensing"
+    - title : "Operation mode"
+      value : "24/7"
 
 ######################## tech docs #################################
 tech:
   enable : true
-  title : "Техническая документация"
+  title : "Documentation"
   docs:    
     # step loop
-    - title : "Руководство по эксплуатации (UA)"
+    - title : "User Manual (UA)"
       icon : "/images/icons/pdf.svg"
       link : "/docs/sensorManualUA.pdf" 
     # step loop
-    - title : "MIRA Desktop Руководство (UA)"
+    - title : "MIRA Desktop User Manual (UA)"
       icon : "/images/icons/pdf.svg"
       link : "/docs/sensorSoftwareManualUA.pdf"       
     # step loop
-    - title : "Паспорт"
+    - title : "Passport"
       icon : "/images/icons/pdf.svg"
       link : "/docs/sensorPassport.pdf"
 
 ######################## norm docs #################################
 norm:
   enable : true
-  title : "Сертификаты"
+  title : "Certificates"
   docs:
     # step loop
-    - title : "Сертификат экспертизы типа (взрывозащита)"
+    - title : "Type examination certificate (ATEX)"
       icon : "/images/icons/pdf.svg"
       link : "/docs/sensorCertBEx.pdf" 
-    - title : "Сертификат экспертизы типа (ЭМС)"
+    - title : "Type examination certificate (EMC)"
       icon : "/images/icons/pdf.svg"
       link : "/docs/sensorCertEMC.pdf" 
 
@@ -165,17 +163,17 @@ connections:
 ######################## bundle #################################
 bundle:
   enable : true
-  title : "Комплект поставки"
+  title : "Bundle"
   header : 
     - title : "#"
-    - title : "Название"
-    - title : "Количество шт."
+    - title : "Name"
+    - title : "pcs."
   data :
-    - title : "Уровнемер для жидкостей \"MIRA+\""
+    - title : "Level sensor for liquids MIRA+"
       count: 1
-    - title : "Паспорт"
+    - title : "Passport"
       count: 1
-    - title : "Руководство по эксплуатации"
+    - title : "User Manual"
       count: 1
-    - title : "Програмное обеспечение «MIRA+ Desktop»"
+    - title : "Software «MIRA+ Desktop»"
       count: 1

@@ -1,101 +1,102 @@
 ################################## Banner #################################
 banner:
   enable : true
-  subtitle : "Prepare for new future"
-  title : "Helping customers be their best in the moments that matter."
+  subtitle : "EVERYTHING WILL BE DIGITAL"
+  title : "Construction of accounting systems for liquids, petroleum products and LPG"
 
   # solid button
   button_solid:
     enable : true
-    label : "Get started"
-    link : "pricing"
+    label : "Level sensor for liquids"
+    link : "level-sensor"
 
   # border button
   button_border:
     enable : true
-    label : "Discover Enov"
-    link : "service"
+    label : "Level Sensor for LPG"
+    link : "level-sensor-lpg"
 
 ######################## Banner call to action ############################
 banner_cta:
   enable : true
-  title : "Crafting visually stunning memorable experiences for web."
-  content : "Magni perspiciatis sequi, molestias dignissimos numquam placeat eveniet nobis rerum eos, facilis minus, est illo adipisci soluta dolores quisquam, praesentium ab corrupti!"
+  title : "Intrinsic safety barriers for digital and analog equipment"
+  content : "Intrinsic safety barrier БИЗоН 2Ex.24.12 meets the requirements EN 60079-0:2017, EN 60079-
+11:2017. The device have explosion-proof marking II (1) G [Ex ia Ga] IIB."
   button:
     enable : true
-    label : "Learn more"
-    link : "about"
+    label : "Read more"
+    link : "is-barrier"
 
 ########################## feature ########################################
 feature:
   enable : true
-  title : "We provide best solution to client with their business problem"
+  title : "We offer the optimal instruments for measuring and automation"
   feature_item:
     # feature item loop
-    - title : "Modern & Responsive design"
+    - title : "Modern solutions"
       icon : "ti-wand" # icon pack : https://themify.me/themify-icons
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, aspernatur."
+      content : "Improving, optimizing and simplifing Clients' tasks."
       
     # feature item loop
-    - title : "Awarded licensed company"
+    - title : "Only certified products"
       icon : "ti-medall" # icon pack : https://themify.me/themify-icons
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, aspernatur."
+      content : "We check and involve accredited laboratories and test centers to confirm the quality."
 
 ######################## About #######################################
 about:
   enable : true
-  image : "images/about/home-8.webp"
-  title : "Forget about <br> design limits! Build and customize your portfolio"
-  content : "We provide consulting services in the area of IFRS and management reporting, helping companies
-            to reach their highest level. We optimize business processes, making them easier."
+  image : "images/about/pexels-photo-6801648.webp"
+  image_jpg : "images/about/pexels-photo-6801648.jpeg"
+  title : "Developer and manufacturer"
+  content : "Our approach - «From concept to implementation».  We have warehouse and production facilities in Ukraine and reliable partners-suppliers for fast and high-quality orders processing."
   button:
     enable : true
-    label : "Get started"
-    link : "pricing"
+    label : "Read more"
+    link : "about"
 
 ##################### Funfacts ######################################
 funfacts:
   enable : true
   funfact_item:
     # fanfacts item loop
-    - title : "Project Done"
+    - title : "Measure channels"
       icon : "ti-check" # themify icon pack: https://themify.me/themify-icons
-      count : "1730"
+      count : "1100"
       unit : "+"
       
     # fanfacts item loop
-    - title : "User Worldwide"
+    - title : "Clients"
       icon : "ti-flag" # themify icon pack: https://themify.me/themify-icons
-      count : "125"
-      unit : "M"
-      
-    # fanfacts item loop
-    - title : "Availble Country"
-      icon : "ti-layers" # themify icon pack: https://themify.me/themify-icons
-      count : "40"
-      unit : ""
-      
-    # fanfacts item loop
-    - title : "Award Winner"
-      icon : "ti-medall" # themify icon pack: https://themify.me/themify-icons
-      count : "10"
+      count : "50"
       unit : "+"
+      
+    # fanfacts item loop
+    - title : "Countries"
+      icon : "ti-layers" # themify icon pack: https://themify.me/themify-icons
+      count : "3"
+      unit : ""      
+    
 
 ######################### Service #####################################
 service:
   enable : true
-  title : "Total Solution in one"
-  content : "We provide a wide range of creative services adipisicing elit. Autem maxime rem modi eaque, voluptate. Beatae officiis neque"
+  title : "Our advantages"
+  content : ""
   # service item comes from "data/**/service.yml" file
 
 ######################### pricing #####################################
 pricing:
-  enable : true
+  enable : false
   # pricing item comes from "data/**/pricing.yml" file
+
+######################### pricing #####################################
+resume:
+  enable : false
+  # pricing item comes from "data/**/resume.yml" file
 
 ############################# Team ##################################
 team:
-  enable: true
+  enable: false
   title : "Amazing Team"
   content : "We provide a wide range of creative services adipisicing elit. Autem maxime rem modi eaque, voluptate. Beatae officiis neque"
   team_member:
@@ -228,15 +229,15 @@ team:
 
 ################################### promo video ##########################
 promo_video:
-  enable : true
+  enable : false
   title : "See How we work!"
   video_thumbnail : "images/bg/contact-bg-min-1.webp"
-  video_link : "https://www.youtube.com/watch?v=jrkvirglgaQ"
+  video_link : ""
   content: "Our mission is to produce the highest quality work for everyclient, on every project"
 
 ############################## blog ####################################
 blog:
   enable: true
-  title : "Latest News & Articles"
-  content : "Don’t just take our words for it. Our clients are our biggest supporters. Would you like to know what they think about us?"
+  title : "Latest news"
+  content : ""
   # blog post comes from "content/**/blog" folder.

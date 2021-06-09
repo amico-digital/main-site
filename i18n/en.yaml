@@ -28,3 +28,17 @@
   translation: Ukraine, Mykolaiv, Spasska st., 1/7
 - id: directions
   translation: Take directions
+- id: footer_address1
+  translation: Ukraine, Mykolaiv,
+- id: footer_address2
+  translation: Spasska st., 1/7
+- id: directions
+  translation: Take directions
+- id: guaranteeText
+  translation: "Get for test"
+- id: commercialText
+  translation: "Get commercial offer"
+- id: title
+  translation: "AMICO DIGITAL - level sensord, measurement systems"
+- id: meta_description
+  translation: ""

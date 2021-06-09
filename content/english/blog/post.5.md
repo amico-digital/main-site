@@ -1,22 +1,19 @@
 ---
-title: "Skill to grow business rapidly"
-date: 2019-09-16T10:30:13+06:00
+title: "С Новым годом!"
+date: 2021-01-01T10:30:13+06:00
 draft: false
-description: "this is meta description"
-bg_image: "images/bg/banner-1.webp"
-image: "images/blog/3.webp"
-author: "themefisher"
-categories: [ "Digital"]
-tags: [ "marketing", "Agency"]
+description: "Новости: с Новым годом!"
+bg_image: "images/bg/news-banner.jpg"
+image: "/images/blog/newYear2021.jpg"
+image_webp: "/images/blog/newYear2021.webp"
+image_sm: "/images/blog/newYear2021-sm.jpg"
+image_webp_sm: "/images/blog/newYear2021-sm.webp"
+author: ""
+categories: ["Holydays"]
+tags: ["Holydays"]
 type: "post"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur?
-Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui.
-Laboriosam autem, nam voluptate in beatae.
+> С Новым 2021 годом !
 
-> A brand for a company is like a reputation for a person. You earn reputation by trying to do hard things well.
-
-#### The same is true as we experience the emotional sensation of stress from our first instances of social rejection ridicule. We quickly learn to fear and thus automatically.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, rerum beatae repellat tenetur incidunt quisquam libero dolores laudantium. Nesciunt quis itaque quidem, voluptatem autem eos animi laborum iusto expedita sapiente.
+Благодарим Вас за сотрудничество в этом году, нам приятно быть Вашими Партнерами и вместе достигать успеха! Пусть Новогодние и Рождественские праздники станут продолжением успешных замыслов и дел а также принесут новые идеи, станут началом новых достижений, интересных событий и встреч! Тепла, радости в семейном кругу, верных друзей, побольше довольных клиентов! 

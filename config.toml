@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 disableHugoGeneratorInject = true
-baseURL = "https://digitalamico.com"
+baseURL = "https://test.digitalamico.com"
 title = "AMICO DIGITAL - рівнеміри та вимірювальні системи"
 theme = "enov-hugo"
 # post pagination
@@ -11,7 +11,7 @@ summaryLength = "10"
 disqusShortname = "enov" # get your shortname form here : https://disqus.com
 defaultContentLanguage = "ua"
 # disable language
-disableLanguages = ["en"] # desable language from here
+disableLanguages = [] # desable language from here
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 
@@ -43,7 +43,7 @@ description = "AMICO Digital розроблює та виготовляє дат
 author = "Ievgen Gudyma"
 # contact info
 address = "Україна, м.Миколаїв, вул. Спаська, будинок 1/7"
-phone = "+38(097)9798320"
+phone = "+38(097)979 83 20"
 # contact form action
 contact_form_action = "https://formspree.io/f/xoqydkap"
 # Google Analitycs
@@ -152,17 +152,17 @@ weight = 5
 
 # footer menu
 [[Languages.en.menu.footer]]
-name = "Бар'єр іскрозахисту"
+name = "IS Barrier"
 URL = "is-barrier"
 weight = 1
 
 [[Languages.en.menu.footer]]
-name = "Рівнемір для рідин"
+name = "Level sensor for liquids"
 URL = "level-sensor"
 weight = 2
 
 [[Languages.en.menu.footer]]
-name = "Рівнемір для газів"
+name = "Level sensor LPG"
 URL = "level-sensor-lpg"
 weight = 3
 

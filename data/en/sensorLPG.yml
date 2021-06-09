@@ -1,0 +1,175 @@
+########################### short info ############################
+info:
+  enable : true
+  mainIMG :
+      title : "Внешний вид уровнемера для газов (LPG) MIRA+"
+      jpeg : "/images/products/sensor1.png" 
+      webp : "/images/products/sensor1.webp" 
+      jpegSM : "/images/products/sensor1.png" 
+      webpSM : "/images/products/sensor1.webp"
+
+  images : 
+   
+
+  title: "Overview"
+  paragraphs:
+    # 
+    - content : "Уровнемер для сжиженных газов «MIRA +» внесен в государственный реестр Украины и предназначен для непрерывного измерения уровня и температуры сжиженных нефтяных (углеводородных) газов в емкостях. Может использоваться для сигнализации докритических и критических значений параметров (например, приближение к заданному верхнему / нижнему уровню продукта), контроля межфазного уровня, и тому подобное. Имеет степень защиты «Искробезопасная электрическая цепь» и может использоваться во взрывоопасных зонах помещений и открытых промышленных площадок классов 0,1,2."
+    - content : "**Уровнемер внесен в государственный реестр Украины и может использоваться как уровнемер-счетчик для контроля и учета жидкостей согласно Постановления КМУ от 22.11.2017 №891.**"
+    - content : "По запросу возможно изготовление оборудования - с учетом особых требований или задач Заказчика и интеграция информации из уровнемера к системам учета и автоматизации."
+  commercialOffer: "/docs/questionnaire.docx" 
+  
+######################### usage #####################################
+usage:
+  enable : true
+  title: "Scope"
+  content: "Уровнемер может использоваться для коммерческого учета, технологического контроля, непрерывного мониторинга состояния различных резервуарных парков со следующими продуктами:"
+  usages : 
+  - content : "* сжиженных газов LPG (пропан, бутан, СПБТ)"
+  
+  images : 
+    - link : "/images/icons/027-oilfield.svg"
+    - link : "/images/icons/054-oil.svg"
+    - link : "/images/icons/078-factory.svg"
+    - link : "/images/icons/044-tank-truck.svg"    
+
+########################### standart ############################
+standart:
+  enable : true
+  title: "Conformance"
+  paragraphs:    
+    - content : "Level sensor for LPG «MIRA+» meets the requirements:"
+    - content : "* Технічний регламент законодавчо регульованих засобів вимірювальної техніки (затверджено постановою Кабінету Міністрів України від 13 січня 2016 р, №94)."
+    - content : "* Технічний регламент з електромагнітної сумісності обладнання (затверджено постановою Кабінету Міністрів України від 16 грудня 2015 р, №1077). "
+    - content : "* Технічний регламент обладнання та захисних систем, призначених для використання в потенційно вибухонебезпечних середовищах (затверджено постановою Кабінету Міністрів України від 28 грудня 2016 р., № 1055). "
+
+######################## parameters #################################
+parameters:
+  enable : true
+  title: "Technical data"
+  header : 
+    - title : "Parameter"
+    - title : "Value"   
+  single:
+    - title : "Level measurement range"
+      value : "0 ... 5 m"
+    - title : "Max. permissible measurement error"
+      value : "± 1 mm"
+    - title : "Number of temperature measurement points"
+      value : "1 … 7 "
+    - title : "Process temperature"
+      value : "-40 … +50 °С"
+    - title : "Max. temperature measurement error"
+      value : ""
+    - title : "in range -20 … +50°С "
+      value : "±0.5 °С"
+    - title : "in range -40 … -20°С "
+      value : "±1.5 °С"
+    - title : "Measurement units"
+      value : "mm, °С "
+    - title : "Output signal, interface"
+      value : "Modbus RTU, RS-485 " 
+    - title : "Nominal voltage, DC"
+      value : "24 V" 
+    - title : "Nominal current"
+      value : "35 mА" 
+    - title : "Voltage range, DC"
+      value : "13 ... 26.5 V" 
+    - title : "Current range"
+      value : "30 ... 45 mА" 
+    - title : "Max power consumption"
+      value : "1.15 W" 
+    - title : "Explosion-proof marking"
+      value : "Ex II 1G Ex ia IIB T4 Ga"
+    - title : "Safety-related data in accordance with ATEX"
+      value : "Ui = 27.0 V, Ii = 260 mА, Pi = 1.15 W, Ci = 0.36 uF, Li = 50 uH"
+    - title : "Cable"
+      value : "twisted pair, 0.5 ... 1 mm2 "
+    - title : "Tank connection"
+      value : "Flange, D125 (Min D100) "
+    - title : "Degree of protection"
+      value : "IP67"
+    - title : "Materials in contact with product"
+      value : "Stainless steel 12Х18Н10Т or counterpart, PTFE "
+    - title : "Net weight (max) "
+      value : "20 kg"
+    - title : "Permissible lateral load (waveguide)"
+      value : "5 Nm"
+    - title : "Ambient temperature (operation), Ta"
+      value : "-25 ... +55 °С"
+    - title : "Process pressure"
+      value : "-0.1 ... 2.5 МPа"
+    - title : "Max. permissible relative humidity (operation)"
+      value : "< 100 %, non-condensing"
+    - title : "Operation mode"
+      value : "24/7"
+
+######################## tech docs #################################
+tech:
+  enable : true
+  title : "Documentation"
+  docs:    
+    # step loop
+    - title : "User Manual (UA)"
+      icon : "/images/icons/pdf.svg"
+      link : "/docs/sensorManualUA.pdf" 
+    # step loop
+    - title : "MIRA Desktop User Manual (UA)"
+      icon : "/images/icons/pdf.svg"
+      link : "/docs/sensorSoftwareManualUA.pdf"       
+    # step loop
+    - title : "Passport"
+      icon : "/images/icons/pdf.svg"
+      link : "/docs/sensorPassport.pdf"
+
+######################## norm docs #################################
+norm:
+  enable : true
+  title : "Certificates"
+  docs:
+    # step loop
+    - title : "Type examination certificate (ATEX)"
+      icon : "/images/icons/pdf.svg"
+      link : "/docs/sensorCertBEx.pdf" 
+    - title : "Type examination certificate (EMC)"
+      icon : "/images/icons/pdf.svg"
+      link : "/docs/sensorCertEMC.pdf"  
+
+######################## connections #################################
+connections:
+  enable : false
+  button : "Подивитися"
+  docs:
+    # 
+    - title : "Схема підключення 1"
+      jpeg : "/images/products/barrier-connection-1.jpg" 
+      webp : "/images/products/barrier-connection-1.webp" 
+      jpegSM : "/images/products/barrier-connection-1-small.jpg" 
+      webpSM : "/images/products/barrier-connection-1-small.webp" 
+
+    # 
+    - title : "Схема підключення 2"
+      jpeg : "/images/products/barrier-connection-2.jpg" 
+      webp : "/images/products/barrier-connection-2.webp" 
+      jpegSM : "/images/products/barrier-connection-2-small.jpg" 
+      webpSM : "/images/products/barrier-connection-2-small.webp"
+      
+    
+
+######################## bundle #################################
+bundle:
+  enable : true
+  title : "Bundle"
+  header : 
+    - title : "#"
+    - title : "Name"
+    - title : "pcs."
+  data :
+    - title : "Level sensor for LPG MIRA+"
+      count: 1
+    - title : "Passport"
+      count: 1
+    - title : "User Manual"
+      count: 1
+    - title : "Software «MIRA+ Desktop»"
+      count: 1

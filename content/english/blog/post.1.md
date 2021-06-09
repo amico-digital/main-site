@@ -1,22 +1,21 @@
 ---
-title: "Improve design with typography?"
-date: 2019-09-16T10:30:13+06:00
+title: "С праздником Светлой Пасхи!"
+date: 2020-04-19T10:30:13+06:00
 draft: false
-description: "this is meta description"
-bg_image: "images/bg/banner-1.webp"
-image: "images/blog/1.webp"
-author: "John Doe"
-categories: ["Innovation"]
-tags: ["Web","Agency"]
+description: "Новости: поздравление с праздником светлой Пасхи"
+bg_image: "images/bg/news-banner.jpg"
+image: "/images/blog/easter2020.jpg"
+image_webp: "/images/blog/easter2020.webp"
+image_sm: "/images/blog/easter2020-sm.jpg"
+image_webp_sm: "/images/blog/easter2020-sm.webp"
+author: ""
+categories: ["Holydays"]
+tags: ["Holydays","Easter"]
 type: "post"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur?
-Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui.
-Laboriosam autem, nam voluptate in beatae.
+Поздравляем Вас со светлым и радостным праздником Пасхи. Желаем счастья и радости, благополучия! Пусть праздник Пасхи принесет любовь и свет в Вашу семью, искренность и добро во взаимоотношения. Здоровья, мира, мудрости Вам и Вашей семье на жизненном пути. Пусть Божья Благодать согревает и делает Вас счастливыми.
 
-> A brand for a company is like a reputation for a person. You earn reputation by trying to do hard things well.
 
-#### The same is true as we experience the emotional sensation of stress from our first instances of social rejection ridicule. We quickly learn to fear and thus automatically.
+> Христос Воскрес!
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, rerum beatae repellat tenetur incidunt quisquam libero dolores laudantium. Nesciunt quis itaque quidem, voluptatem autem eos animi laborum iusto expedita sapiente.

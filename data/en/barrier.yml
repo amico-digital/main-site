@@ -21,7 +21,7 @@ info:
       jpegSM : "/images/products/barrier3-small.jpg" 
       webpSM : "/images/products/barrier3-small.webp"
 
-  title: "Короткое описание"
+  title: "Overview"
   paragraphs:
     # 
     - content : "Двухканальный барьер искрозащиты с функцией автоматического восстановления после срабатывания. Предназначен для обеспечения искробезопасности электрических цепей питания и сигнальных цепей преобразователей, установленных во взрывоопасных зонах."
@@ -41,7 +41,7 @@ info:
 ######################### usage #####################################
 usage:
   enable : true
-  title: "Область применения"
+  title: "Scope"
   content: "Устройство применяется в системах измерения и контроля, автоматического регулирования, сигнализации, противоаварийной защиты и управления технологическими процессами на взрывоопасных и / или пожароопасных участках производств нефтегазового комплекса, металлургии, теплоэнергетики, химической и нефтехимической, пищевой и других отраслях промышленности, где могут присутствовать взрывоопасные смеси газов , паров, а также легковоспламеняющиеся и взрывчатые вещества (пыль, порошок)."
   images : 
     - link : "/images/icons/027-oilfield.svg"
@@ -56,64 +56,64 @@ usage:
 ########################### standart ############################
 standart:
   enable : true
-  title: "Соответствие стандартам"
+  title: "Conformance"
   paragraphs:    
-    - content : "Барьер искрозащиты БИЗоН 2Ex.24.12 соответствует следующим нормам и национальным стандартам:"   
+    - content : "Intrinsic safety barrier БИЗоН 2Ex.24.12 meets the requirements:"   
     - content : "* Технічний регламент обладнання та захисних систем, призначених для використання в потенційно вибухонебезпечних середовищах (затверджено постановою Кабінету Міністрів України від 28 грудня 2016 р., № 1055). "
 
 
 ######################## parameters #################################
 parameters:
   enable : true
-  title: "Технические характеристики"
+  title: "Technical data"
   header : 
-    - title : "Параметр"
-    - title : "Канал \"Питание\""
-    - title : "Канал \"Сигнальный\""
+    - title : "Parameter"
+    - title : "Power channel"
+    - title : "Signal channel"
   single:
-    - title : "Маркировка взрывозащиты"
+    - title : "Explosion-proof marking"
       value : "Ex II (1) G [Ex ia Ga] IIB"
-    - title : "Соответствие стандартам"
-      value : "ДСТУ EN 60079-0:2017 і ДСТУ EN 60079- 11:2017 "
-    - title : "Степень защиты"
+    - title : "Conformance"
+      value : "EN 60079-0:201б, EN 60079- 11:2017 "
+    - title : "Degree of protection"
       value : "IP20"
-    - title : "Рабочий диапазон температур"
+    - title : "Ambient temperature (operation)"
       value : "-20...+60 °С"
-    - title : "Относительная влажность"
-      value : "< 80 % (без конденсации)"
-    - title : "Тип монтажа"
-      value : "Крепление на DIN-рейку 35 мм"
-    - title : "Габариты"
-      value : "111х99х17,6 мм"
-    - title : "Вес"
-      value : "100г"
-    - title : "Корпус и клеммы"
-      value : "Phoenix Contact (Германия); литые винтовые зажимные клеммы; сечение провода: 0.2-2.5 мм2"
+    - title : "Relative humidity (operation)"
+      value : "< 80 % (non-condensing)"
+    - title : "Assembly instructions"
+      value : "35 mm DIN rail mounting"
+    - title : "Dimensions"
+      value : "111 х 99 х 17.6 mm"
+    - title : "Net weight"
+      value : "100g"
+    - title : "Connection data"
+      value : "Phoenix Contact; screw connection; conductor cross section: 0.2-2.5 mm2"
   double:
-    - title : "Количество каналов"
+    - title : "Channel count"
       value1 : "1"
       value2 : "1"
-    - title : "Напряжение холостого хода Uхх, не более"
-      value1 : "25 В"
-      value2 : "10 В"
-    - title : "Ток нагрузки Iн, не более"
-      value1 : "50 мА"
-      value2 : "40 мА"
-    - title : "Сопротивление канала"
-      value1 : "210 Ом"
-      value2 : "190 Ом"
-    - title : "Суммарная емкость кабеля и нагрузки"
-      value1 : "0,4 мкФ"
-      value2 : "3,5 мкФ"
-    - title : "Сумарная индуктивность кабеля и нагрузки"
-      value1 : "1 мГн"
-      value2 : "4,5 мГн"
-    - title : "Максимальное напряжение на выходе барьера в аварийном режиме Uo, не более"
-      value1 : "27 В"
-      value2 : "12.75 В"
-    - title : "Максимальный ток на выходе барьера в аварийном режиме Io, не более"
-      value1 : "165 мА"
-      value2 : "90 мА"
+    - title : "Max supply voltage Uхх"
+      value1 : "25 V"
+      value2 : "10 V"
+    - title : "Max supply current Iн"
+      value1 : "50 mА"
+      value2 : "40 mА"
+    - title : "Channel resistance"
+      value1 : "210 Оhm"
+      value2 : "190 Оhm"
+    - title : "Max.  external capacitance Co"
+      value1 : "0.4 uF"
+      value2 : "3.5 uF"
+    - title : "Max. external inductance Io"
+      value1 : "1 mH"
+      value2 : "4.5 mH"
+    - title : "Max. output voltage Uo"
+      value1 : "27 V"
+      value2 : "12.75 V"
+    - title : "Max. output current Io"
+      value1 : "165 mА"
+      value2 : "90 mА"
     
 
   
@@ -121,30 +121,30 @@ parameters:
 ######################## tech docs #################################
 tech:
   enable : true
-  title : "Техническая документация"
+  title : "Documentation"
   docs:
     # step loop
-    - title : "Руководство по эксплуатации (RU)"
+    - title : "User Manual (RU)"
       icon : "/images/icons/pdf.svg"
       link : "/docs/barrierManualRU.pdf" 
 
     # step loop
-    - title : "Настанова з експлуатації (UA)"
+    - title : "User Manual (UA)"
       icon : "/images/icons/pdf.svg"
       link : "/docs/barrierManualUA.pdf" 
       
     # step loop
-    - title : "Паспорт"
+    - title : "Passport"
       icon : "/images/icons/pdf.svg"
       link : "/docs/barrierPassport.pdf"
 
 ######################## norm docs #################################
 norm:
   enable : true
-  title : "Сертификаты"
+  title : "Certificates"
   docs:
     # step loop
-    - title : "Сертификат экспертизы типа"
+    - title : "Type examination certificate (Ex)"
       icon : "/images/icons/pdf.svg"
       link : "/docs/barrierCertB.pdf" 
 
@@ -172,15 +172,15 @@ connections:
 ######################## bundle #################################
 bundle:
   enable : true
-  title : "Комплект поставки"
+  title : "Bundle"
   header : 
     - title : "#"
-    - title : "Название"
-    - title : "Количество шт."
+    - title : "Name"
+    - title : "pcs."
   data :
-    - title : "Барьер искрозащиты БИЗоН-2Ex-24.12"
+    - title : "IS Barrier БИЗоН-2Ex-24.12"
       count: 1
-    - title : "Паспорт"
+    - title : "Passport"
       count: 1
-    - title : "Руководство по эксплуатации"
+    - title : "User Manual"
       count: 1

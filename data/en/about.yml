@@ -1,24 +1,60 @@
+############################### Info #################################
+info:
+  enable: true
+  first_header: "General information"
+  first_paragraphs:
+    - content: "Общество с ограниченной ответственностью «АМИКО Диджитал» основано в 2020 в г. Николаев, Украина."
+    - content: "ООО «АМИКО Диджитал» является частью группы компаний «АМИКО», имеющая более чем 30-летнюю историю деятельности в области проектирования, изготовления и поддержки измерительных систем для резервуарных парков, автоматизированных систем управления технологическими процессами, разработки программного обеспечения для реализации задач Клиентов."
+    - content: "Мы решаем проблемы, которые ставят наши Заказчики путем разработки инженерных решений и инструментов."
+  second_header: "Что мы делаем"
+  second_paragraphs:
+    - content: "Компания основана с целью разработки и внедрения новых продуктов, отвечающих требованиям «цифровой» эпохи."
+    - content: "Поскольку компания фокусируется на разработке решений для учета жидкостей на различных производствах или управления технологическими процессами - спроектированы соответствующие инструменты для эффективного решения типовых задач Клиентов."
+  text1 : "В частности, первым продуктом компании является"
+  sensor_link : "/ru/level-sensor"
+  sensor_text : "уровнемер для жидкостей"
+  sensor_lpg_link: "/ru/level-sensor-lpg"
+  sensor_lpg_text: " и сжиженных газов"
+  text2: " серии «MIRA+», который может использоваться для замены измерительных каналов системы "
+  sadco_text: "«САДКО»"
+  sadco_link: "http://amico.ua/sadco_tech.php"
+  text3: ", выработавших установленный ресурс эксплуатации. Прибор имеет существенные преимущества относительно предыдущего поколения и аналогов, является более надежным, точным, гибким и удобным для применения (проектирование выполнено с учетом большого объема статистики практической эксплуатации и применения опыта поддержки подобного оборудования)."
+  text4: "Другим примером продукта компании могут выступать "
+  barrier_link: "/ru/is-barrier"
+  barrier_text: "барьеры изскрозащиты серии БИЗоН"
+  text5: ", которые широко применяются в нефтегазовой, добывающей и других отраслях промышленности где есть необходимость в обеспечении взрывозащиты. Появление такого продукта в нашей линейке обусловлена требованиями безопасности и необходимостью надежной защиты при подключении различных измерительных преобразователей и устройств к системам контроля и управления."
+  text6: "Для эффективной и точной работы систем учета жидких продуктов и систем управления - необходимы четкие алгоритмы и справочные данные. Мы разрабатываем соответствующие алгоритмы, программное обеспечение и его элементы а также необходимые информационно-справочные системы. "
+  contact_text: "Опишите задачу - попробуем вместе её решить."
+  contact_link: "/ru/contact"
+  third_header: "Our approaches"
+  third_paragraphs:
+    - content: "Мы стремимся улучшать, оптимизировать и облегчать выполнение задач Клиентов. Как следствие этого - экономия времени и денег клиентов, обеспечение необходимого уровня безопасности и надежности."
+    - content: "Мы предлагаем Клиентам и Партнерам оптимальный набор качественных инструментов для измерения, автоматизации, которые повышают эффективность клиентских процессов и бизнеса при оптимальном уровне сервиса."
+    - content: "На примере использования уровнемеров MIRA + - мы разрабатываем решения, которые позволяют нашим Клиентам получать достоверную информацию о параметрах контролируемых продуктов, хранящихся в резервуарах и получать данные в удобном виде в любой точке мира в реальном масштабе времени 24x7, извещать операторов о важных событиях и т.д. ."
+
 ############################### About #################################
 about:
   enable: true
-  title : "We create digital ideas that are bigger, bolder, braver and better."
-  content : "We provide consulting services in the area of IFRS and management
-          reporting, helping companies to reach their highest level. We optimize business processes, making them easier."
+  title : ""
+  content : ""
   about_item:
     # about item loop
-    - title : "Our Mission"
-      image : "images/about/bg-1.webp"
-      content : "llum similique ducimus accusamus laudantium praesentium, impedit quaerat, itaque maxime sunt deleniti  distinctio ."
+    - title : "Mission"
+      image : "/images/about/pexels-photo-6801648.webp"
+      image_jpg : "/images/about/pexels-photo-6801648.jpg"
+      content : "AMICO Digital существует для создания, внедрения и поддержки удобных и простых в использовании продуктов, упрощения и осуществления инженерной поддержки Клиентов."
           
     # about item loop
-    - title : "Our Vission"
-      image : "images/about/about.webp"
-      content : "llum similique ducimus accusamus laudantium praesentium, impedit quaerat, itaque maxime sunt deleniti  distinctio ."
+    - title : "Vission"
+      image : "images/about/pexels-pixabay-461593.webp"
+      image_jpg : "/images/about/pexels-photo-6801648.jpg"
+      content : "AMICO Digital - глобальный игрок на рынке измерений и автоматизации. Мы станем более конкурентными за счет расширения спектра продуктов и использования современных digital-решений."
           
     # about item loop
-    - title : "Our Approach"
-      image : "images/about/home-8.webp"
-      content : "llum similique ducimus accusamus laudantium praesentium, impedit quaerat, itaque maxime sunt deleniti  distinctio ."
+    - title : "Approach"
+      image : "images/about/pexels-polina-zimmerman-3782235.webp"
+      image_jpg : "/images/about/pexels-photo-6801648.jpg"
+      content : "Наш главный принцип - предоставлять услуги и продукты наивысшего уровня качества. Фокус на потребностях клиентов. Мы убеждены, что каждый может учиться и совершенствоваться - так достигается устойчивое развитие."
 
 ##################### Funfacts ######################################
 funfacts:
@@ -28,12 +64,12 @@ funfacts:
       
 ############################# Team ##################################
 team:
-  enable: true
+  enable: false
   # team content comes from "data/**/homepage.yml" file
 
 ############################ Testimonial ############################
 testimonial:
-  enable : true
+  enable : false
   bg_image : "images/bg/about-modern-img-1.webp"
   testimonial_item:
     # testimonial item loop

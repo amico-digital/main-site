@@ -1,22 +1,22 @@
 ---
-title: "Research your competitor result"
-date: 2019-09-16T10:30:13+06:00
+title: "Поздравление по случаю Дня работников нефтяной, газовой и нефтеперерабатывающей промышленности!"
+date: 2020-09-13T10:30:13+06:00
 draft: false
-description: "this is meta description"
-bg_image: "images/bg/banner-1.webp"
-image: "images/blog/4.webp"
-author: "Mark Dinn"
-categories: ["Innovation"]
-tags: [ "Web", "Agency", "Digital", "Marketing"]
+description: "Новости: Получен сертификат экспертизы типа для барьеров искрозащиты (модуль B)"
+bg_image: "images/bg/news-banner.jpg"
+image: "/images/blog/gas.jpg"
+image_webp: "/images/blog/gas.webp"
+image_sm: "/images/blog/gas-sm.jpg"
+image_webp_sm: "/images/blog/gas-sm.webp"
+author: ""
+categories: ["Holydays"]
+tags: ["Holydays"]
 type: "post"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur?
-Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui.
-Laboriosam autem, nam voluptate in beatae.
+> З Днем працівників нафтової, газової та нафтопереробної промисловості!
 
-> A brand for a company is like a reputation for a person. You earn reputation by trying to do hard things well.
+Желаем профессионалам нефтяной, газовой и нефтеперерабатывающей промышленности увеличить объем добычи углеводородов, модернизировать предприятия и транспортную систему, инфраструктуру для повышения степени переработки сырья, уровня технологической и экологической безопасности.
 
-#### The same is true as we experience the emotional sensation of stress from our first instances of social rejection ridicule. We quickly learn to fear and thus automatically.
+Желаем Вам здоровья, семейного, благополучия и новых достижений.  Без сомнений, с надежной на продолжение плодотворного сотрудничества, всегда Ваш - коллектив "АМИКО Диджитал". 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, rerum beatae repellat tenetur incidunt quisquam libero dolores laudantium. Nesciunt quis itaque quidem, voluptatem autem eos animi laborum iusto expedita sapiente.

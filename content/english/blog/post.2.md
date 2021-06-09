@@ -1,22 +1,23 @@
 ---
-title: "Marketing strategy your should know"
-date: 2019-09-16T10:30:13+06:00
+title: "Получен сертификат экспертизы типа для уровнемеров серии MIRA+ касательно ТР1055 (модуль B, взрывозащита)"
+date: 2020-07-24T10:30:13+06:00
 draft: false
-description: "this is meta description"
-bg_image: "images/bg/banner-1.webp"
-image: "images/blog/2.webp"
-author: "Mark Dinn"
-categories: ["Creative"]
-tags: ["Web", "Company", "HTML"]
+description: "Новости: Получен сертификат экспертизы типа для уровнемеров серии MIRA+ касательно ТР1055 (модуль B, взрывозащита)"
+bg_image: "images/bg/news-banner.jpg"
+image: "/images/blog/certEx-sensor.jpg"
+image_webp: "/images/blog/certEx-sensor.webp"
+image_sm: "/images/blog/certEx-sensor-sm.jpg"
+image_webp_sm: "/images/blog/certEx-sensor-sm.webp"
+author: ""
+categories: ["Certification"]
+tags: ["Level Sensor", "Certificate", "Ex"]
 type: "post"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur?
-Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui.
-Laboriosam autem, nam voluptate in beatae.
+Уполномоченным органом по оценке соответствия установлено соответствие уровнемеров серии MIRA + существенным требованиям по защите здоровья и безопасности в отношении технического проекта и конструкции оборудования, предназначенного для использования в потенциально взрывоопасных средах, которые приведены в Техническом регламенте оборудования и защитных систем, предназначенных для использования в потенциально взрывоопасных средах (Постановление КМУ от 28 декабря 2016 № 1055).
 
-> A brand for a company is like a reputation for a person. You earn reputation by trying to do hard things well.
+Соответствие оборудования существенным требованиям по защите здоровья и безопасности была обеспечена выполнением требований следующих стандартов: ДСТУ EN 60079-0: 2017 (с изменением 11: 2017), ДСТУ EN 60079- 11: 2017.
 
-#### The same is true as we experience the emotional sensation of stress from our first instances of social rejection ridicule. We quickly learn to fear and thus automatically.
+**[Уровнемер для жидкостей](/ru/level-sensor/)**
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, rerum beatae repellat tenetur incidunt quisquam libero dolores laudantium. Nesciunt quis itaque quidem, voluptatem autem eos animi laborum iusto expedita sapiente.
+**[Уровнемер для газов (LPG)](/ru/level-sensor-lpg/)**

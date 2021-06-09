@@ -1,22 +1,21 @@
 ---
-title: "Skill to grow business rapidly"
-date: 2019-09-16T10:30:13+06:00
+title: "Получен сертификат экспертизы типа для барьеров искрозащиты (модуль B)"
+date: 2020-11-06T10:30:13+06:00
 draft: false
-description: "this is meta description"
-bg_image: "images/bg/banner-1.webp"
-image: "images/blog/3.webp"
-author: "John Doe"
-categories: ["Digital"]
-tags: ["HTML", "marketing", "branding", "Agency"]
+description: "Новости: Получен сертификат экспертизы типа для барьеров искрозащиты (модуль B)"
+bg_image: "images/bg/news-banner.jpg"
+image: "/images/blog/certEx-barrier.jpg"
+image_webp: "/images/blog/certEx-barrier.webp"
+image_sm: "/images/blog/certEx-barrier-sm.jpg"
+image_webp_sm: "/images/blog/certEx-barrier-sm.webp"
+author: ""
+categories: ["Certification"]
+tags: ["Barrier", "Certificate", "Ex"]
 type: "post"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur?
-Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui.
-Laboriosam autem, nam voluptate in beatae.
+Уполномоченным органом по оценке соответствия установлено соответствие барьеров искрозащиты для цепей питания и передачи данных (Бизон 2Ex.24.12) существенным требованиям по защите здоровья и безопасности в отношении технического проекта и конструкции оборудования, предназначенного для использования в потенциально взрывоопасных средах, которые приведены в Техническом регламенте оборудования и защитных систем, предназначенных для использования в потенциально взрывоопасных средах (Постановление КМУ от 28 декабря 2016 № 1055).
 
-> A brand for a company is like a reputation for a person. You earn reputation by trying to do hard things well.
+Соответствие оборудования существенным требованиям по защите здоровья и безопасности была обеспечена выполнением требований следующих стандартов: ДСТУ EN 60079-0: 2017 (с изменением 11: 2017), ДСТУ EN 60079- 11: 2017.
 
-#### The same is true as we experience the emotional sensation of stress from our first instances of social rejection ridicule. We quickly learn to fear and thus automatically.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, rerum beatae repellat tenetur incidunt quisquam libero dolores laudantium. Nesciunt quis itaque quidem, voluptatem autem eos animi laborum iusto expedita sapiente.
+**[Барьеры искрозащиты для цепей питания и передачи данных БИЗОН 2Ex.24.12 ](/ru/is-barrier/)**
