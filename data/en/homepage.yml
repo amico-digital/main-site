@@ -30,7 +30,7 @@ banner_cta:
 ########################## feature ########################################
 feature:
   enable : true
-  title : "We offer the optimal instruments for measuring and automation"
+  title : "We offer optimal instruments for precise measuruments and automation"
   feature_item:
     # feature item loop
     - title : "Modern solutions"
