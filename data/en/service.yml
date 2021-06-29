@@ -1,34 +1,34 @@
 ########################## services ############################
 services:
   # service item loop
-  - title : "Own development and production"
+  - title : "R&D and production"
     icon : "/images/icons/develop.svg" 
-    content : "Большинство инженерных решений являются уникальными и разработаны нашими специалистами исходя из практического опыта. Решения направлены на достижение конкретного результата."
+    content : "Most of the engineering solutions are unique and designed using wide practical experience of our engineers. All products and solutions are strictly result-oriented."
     
   # service item loop
   - title : "Support and service"
     icon : "/images/icons/support.svg" # themify icon pack: https://themify.me/themify-icons
-    content : "Самостоятельно выполняем поддержку пользователей и сервисное обслуживание продукции и решений на всех этапах жизненного цикла."
+    content : "We have separate team for service and support of products & solutions that can be provided on all stages of a lifecycle."
     
   # service item loop
   - title : "Our approach"
     icon : "/images/icons/time.svg" # themify icon pack: https://themify.me/themify-icons
-    content : "Постоянно используем \"пользовательский опыт\" для улучшения продуктов. Основной принцип нашей деятельности - Открытость и Партнерство для постоянного развития."
+    content : "Authentically serve our customers by empowering, listening and collaborating with them and using their experience for product enhancement. Basic principle of our activity is Transparency and Partnership for sustainable development."
     
   # service item loop
   - title : "Product quality"
     icon : "/images/icons/stamp.svg" # themify icon pack: https://themify.me/themify-icons
-    content : "Гарантируем качество продукции. Многократно проверяем ее и привлекаем для подтверждения аккредитованные лаборатории, испытательные центры (см. Сертификаты и документацию)."
+    content : "Quality is guaranteed. Quality checks procedures are made for each part of a production chain. We engage accredited laboratories and testing centers for tests and examination, quality assessment and compliance check (see Certificates and documentation)."
     
   # service item loop
   - title : "Partnership"
     icon : "/images/icons/partners.svg" # themify icon pack: https://themify.me/themify-icons
-    content : "Заинтересованы в долгосрочном сотрудничестве. Поэтому поставляем качественную продукцию и выполняем работы на должном уровне. Исповедуем принцип - «Вырастая вместе - достигнем большего»."
+    content : "We are interested in long-term cooperation and high reputation level so the quality of products and services must meet customer expectations. We follow the principle - \"Everybody achieve more when growing up together\"."
     
   # service item loop
   - title : "Proposals"
     icon : "/images/icons/list.svg" # themify icon pack: https://themify.me/themify-icons
-    content : "Мы всегда рады расмотреть любые предложения, касающиеся кооперации, готовы ответить на Ваши вопросы."
+    content : "We are happy to consider any projects and cooperation proposals. Always ready to answer your questions."
 
 
 ######################### pricing #####################################

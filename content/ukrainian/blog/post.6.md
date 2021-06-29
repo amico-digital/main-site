@@ -3,6 +3,7 @@ title: "З Великоднем!"
 date: 2021-05-02T10:30:13+06:00
 draft: false
 bg_image: "images/bg/news-banner.jpg"
+keywords: Новини, блог, Holydays
 description: "Новини: З Великоднем"
 image: "/images/blog/easter2021.jpg"
 image_webp: "/images/blog/easter2021.webp"

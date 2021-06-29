@@ -2,6 +2,7 @@
 title: "Получен сертификат экспертизы типа для уровнемеров серии MIRA+ касательно ТР1077 (модуль B, ЭМС)"
 date: 2020-09-01T10:30:13+06:00
 draft: false
+keywords: АМИКО Диджитал, новости, Certification
 description: "Новости: Получен сертификат экспертизы типа для уровнемеров серии MIRA+ касательно ТР1077 (модуль B, ЭМС)"
 bg_image: "images/bg/news-banner.jpg"
 image: "/images/blog/certEMC-sensor.jpg"
@@ -10,7 +11,7 @@ image_sm: "/images/blog/certEMC-sensor-sm.jpg"
 image_webp_sm: "/images/blog/certEMC-sensor-sm.webp"
 author: ""
 categories: ["Certification"]
-tags: ["Level Sensor", "Certificate", "Ex"]
+tags: ["Level_Sensor", "Certificate", "Ex"]
 type: "post"
 ---
 

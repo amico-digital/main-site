@@ -2,20 +2,20 @@
 info:
   enable : true
   mainIMG :
-      title : "Внешний вид барьера искрозащиты БИЗоН 2Ex.24.12"
+      title : "Внешние вид барьеров искрозащиты БИЗоН 2Ex.24.12"
       jpeg : "/images/products/barrier1.jpg" 
       webp : "/images/products/barrier1.webp" 
       jpegSM : "/images/products/barrier1-small.jpg" 
       webpSM : "/images/products/barrier1-small.webp"
 
   images : 
-    - title : "Внешний вид барьера искрозащиты БИЗоН 2Ex.24.12 2"
+    - title : "Внешние вид барьеров искрозащиты БИЗоН 2Ex.24.12 2"
       jpeg : "/images/products/barrier2.jpg" 
       webp : "/images/products/barrier2.webp" 
       jpegSM : "/images/products/barrier2-small.jpg" 
       webpSM : "/images/products/barrier2-small.webp"
 
-    - title : "Внешний вид барьера искрозащиты БИЗоН 2Ex.24.12 3"
+    - title : "Внешние вид барьеров искрозащиты БИЗоН 2Ex.24.12 3"
       jpeg : "/images/products/barrier3.jpg" 
       webp : "/images/products/barrier3.webp" 
       jpegSM : "/images/products/barrier3-small.jpg" 
@@ -45,12 +45,19 @@ usage:
   content: "Устройство применяется в системах измерения и контроля, автоматического регулирования, сигнализации, противоаварийной защиты и управления технологическими процессами на взрывоопасных и / или пожароопасных участках производств нефтегазового комплекса, металлургии, теплоэнергетики, химической и нефтехимической, пищевой и других отраслях промышленности, где могут присутствовать взрывоопасные смеси газов , паров, а также легковоспламеняющиеся и взрывчатые вещества (пыль, порошок)."
   images : 
     - link : "/images/icons/027-oilfield.svg"
+      alt : "Барьеры искрозащиты для предприятий добывающей отрасли (нефтегаз)"
     - link : "/images/icons/054-oil.svg"
+      alt : "Барьеры искрозащиты для предприятий нефтеперерабатывающей отрасли, хранителей легковоспламеняющихся продуктов"
     - link : "/images/icons/078-factory.svg"
+      alt : "Барьеры искрозащиты для предприятий перерабатывающей отрасли промышленности"
     - link : "/images/icons/044-tank-truck.svg"
+      alt : "Барьеры искрозащиты для применения в транспортной отрасли"
     - link : "/images/icons/079-silo-1.svg"
+      alt : "Барьеры искрозащиты для предприятий химической и нефтехимической отраслей"
     - link : "/images/icons/025-coal.svg"
+      alt : "Барьеры искрозащиты для применения в шахтах"
     - link : "/images/icons/071-nuclear-plant.svg"
+      alt : "Барьеры искрозащиты для предприятий энергетической отрасли"
 
 
 ########################### standart ############################

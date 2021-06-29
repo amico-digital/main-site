@@ -2,6 +2,7 @@
 title: "Отримано сертифікат відповідності на партію рівнемірів MIRA+"
 date: 2021-03-04T10:30:13+06:00
 draft: false
+keywords: Новини, блог, Certification
 description: "Новини: Отримано сертифікат відповідності на партію рівнемірів MIRA+"
 bg_image: "images/bg/news-banner.jpg"
 image: "/images/blog/certExF-sensor.jpg"
@@ -10,7 +11,7 @@ image_sm: "/images/blog/certExF-sensor-sm.jpg"
 image_webp_sm: "/images/blog/certExF-sensor-sm.webp"
 author: ""
 categories: ["Certification"]
-tags: ["Level Sensor", "Certificate", "Ex"]
+tags: ["Level_Sensor", "Certificate", "Ex"]
 type: "post"
 ---
 

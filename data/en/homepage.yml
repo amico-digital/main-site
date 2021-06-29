@@ -1,8 +1,8 @@
 ################################## Banner #################################
 banner:
   enable : true
-  subtitle : "EVERYTHING WILL BE DIGITAL"
-  title : "Construction of accounting systems for liquids, petroleum products and LPG"
+  subtitle : "Сan’t measure it - can’t improve it. Be digital."
+  title : "Measurement solutions for liquids, petroleum products and LPG"
 
   # solid button
   button_solid:
@@ -21,7 +21,7 @@ banner_cta:
   enable : true
   title : "Intrinsic safety barriers for digital and analog equipment"
   content : "Intrinsic safety barrier БИЗоН 2Ex.24.12 meets the requirements EN 60079-0:2017, EN 60079-
-11:2017. The device have explosion-proof marking II (1) G [Ex ia Ga] IIB."
+11:2017. The device have explosion-proof marking Ex II (1) G [Ex ia Ga] IIB."
   button:
     enable : true
     label : "Read more"
@@ -47,6 +47,7 @@ about:
   enable : true
   image : "images/about/pexels-photo-6801648.webp"
   image_jpg : "images/about/pexels-photo-6801648.jpeg"
+  alt : "Development and production of level sensors and measurement systems"
   title : "Developer and manufacturer"
   content : "Our approach - «From concept to implementation».  We have warehouse and production facilities in Ukraine and reliable partners-suppliers for fast and high-quality orders processing."
   button:
@@ -59,7 +60,7 @@ funfacts:
   enable : true
   funfact_item:
     # fanfacts item loop
-    - title : "Measure channels"
+    - title : "Measurement channels"
       icon : "ti-check" # themify icon pack: https://themify.me/themify-icons
       count : "1100"
       unit : "+"

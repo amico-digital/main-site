@@ -2,7 +2,8 @@
 title: "АМИКО Диджитал присоединилось к Морскому Кластеру Украины"
 date: 2021-05-28T17:30:13+06:00
 draft: false
-description: "Новости:АМИКО Диджитал присоединилось к Морскому Кластеру Украины"
+keywords: АМИКО Диджитал, новости, News
+description: "Новости:АМИКО Диджитал присоединилось к Морскому Кластеру Украины, категория: News"
 bg_image: "images/bg/news-banner.jpg"
 image: "/images/blog/mku_cert_photo.jpg"
 image_webp: "/images/blog/mku_cert_photo.webp"
@@ -10,7 +11,7 @@ image_sm: "/images/blog/mku_cert_photo-sm.jpg"
 image_webp_sm: "/images/blog/mku_cert_photo-sm.webp"
 author: ""
 categories: ["News"]
-tags: ["News & press releases"]
+tags: ["News"]
 type: "post"
 ---
 28 мая в Николаеве Морской Кластер Украины (МКУ) провел круглый стол по случаю Европейского Морского Дня.

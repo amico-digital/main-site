@@ -2,6 +2,7 @@
 title: "Отримано сертифікат експертизи типу для рівнемірів серії MIRA+ стосовно ТР 1077, (Модуль B, ЕМС)"
 date: 2020-09-01T10:30:13+06:00
 draft: false
+keywords: Новини, блог, Certification
 description: "Новини: Отримано сертифікат експертизи типу для рівнемірів серії MIRA+ стосовно ТР 1077, (Модуль B, ЕМС)"
 bg_image: "images/bg/news-banner.jpg"
 image: "/images/blog/certEMC-sensor.jpg"
@@ -10,7 +11,7 @@ image_sm: "/images/blog/certEMC-sensor-sm.jpg"
 image_webp_sm: "/images/blog/certEMC-sensor-sm.webp"
 author: ""
 categories: ["Certification"]
-tags: ["Level Sensor", "Certificate", "Ex"]
+tags: ["Level_Sensor", "Certificate", "Ex"]
 type: "post"
 ---
 

@@ -35,10 +35,12 @@
 - id: directions
   translation: Take directions
 - id: guaranteeText
-  translation: "Get for test"
+  translation: "Request for test"
 - id: commercialText
-  translation: "Get commercial offer"
+  translation: "Request a quote"
+- id: keywords
+  translation: AMICO Digital, level sensors, level gauging, liquids metering, monitoring and control systems, intrinsic safety barriers
 - id: title
-  translation: "AMICO DIGITAL - level sensord, measurement systems"
+  translation: "AMICO Digital - Level gauges, measurement systems for liquids in tanks, automation solutions"
 - id: meta_description
-  translation: ""
+  translation: "AMICO Digital develops and manufactures level measurement sensors, measurement systems, equipment and software for integration into process control systems."

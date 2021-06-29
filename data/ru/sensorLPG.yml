@@ -29,9 +29,13 @@ usage:
   
   images : 
     - link : "/images/icons/027-oilfield.svg"
+      alt : "Уровнемеры для предприятий нефтегазодобывающей отрасли"
     - link : "/images/icons/054-oil.svg"
+      alt : "Уровнемеры MIRA+ для нефтепродуктов, коммерческого учета, мониторинга"
     - link : "/images/icons/078-factory.svg"
-    - link : "/images/icons/044-tank-truck.svg"    
+      alt : "Уровнемеры для производственных предприятий, промышленности"
+    - link : "/images/icons/044-tank-truck.svg" 
+      alt : "Уровнемеры для автоцистерн"
 
 ########################### standart ############################
 standart:

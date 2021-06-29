@@ -2,7 +2,7 @@
 title: " Latest news"
 date: 2019-09-16T10:30:13+06:00
 draft: false
-keywords: "AMICO DIGITAL, news"
+keywords: AMICO DIGITAL, news
 description: "AMICO DIGITAL latest news"
 bg_image: "images/bg/news-banner.jpg"
 ---

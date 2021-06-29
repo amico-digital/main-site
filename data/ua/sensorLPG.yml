@@ -30,9 +30,14 @@ usage:
   
   images : 
     - link : "/images/icons/027-oilfield.svg"
+      alt : "Рівнеміри для видобувної галузі"
     - link : "/images/icons/054-oil.svg"
+      alt : "Рівнеміри MIRA+ для нафтопродуктів, комерційного обліку"
     - link : "/images/icons/078-factory.svg"
-    - link : "/images/icons/044-tank-truck.svg"    
+      alt : "Рівнеміри для переробної галузі"
+    - link : "/images/icons/044-tank-truck.svg"
+      alt : "Рівнеміри MIRA+ для автоцистерн"
+  
 
 ########################### standart ############################
 standart:

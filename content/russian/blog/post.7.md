@@ -2,6 +2,7 @@
 title: "Проведена оценка соответствия партии барьеров искрозащиты серии БИЗоН"
 date: 2021-03-04T9:30:13+06:00
 draft: false
+keywords: АМИКО Диджитал, новости, Certification
 description: "Новости: Проведена оценка соответствия партии барьеров искрозащиты серии БИЗоН"
 bg_image: "images/bg/news-banner.jpg"
 image: "/images/blog/certExF-barrier.jpg"
@@ -10,7 +11,7 @@ image_sm: "/images/blog/certExF-barrier-sm.jpg"
 image_webp_sm: "/images/blog/certExF-barrier-sm.webp"
 author: ""
 categories: ["Certification"]
-tags: ["Level Sensor", "Certificate", "Ex"]
+tags: ["Barrier", "Certificate", "Ex"]
 type: "post"
 ---
 

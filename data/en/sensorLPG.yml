@@ -2,7 +2,7 @@
 info:
   enable : true
   mainIMG :
-      title : "Внешний вид уровнемера для газов (LPG) MIRA+"
+      title : "MIRA+ level sensor for liquid petroleum gases (LPG) photo"
       jpeg : "/images/products/sensor1.png" 
       webp : "/images/products/sensor1.webp" 
       jpegSM : "/images/products/sensor1.png" 
@@ -12,26 +12,31 @@ info:
    
 
   title: "Overview"
-  paragraphs:
-    # 
-    - content : "Уровнемер для сжиженных газов «MIRA +» внесен в государственный реестр Украины и предназначен для непрерывного измерения уровня и температуры сжиженных нефтяных (углеводородных) газов в емкостях. Может использоваться для сигнализации докритических и критических значений параметров (например, приближение к заданному верхнему / нижнему уровню продукта), контроля межфазного уровня, и тому подобное. Имеет степень защиты «Искробезопасная электрическая цепь» и может использоваться во взрывоопасных зонах помещений и открытых промышленных площадок классов 0,1,2."
-    - content : "**Уровнемер внесен в государственный реестр Украины и может использоваться как уровнемер-счетчик для контроля и учета жидкостей согласно Постановления КМУ от 22.11.2017 №891.**"
-    - content : "По запросу возможно изготовление оборудования - с учетом особых требований или задач Заказчика и интеграция информации из уровнемера к системам учета и автоматизации."
+  paragraphs:    
+    - content : "Level gauge for LPG MIRA+™ is designed for continuous measurement of level and temperature of liquids in tanks. The level sensor for LPG MIRA +™ is designed for continuous measurement of the level and temperature of gases in storage tanks. "
+    - content : "Level gauges MIRA+™ can be additionally used for interface level measurement, alarm and notification generation when sub-critical or critical process parameter values are estimated (e.g., for overfilling protection - when level reaches \"top fill level\" or \"alarm level\" that was optioned by an operator). "
+    - content : "Level sensor has EX protection type \"Intrinsically safe electrical circuit\" and can be mounted in hazardous areas of classes 0,1,2."
+    - content : "The level gauge is certified and can be used in custody transfer applications."
+    - content : "It is possible to produce equipment upon special requirements of the Customer. Information integration from the level sensor into any automation systems is available to signal subcritical and critical parameter values (e.g. approaching the set upper/lower product level), control interphase level."
   commercialOffer: "/docs/questionnaire.docx" 
   
 ######################### usage #####################################
 usage:
   enable : true
   title: "Scope"
-  content: "Уровнемер может использоваться для коммерческого учета, технологического контроля, непрерывного мониторинга состояния различных резервуарных парков со следующими продуктами:"
+  content: "Level gauges can be used for custody transfer, process control, continuous monitoring of various tank farms. Sensors are applicable for the use with the following products:"
   usages : 
-  - content : "* сжиженных газов LPG (пропан, бутан, СПБТ)"
+  - content : "* liquified petroleum gas (propane, butane and etc.)"
   
   images : 
     - link : "/images/icons/027-oilfield.svg"
+      alt : "Level gauges for LPG measurement, use in oil and gas industry, refineries"
     - link : "/images/icons/054-oil.svg"
+      alt : "MIRA+ level sensors for LPG can be used for custody transfer and monitoring of  liquid petroleum gases stored in a reservoirs"
     - link : "/images/icons/078-factory.svg"
-    - link : "/images/icons/044-tank-truck.svg"    
+      alt : "Industrial applications of an LPG Level sensors, usage for LPG level measurement for production facilities, etc."
+    - link : "/images/icons/044-tank-truck.svg" 
+      alt : "LPG level sensors and gauging for tank trucks"    
 
 ########################### standart ############################
 standart:
@@ -39,9 +44,11 @@ standart:
   title: "Conformance"
   paragraphs:    
     - content : "Level sensor for LPG «MIRA+» meets the requirements:"
-    - content : "* Технічний регламент законодавчо регульованих засобів вимірювальної техніки (затверджено постановою Кабінету Міністрів України від 13 січня 2016 р, №94)."
-    - content : "* Технічний регламент з електромагнітної сумісності обладнання (затверджено постановою Кабінету Міністрів України від 16 грудня 2015 р, №1077). "
-    - content : "* Технічний регламент обладнання та захисних систем, призначених для використання в потенційно вибухонебезпечних середовищах (затверджено постановою Кабінету Міністрів України від 28 грудня 2016 р., № 1055). "
+    - content : "* **OIML R85-1 & 2:2014, OIML D11**"
+    - content : "* EN 60529:2018 (EN 60529:1991; A1:2000; A2:2013; AC:2016, IDT; IEC 60529:1989; A1:1999; A2:2013; Cor 2:2015, IDT)"
+    - content : "* EN 61010-1:2014"
+    - content : "* EN 61326-1:2006 "
+    - content : "* EN 60079-0:201б, EN 60079- 11:2017 "
 
 ######################## parameters #################################
 parameters:
@@ -53,7 +60,7 @@ parameters:
   single:
     - title : "Level measurement range"
       value : "0 ... 5 m"
-    - title : "Max. permissible measurement error"
+    - title : "Max. measurement error"
       value : "± 1 mm"
     - title : "Number of temperature measurement points"
       value : "1 … 7 "
@@ -61,19 +68,19 @@ parameters:
       value : "-40 … +50 °С"
     - title : "Max. temperature measurement error"
       value : ""
-    - title : "in range -20 … +50°С "
+    - title : "for temperatures -20 … +50°С "
       value : "±0.5 °С"
-    - title : "in range -40 … -20°С "
+    - title : "for temperatures -40 … -20°С "
       value : "±1.5 °С"
     - title : "Measurement units"
       value : "mm, °С "
     - title : "Output signal, interface"
       value : "Modbus RTU, RS-485 " 
-    - title : "Nominal voltage, DC"
+    - title : "Supply Voltage DC (Nominal)"
       value : "24 V" 
     - title : "Nominal current"
       value : "35 mА" 
-    - title : "Voltage range, DC"
+    - title : "Supply Voltage Range, DC"
       value : "13 ... 26.5 V" 
     - title : "Current range"
       value : "30 ... 45 mА" 
@@ -86,12 +93,12 @@ parameters:
     - title : "Cable"
       value : "twisted pair, 0.5 ... 1 mm2 "
     - title : "Tank connection"
-      value : "Flange, D125 (Min D100) "
+      value : "Flange, DN>=125 (see drawings for details) "
     - title : "Degree of protection"
       value : "IP67"
     - title : "Materials in contact with product"
-      value : "Stainless steel 12Х18Н10Т or counterpart, PTFE "
-    - title : "Net weight (max) "
+      value : "Wetted parts and sealings: Stainless steel AISI 304/321, PTFE (or equivalents)"
+    - title : "Max Net weight"
       value : "20 kg"
     - title : "Permissible lateral load (waveguide)"
       value : "5 Nm"
@@ -99,7 +106,7 @@ parameters:
       value : "-25 ... +55 °С"
     - title : "Process pressure"
       value : "-0.1 ... 2.5 МPа"
-    - title : "Max. permissible relative humidity (operation)"
+    - title : "Max. relative humidity"
       value : "< 100 %, non-condensing"
     - title : "Operation mode"
       value : "24/7"
@@ -159,7 +166,7 @@ connections:
 ######################## bundle #################################
 bundle:
   enable : true
-  title : "Bundle"
+  title : "Delivery set (typical)"
   header : 
     - title : "#"
     - title : "Name"

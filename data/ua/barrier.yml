@@ -2,20 +2,20 @@
 info:
   enable : true
   mainIMG :
-      title : "Зовнішній вигляд бар'єру іскрозахисту БИЗоН 2Ex.24.12"
+      title : "Зовнішній вигляд бар&#39;єра іскрозахисту БИЗоН 2Ex.24.12"
       jpeg : "/images/products/barrier1.jpg" 
       webp : "/images/products/barrier1.webp" 
       jpegSM : "/images/products/barrier1-small.jpg" 
       webpSM : "/images/products/barrier1-small.webp"
 
   images : 
-    - title : "Зовнішній вигляд бар'єру іскрозахисту БИЗоН 2Ex.24.12 2"
+    - title : "Зовнішній вигляд бар&#39;єра іскрозахисту БИЗоН 2Ex.24.12 2"
       jpeg : "/images/products/barrier2.jpg" 
       webp : "/images/products/barrier2.webp" 
       jpegSM : "/images/products/barrier2-small.jpg" 
       webpSM : "/images/products/barrier2-small.webp"
 
-    - title : "Зовнішній вигляд бар'єру іскрозахисту БИЗоН 2Ex.24.12 3"
+    - title : "Зовнішній вигляд бар&#39;єра іскрозахисту БИЗоН 2Ex.24.12 3"
       jpeg : "/images/products/barrier3.jpg" 
       webp : "/images/products/barrier3.webp" 
       jpegSM : "/images/products/barrier3-small.jpg" 
@@ -46,12 +46,19 @@ usage:
   content: "Пристрій застосовується в системах вимірювання та контролю, автоматичного регулювання, сигналізації, протиаварійного захисту і управління технологічними процесами на вибухонебезпечних і / або пожежонебезпечних ділянках виробництв нафтогазового комплексу, металургії, теплоенергетики, хімічної та нафтохімічної, харчової та інших галузях промисловості, де можуть бути вибухонебезпечні суміші газів, парів, а також легкозаймисті та вибухові речовини (пил, порошок)."
   images : 
     - link : "/images/icons/027-oilfield.svg"
+      alt : "Бар&#39;єри іскрозахисту для підприємств видобувної галузі (нафтогаз)"
     - link : "/images/icons/054-oil.svg"
+      alt : "Бар&#39;єри іскрозахисту для підприємств нафтопереробної галузі, підприємств зберігання легкозаймистих продуктів"
     - link : "/images/icons/078-factory.svg"
+      alt : "Бар&#39;єри іскрозахисту для підприємств переробної галузі"
     - link : "/images/icons/044-tank-truck.svg"
+      alt : "Бар&#39;єри іскрозахисту для автоцистерн"
     - link : "/images/icons/079-silo-1.svg"
+      alt : "Бар&#39;єри іскрозахисту для підприємств хімічної та нафтохімічної галузей"
     - link : "/images/icons/025-coal.svg"
+      alt : "Бар&#39;єри іскрозахисту для шахт"
     - link : "/images/icons/071-nuclear-plant.svg"
+      alt : "Бар&#39;єри іскрозахисту для підприємств енергетичної галузі"
 
 
 ########################### standart ############################

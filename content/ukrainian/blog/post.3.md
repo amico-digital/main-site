@@ -2,6 +2,7 @@
 title: "Отримано сертифікат експертизи типу для бар’єрів іскрозахисту (Модуль B)"
 date: 2020-11-06T10:30:13+06:00
 draft: false
+keywords: Новини, блог, Certification
 description: "Новини:Отримано сертифікат експертизи типу для бар&#39;єрів іскрозахисту (Модуль B)"
 bg_image: "images/bg/news-banner.jpg"
 image: "/images/blog/certEx-barrier.jpg"

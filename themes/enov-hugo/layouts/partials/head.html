@@ -5,11 +5,12 @@
   <meta content="AMICO Digital LLC" name="publisher" />
   <meta content="global" name="distribution" />
   <meta content="industry" name="page-topic" />
-  <meta property="og:image" content="{{ .Site.Params.logo | absURL }}" />
-  <meta name="keywords" content="{{ with .Keywords }}{{ . }}{{ else }}{{ with .Site.Params.keywords }}{{ . }}{{ end }}{{ end }}">
+  <meta name="keywords" content="{{ with delimit .Keywords " "}}{{ . }}{{ else }}{{ i18n "keywords" }}{{ end }}">
   {{ "<!-- mobile responsive meta -->" | safeHTML }}
+  <meta property="og:image" content="{{ "/images/mstile-310x310.png" | absURL }}" />  
+  {{ "<!-- mobile responsive meta -->" | safeHTML }}  
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ i18n "meta_description" }}{{ end }}">
   {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
  
   
@@ -26,6 +27,8 @@
   <link rel="preload" href="{{.Site.Params.bootstrap | absURL}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="{{.Site.Params.bootstrap | absURL}}"></noscript>
 
+
+
   {{ "<!-- Main Stylesheet -->" | safeHTML }}
   {{ $styles := resources.Get "scss/style.scss" | toCSS | minify }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
@@ -37,5 +40,15 @@
   <link rel="mask-icon" href="{{ `images/safari-pinned-tab.svg` | absURL }}" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#ffc40d">
   <meta name="theme-color" content="#ffffff"> 
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGD15TRLZ4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-VGD15TRLZ4');
+  </script>
 
 </head>

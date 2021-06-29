@@ -1,8 +1,9 @@
 ---
-title: "Получен сертификат экспертизы типа для барьеров искрозащиты (модуль B)"
+title: "IS barrier БИЗОН 2Ex.24.12 completed certification for use in potentially explosive atmospheres"
 date: 2020-11-06T10:30:13+06:00
 draft: false
-description: "Новости: Получен сертификат экспертизы типа для барьеров искрозащиты (модуль B)"
+keywords: AMICO DIGITAL, news, Certification
+description: "News: IS barrier БИЗОН 2Ex.24.12 completed certification for use in potentially explosive atmospheres"
 bg_image: "images/bg/news-banner.jpg"
 image: "/images/blog/certEx-barrier.jpg"
 image_webp: "/images/blog/certEx-barrier.webp"
@@ -14,8 +15,9 @@ tags: ["Barrier", "Certificate", "Ex"]
 type: "post"
 ---
 
-Уполномоченным органом по оценке соответствия установлено соответствие барьеров искрозащиты для цепей питания и передачи данных (Бизон 2Ex.24.12) существенным требованиям по защите здоровья и безопасности в отношении технического проекта и конструкции оборудования, предназначенного для использования в потенциально взрывоопасных средах, которые приведены в Техническом регламенте оборудования и защитных систем, предназначенных для использования в потенциально взрывоопасных средах (Постановление КМУ от 28 декабря 2016 № 1055).
+The authorized conformity assessment body confirmed the compliance of IS barrier БИЗОН 2Ex.24.12 with the significant health & safety requirements regarding technical project and design of equipment intended for use in potentially explosive athmospheres, which are listed is Technical Regulations for equipment and protective systems intended for use in potentially explosive atmospheres (Resolution of the Cabinet of Ministers of Ukraine dated December 28, 2016 No. 1055).
 
-Соответствие оборудования существенным требованиям по защите здоровья и безопасности была обеспечена выполнением требований следующих стандартов: ДСТУ EN 60079-0: 2017 (с изменением 11: 2017), ДСТУ EN 60079- 11: 2017.
+The compliance of level sensors with the significant health and safety requirements was ensured by meeting the requirements of the following standards: EN 60079-0: 2017 (as amended 11: 2017), EN 60079- 11: 2017
 
-**[Барьеры искрозащиты для цепей питания и передачи данных БИЗОН 2Ex.24.12 ](/ru/is-barrier/)**
+
+**[IS barrier БИЗОН 2Ex.24.12 ](/en/is-barrier/)**

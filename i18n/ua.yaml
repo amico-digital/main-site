@@ -36,6 +36,8 @@
   translation: "Отримати на тест"
 - id: commercialText
   translation: "Отримати комерційну пропозицію"
+- id: keywords
+  translation: "АМІКО Діджитал, рівнемір, рівнеміри, системи обліку рідин"
 - id: title
   translation: "AMICO DIGITAL - рівнеміри та вимірювальні системи"
 - id: meta_description

@@ -2,6 +2,7 @@
 title: "Проведена оценка соответствия партии уровнемеров MIRA+"
 date: 2021-03-04T10:30:13+06:00
 draft: false
+keywords: АМИКО Диджитал, новости, Certification
 description: "Новости: Проведена оценка соответствия партии уровнемеров MIRA+"
 bg_image: "images/bg/news-banner.jpg"
 image: "/images/blog/certExF-sensor.jpg"
@@ -10,7 +11,7 @@ image_sm: "/images/blog/certExF-sensor-sm.jpg"
 image_webp_sm: "/images/blog/certExF-sensor-sm.webp"
 author: ""
 categories: ["Certification"]
-tags: ["Level Sensor", "Certificate", "Ex"]
+tags: ["Level_Sensor", "Certificate", "Ex"]
 type: "post"
 ---
 

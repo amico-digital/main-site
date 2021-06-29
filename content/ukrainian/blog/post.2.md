@@ -2,6 +2,7 @@
 title: "Отримано сертифікат експертизи типу для рівнемірів серії MIRA+ (Модуль B, вибухозахист)"
 date: 2020-07-24T10:30:13+06:00
 draft: false
+keywords: Новини, блог, Certification
 description: "Новини: Отримано сертифікат експертизи типу для рівнемірів серії MIRA+ (Модуль B, вибухозахист)"
 bg_image: "images/bg/news-banner.jpg"
 image: "/images/blog/certEx-sensor.jpg"
@@ -10,7 +11,7 @@ image_sm: "/images/blog/certEx-sensor-sm.jpg"
 image_webp_sm: "/images/blog/certEx-sensor-sm.webp"
 author: ""
 categories: ["Certification"]
-tags: ["Level Sensor", "Certificate", "Ex"]
+tags: ["Level_Sensor", "Certificate", "Ex"]
 type: "post"
 ---
 

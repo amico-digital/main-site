@@ -1,8 +1,9 @@
 ---
-title: "Проведена оценка соответствия партии барьеров искрозащиты серии БИЗоН"
+title: "IS barrier completed certification for use in potentially explosive atmospheres (Module F)"
 date: 2021-03-04T9:30:13+06:00
 draft: false
-description: "Новости: Проведена оценка соответствия партии барьеров искрозащиты серии БИЗоН"
+keywords: AMICO DIGITAL, news, Certification
+description: "News: IS barrier completed certification for use in potentially explosive atmospheres (Module F)"
 bg_image: "images/bg/news-banner.jpg"
 image: "/images/blog/certExF-barrier.jpg"
 image_webp: "/images/blog/certExF-barrier.webp"
@@ -10,12 +11,13 @@ image_sm: "/images/blog/certExF-barrier-sm.jpg"
 image_webp_sm: "/images/blog/certExF-barrier-sm.webp"
 author: ""
 categories: ["Certification"]
-tags: ["Level Sensor", "Certificate", "Ex"]
+tags: ["Barrier", "Certificate", "Ex"]
 type: "post"
 ---
 
-Уполномоченным органом по оценке соответствия установлено соответствие партии барьеров искрозащиты утвержденному типу на основе процедуры проверки продукции касательно выполнения требований Технического регламента оборудования и защитных систем, предназначенных для использования в потенциально взрывоопасных средах (постановление КМУ от 28 декабря 2016 №1055).
+The authorized conformity assessment body confirmed the compliance of the intrinsic safety barriers batch to the requirements of the Technical Regulations for equipment and protective systems intended for use in potentially explosive atmospheres (Resolution of the Cabinet of Ministers of Ukraine dated December 28, 2016 No. 1055) and previously type approval certificate.
 
-На основании исследований и испытаний, проведенных по модулю F (соответствие типу на основе проверки продукции) было установлено соответствие приборов требованиям указанного технического регламента и утвержденному типу, что указано в соответствующем сертификате.
+Based on the results of conducted studies and tests (Module F  - conformity to type based on product verification), it was found that the devices meet the requirements of these technical regulations and the approved type, as indicated in the relevant certificate.
 
-**[Барьеры искрозащиты для цепей питания и передачи данных БИЗОН 2Ex.24.12](/is-barrier/)**
+
+**[IS barrier БИЗОН 2Ex.24.12](/en/is-barrier/)**

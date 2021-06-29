@@ -2,6 +2,7 @@
 title: "С праздником Светлой Пасхи!"
 date: 2021-05-02T10:30:13+06:00
 draft: false
+keywords: АМИКО Диджитал, новости, Holydays
 bg_image: "images/bg/news-banner.jpg"
 description: "Новости: с праздником Светлой Пасхи"
 image: "/images/blog/easter2021.jpg"

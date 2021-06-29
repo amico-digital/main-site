@@ -2,6 +2,7 @@
 title: "З Новим роком!"
 date: 2021-01-01T10:30:13+06:00
 draft: false
+keywords: Новини, блог, Holydays
 description: "Новини: З Новим роком!"
 bg_image: "images/bg/news-banner.jpg"
 image: "/images/blog/newYear2021.jpg"

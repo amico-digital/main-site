@@ -11,8 +11,7 @@
 <section class="about-2 position-relative">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-lg-10 col-md-10 text-center">
-        <h1>{{ .title | markdownify }}</h1>
+      <div class="col-lg-10 col-md-10 text-center">        
         <p class="mb-5 lead mt-4 font-weight-normal">{{ .content | markdownify }}
         </p>
       </div>
@@ -23,7 +22,7 @@
       <div class="col-lg-4 mb-4 mb-lg-0 col-md-6" data-aos="fade-up" data-aos-delay="{{ $delay }}">
         <picture>            
             <source srcset="{{ .image | absURL  }}" type="image/webp">
-            <img src="{{ .image_jpg | absURL  }}" alt="{{ .Title | markdownify }}" class="img-fluid rounded" >
+            <img src="{{ .image_jpg | absURL  }}" alt="{{ .alt | markdownify }}" class="img-fluid rounded" >
           </picture>
         
         <div class="about-info-item mt-4">

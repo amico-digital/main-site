@@ -70,7 +70,7 @@
         <div class="about-img mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
           <picture>            
             <source srcset="{{ .image | absURL  }}" type="image/webp">
-            <img src="{{ .image_jpg | absURL  }}" alt="{{ .Title | markdownify }}" class="img-fluid lozad" style="max-height: 60vh;">
+            <img src="{{ .image_jpg | absURL  }}" alt="{{ .alt | markdownify }}" class="img-fluid lozad" style="max-height: 60vh;">
           </picture>          
         </div>
       </div>

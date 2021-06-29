@@ -86,7 +86,7 @@
 				{{ range $index, $element:= $data.sensor.usage.images }}
       			{{ $delay := mul $index 100 }}
 				<div class="p-2">
-					<img src="{{ .link }}" width="50" height="50" alt="{{ .link }}"/>
+					<img src="{{ .link }}" width="50" height="50" alt="{{ .alt }}"/>
 				</div>
 				{{ end }}				
 			</div>
@@ -150,7 +150,7 @@
       	{{ $delay := mul $index 100 }}
 		  	<div class="col-sm-3 text-center">
 				<a href="{{ .link | markdownify }}" target="_blank">
-				<img src="{{ .icon | markdownify }}" width="50" height="75" aria-hidden="true"></i><br><p>{{ .title | markdownify }}</p></a>
+				<img src="{{ .icon | markdownify }}" alt="PDF icon" width="50" height="75" aria-hidden="true"></i><br><p>{{ .title | markdownify }}</p></a>
 			</div>			
 		{{ end }}			
 	</div>
@@ -165,7 +165,7 @@
       	{{ $delay := mul $index 100 }}
 		  	<div class="col-sm-3 text-center">
 				<a href="{{ .link | markdownify }}" target="_blank">
-				<img src="{{ .icon | markdownify }}" width="50" height="75" aria-hidden="true"></i><br><p>{{ .title | markdownify }}</p></a>
+				<img src="{{ .icon | markdownify }}" alt="PDF icon" width="50" height="75" aria-hidden="true"></i><br><p>{{ .title | markdownify }}</p></a>
 			</div>			
 		{{ end }}			
 	</div>

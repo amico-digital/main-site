@@ -2,6 +2,7 @@
 title: "С праздником Светлой Пасхи!"
 date: 2020-04-19T10:30:13+06:00
 draft: false
+keywords: АМИКО Диджитал, новости, Holydays
 description: "Новости: поздравление с праздником светлой Пасхи"
 bg_image: "images/bg/news-banner.jpg"
 image: "/images/blog/easter2020.jpg"

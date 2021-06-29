@@ -2,20 +2,20 @@
 info:
   enable : true
   mainIMG :
-      title : "Внешний вид барьера искрозащиты БИЗоН 2Ex.24.12"
+      title : "Intrinsic Safety Barrier BIZoN 2Ex.24.12 photo"
       jpeg : "/images/products/barrier1.jpg" 
       webp : "/images/products/barrier1.webp" 
       jpegSM : "/images/products/barrier1-small.jpg" 
       webpSM : "/images/products/barrier1-small.webp"
 
   images : 
-    - title : "Внешний вид барьера искрозащиты БИЗоН 2Ex.24.12 2"
+    - title : "Intrinsic Safety Barrier BIZoN 2Ex.24.12 photo 2"
       jpeg : "/images/products/barrier2.jpg" 
       webp : "/images/products/barrier2.webp" 
       jpegSM : "/images/products/barrier2-small.jpg" 
       webpSM : "/images/products/barrier2-small.webp"
 
-    - title : "Внешний вид барьера искрозащиты БИЗоН 2Ex.24.12 3"
+    - title : "Intrinsic Safety Barrier BIZoN 2Ex.24.12 photo 3"
       jpeg : "/images/products/barrier3.jpg" 
       webp : "/images/products/barrier3.webp" 
       jpegSM : "/images/products/barrier3-small.jpg" 
@@ -24,16 +24,17 @@ info:
   title: "Overview"
   paragraphs:
     # 
-    - content : "Двухканальный барьер искрозащиты с функцией автоматического восстановления после срабатывания. Предназначен для обеспечения искробезопасности электрических цепей питания и сигнальных цепей преобразователей, установленных во взрывоопасных зонах."
+    - content : "BIZoN EX.24.12 is two-channel intrinsic safety barrier with automatic recovery function after tripping is designed to provide intrinsic safety of transducers and equipment installed in hazardous areas."
       
     # 
-    - content : "Канал «Питание» предназначен для питания одного первичного преобразователя с выходным токовым сигналом 0-5 мА / 0-20 мА / 4-20 мА постоянного тока, или для питания напряжением + 24В постоянного тока одного устройства, установленного во взрывоопасной зоне."
+    - content : "The \"Power\" channel is designed protect power supply circuitry for one device with current-loop 0-5 mA / 0-20 mA / 4-20 mA DC, or for one device installed in a hazardous area (up to +24V DC)."
       
     # service item loop
-    - content : "Канал «Сигнальный» предназначен для приема / передачи сигналов цифровых интерфейсов RS-485 / RS-422 или для передачи дискретных сигналов от датчиков с выходом «сухой контакт» амплитудой до 10В постоянного тока."
+    - content : "The \"Signal\" channel is designed for protection of signal circuitry of digital interfaces (e.g. RS-485/RS-422) or for protection of circuitry for transmitting discrete signals from equipment with a \"dry contact\" output, amplitude up to 10V DC."
       
     # service item loop
-    - content : "Барьер соответствует требованиям ДСТУ EN 60079-0:2017 і ДСТУ EN 60079-11:2017, имеет выходные искробезопасные электрические цепи уровня «iа» и маркировку взрывозащиты EX II (1) G [Ex ia Ga] IIB и предназначен для установки вне взрывоопасных зон."
+    - content : "Intrinsic safety barrier meets the requirements of EN 60079-0:2017 and EN 60079-11:2017, has explosion protection marking EX II (1) G [Ex ia Ga] IIB (designed for installation outside hazardous areas)."
+    - content : "*Intrinsic safety barrier - is the device that limits the energy supplied to a circuit and protects hazardous areas from excess energy. By limiting energy to a safe level, intrinsically safe circuits prevent the ignition of potentially explosive atmospheres.*"
   
   guaranteeLetter: "/docs/guaranteeLetter.docx"  
   commercialOffer: "/docs/questionnaire.docx"   
@@ -42,15 +43,22 @@ info:
 usage:
   enable : true
   title: "Scope"
-  content: "Устройство применяется в системах измерения и контроля, автоматического регулирования, сигнализации, противоаварийной защиты и управления технологическими процессами на взрывоопасных и / или пожароопасных участках производств нефтегазового комплекса, металлургии, теплоэнергетики, химической и нефтехимической, пищевой и других отраслях промышленности, где могут присутствовать взрывоопасные смеси газов , паров, а также легковоспламеняющиеся и взрывчатые вещества (пыль, порошок)."
+  content: "The device is used in measurement and process control systems, emergency protection and alarm systems in explosive and/or hazardous areas of oil and gas & petrochemical, metallurgy, power, chemical, food and other industries, where explosive gas mixtures, vapors, other flammable and explosive substances (dust, powder) may be present."
   images : 
     - link : "/images/icons/027-oilfield.svg"
+      alt : "Intrinsic Safety Barriers for mining industry (oil and gas)"
     - link : "/images/icons/054-oil.svg"
+      alt : "IS Barriers for processing industrу enterprises"
     - link : "/images/icons/078-factory.svg"
+      alt : "Intrinsic Safety Barriers for oil and gas industry, for safe keeping of flammable products"
     - link : "/images/icons/044-tank-truck.svg"
+      alt : "Intrinsic safety, spark protection barriers for use in a transport industry"
     - link : "/images/icons/079-silo-1.svg"
+      alt : "Intrinsic safety barriers for use in a chemical and petrochemical industries"
     - link : "/images/icons/025-coal.svg"
+      alt : "Intrinsic Safety Barriers for use with mining equipment"
     - link : "/images/icons/071-nuclear-plant.svg"
+      alt : "Intrinsic Safety Barriers for use in power & energy industries"
 
 
 ########################### standart ############################
@@ -59,7 +67,7 @@ standart:
   title: "Conformance"
   paragraphs:    
     - content : "Intrinsic safety barrier БИЗоН 2Ex.24.12 meets the requirements:"   
-    - content : "* Технічний регламент обладнання та захисних систем, призначених для використання в потенційно вибухонебезпечних середовищах (затверджено постановою Кабінету Міністрів України від 28 грудня 2016 р., № 1055). "
+    - content : "* EN 60079-0:201б, EN 60079- 11:2017 "
 
 
 ######################## parameters #################################
@@ -90,13 +98,13 @@ parameters:
     - title : "Connection data"
       value : "Phoenix Contact; screw connection; conductor cross section: 0.2-2.5 mm2"
   double:
-    - title : "Channel count"
+    - title : "Channels count"
       value1 : "1"
       value2 : "1"
-    - title : "Max supply voltage Uхх"
+    - title : "Max supply voltage"
       value1 : "25 V"
       value2 : "10 V"
-    - title : "Max supply current Iн"
+    - title : "Max supply current"
       value1 : "50 mА"
       value2 : "40 mА"
     - title : "Channel resistance"
@@ -172,7 +180,7 @@ connections:
 ######################## bundle #################################
 bundle:
   enable : true
-  title : "Bundle"
+  title : "Delivery set (typical)"
   header : 
     - title : "#"
     - title : "Name"

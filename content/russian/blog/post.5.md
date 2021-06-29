@@ -2,6 +2,7 @@
 title: "С Новым годом!"
 date: 2021-01-01T10:30:13+06:00
 draft: false
+keywords: АМИКО Диджитал, новости, Holydays
 description: "Новости: с Новым годом!"
 bg_image: "images/bg/news-banner.jpg"
 image: "/images/blog/newYear2021.jpg"

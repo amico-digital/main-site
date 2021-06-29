@@ -1,8 +1,9 @@
 ---
-title: "АМИКО Диджитал присоединилось к Морскому Кластеру Украины"
+title: "AMICO Digital joined the Ukrainian Maritime Cluster"
 date: 2021-05-28T17:30:13+06:00
 draft: false
-description: "Новости:АМИКО Диджитал присоединилось к Морскому Кластеру Украины"
+keywords: AMICO DIGITAL, news
+description: "News:AMICO Digital joined the Ukrainian Maritime Cluster"
 bg_image: "images/bg/news-banner.jpg"
 image: "/images/blog/mku_cert_photo.jpg"
 image_webp: "/images/blog/mku_cert_photo.webp"
@@ -10,19 +11,19 @@ image_sm: "/images/blog/mku_cert_photo-sm.jpg"
 image_webp_sm: "/images/blog/mku_cert_photo-sm.webp"
 author: ""
 categories: ["News"]
-tags: ["News & press releases"]
+tags: ["News"]
 type: "post"
 ---
-28 мая в Николаеве Морской Кластер Украины (МКУ) провел круглый стол по случаю Европейского Морского Дня.
+The Ukrainian Maritime Cluster (UMC) held a round table dedicated to the European Maritime Day in Mykolaiv on May 28.
 
-В событии приняли участие представители судостроительных и научно-исследовательских предприятий, учебных заведений, бизнес-структур, занимающихся привлечением инвестиций и проведением выставок, Минстратегпрома Украины, концерна «Укроборонпром» и органов городского самоуправления.
+The representatives of shipbuilding and research enterprises, educational institutions, business structures engaged in attracting investment and holding exhibitions, the representatives of the Ministry of Industry and Trade of Ukraine, "Ukroboronprom" Concern and the city government attended the event.
 
-Одним из ключевых моментов мероприятия стала процедура официального принятия в члены МКУ, во время которой каждая из организаций получила приветствие по случаю присоединения к МКУ и подтверждающие свидетельства. ООО "АМИКО Диджитал" присоединилось к МКУ в качестве разработчика оборудования и инжиниринговой компании.
+One of the key moments of the event was the procedure of official admission to the UMC membership, during which each of the representatives received a greeting with the joining the UMC and confirming certificates. AMICO Digital LLC joined the UMC as an equipment developer and engineering company.
 
-Активное обсуждение вопросов повестки дня происходило вокруг практических шагов взаимодействия участников кластера и перспектив дальнейшего развития судостроительной и морехозяйственной отраслей Украины.
+Active discussion on the agenda was around practical steps of interaction between the cluster members and around the prospects of further development of the shipbuilding and maritime industries of Ukraine.
 
-Справка: Морской кластер Украины (МКУ) - объединение юридических лиц частного права для содействия развитию морской экономики Украины, защиты их прав и законных интересов. МКУ предлагает функции сотрудничества с отраслевыми кластерами Европы для усиления экспортных возможностей отечественных предприятий. Кластер предлагает услуги по реализации проектов развития для привлечения грантовых средств от международных организаций.
+Reference info: Ukrainian Maritime Cluster is a platform for the Ukrainian maritime industry companies to share best practices and facilitate the development of Ukrainian maritime economy. The UMC offers cooperation functions with industry clusters in Europe and development projects to attract grant funds from international organizations.
 
-Ссылка: https://maritimeukraine.com/
+Link: https://maritimeukraine.com/
 
-Фото Дмитрия Удовицкого, ссылки на отчет: https://www.facebook.com/MykolaivShipbuilding/posts/846863465905783 
+Foto: https://www.facebook.com/MykolaivShipbuilding/posts/846863465905783 

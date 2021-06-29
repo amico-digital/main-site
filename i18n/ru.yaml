@@ -36,6 +36,8 @@
   translation: "Получить на тест"
 - id: commercialText
   translation: "Получить коммерческое предложение"
+- id: keywords
+  translation: "АМИКО Диджитал, уровнемер, уровнемеры, системы учета"
 - id: title
   translation: "AMICO DIGITAL - уровнемеры, измерительные системы"
 - id: meta_description

@@ -1,7 +1,6 @@
 ######################## default configuration ####################
 disableHugoGeneratorInject = true
 baseURL = "https://digitalamico.com"
-title = "AMICO DIGITAL - рівнеміри та вимірювальні системи"
 theme = "enov-hugo"
 # post pagination
 paginate = "6"
@@ -11,7 +10,7 @@ summaryLength = "10"
 disqusShortname = "enov" # get your shortname form here : https://disqus.com
 defaultContentLanguage = "ua"
 # disable language
-disableLanguages = ["en"] # desable language from here
+disableLanguages = [] # desable language from here
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 
@@ -38,7 +37,7 @@ logo = "images/logo.svg"
 # top header
 top_header = true
 # Meta data
-keywords = "АМІКО Діджитал, рівнемір, рівнеміри, системи обліку рідин, АМИКО Диджитал, уровнемер, уровнемеры, системы учета"
+keywords = "АМІКО Діджитал, рівнемір, рівнеміри, системи обліку рідин, АМИКО Диджитал, уровнемер, уровнемеры, системы учета, AMICO Digital, level sensors, level gauging, liquids metering, monitoring and control systems, intrinsic safety barriers"
 description = "AMICO Digital розроблює та виготовляє датчики рівня та інше обладнання і програмне забезпечення для інтеграції у системи автоматичного керування технологічними процесами."
 author = "Ievgen Gudyma"
 # contact info
@@ -46,8 +45,6 @@ address = "Україна, м.Миколаїв, вул. Спаська, буди
 phone = "+38(097)979 83 20"
 # contact form action
 contact_form_action = "https://formspree.io/f/xoqydkap"
-# Google Analitycs
-google_analitycs_id = "G-VGD15TRLZ4" # your id
 # search
 search = false
 # bootstrap css
@@ -127,7 +124,7 @@ hasChildren = true
 
   [[Languages.en.menu.main]]
   parent = "Products"
-  name = "Level sensor LPG"
+  name = "Level sensor for LPG"
   URL = "level-sensor-lpg"
 
   [[Languages.en.menu.main]]
@@ -162,7 +159,7 @@ URL = "level-sensor"
 weight = 2
 
 [[Languages.en.menu.footer]]
-name = "Level sensor LPG"
+name = "Level sensor for LPG"
 URL = "level-sensor-lpg"
 weight = 3
 
@@ -231,7 +228,6 @@ weight = 3
 languageName = "RU"
 languageCode = "ru-RU"
 contentDir = "content/russian"
-title = "AMICO DIGITAL - уровнемеры, измерительные системы"
 weight = 1
 home = ""
 

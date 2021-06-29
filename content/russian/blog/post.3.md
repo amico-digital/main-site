@@ -2,6 +2,7 @@
 title: "Получен сертификат экспертизы типа для барьеров искрозащиты (модуль B)"
 date: 2020-11-06T10:30:13+06:00
 draft: false
+keywords: АМИКО Диджитал, новости, Certification
 description: "Новости: Получен сертификат экспертизы типа для барьеров искрозащиты (модуль B)"
 bg_image: "images/bg/news-banner.jpg"
 image: "/images/blog/certEx-barrier.jpg"
