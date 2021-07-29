@@ -141,6 +141,9 @@ norm:
   title : "Certificates"
   docs:
     # step loop
+    - title : "Type examination certificate"
+      icon : "/images/icons/pdf.svg"
+      link : "/docs/sensorCertB.pdf"
     - title : "Type examination certificate (ATEX)"
       icon : "/images/icons/pdf.svg"
       link : "/docs/sensorCertBEx.pdf" 
@@ -178,11 +181,11 @@ bundle:
     - title : "Name"
     - title : "pcs."
   data :
-    - title : "Level sensor for liquids MIRA+"
+    - title : "Level sensor for liquids MIRA+™"
       count: 1
     - title : "Passport"
       count: 1
     - title : "User Manual"
       count: 1
-    - title : "Software «MIRA+ Desktop»"
+    - title : "Software MIRA+™ Desktop"
       count: 1

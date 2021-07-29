@@ -1,5 +1,5 @@
 ---
-title: "MIRA+ level gauges completed certification for use in potentially explosive atmospheres"
+title: "MIRA+™ level gauges completed certification for use in potentially explosive atmospheres"
 date: 2020-07-24T10:30:13+06:00
 draft: false
 keywords: AMICO DIGITAL, news
@@ -15,7 +15,7 @@ tags: ["Level_Sensor", "Certificate", "Ex"]
 type: "post"
 ---
 
-The authorized conformity assessment body confirmed the compliance of MIRA+ level gauges with the significant health & safety requirements regarding technical project and design of equipment intended for use in potentially explosive athmospheres, which are listed is Technical Regulations for equipment and protective systems intended for use in potentially explosive atmospheres (Resolution of the Cabinet of Ministers of Ukraine dated December 28, 2016 No. 1055).
+The authorized conformity assessment body confirmed the compliance of MIRA+™ level gauges with the significant health & safety requirements regarding technical project and design of equipment intended for use in potentially explosive athmospheres, which are listed is Technical Regulations for equipment and protective systems intended for use in potentially explosive atmospheres (Resolution of the Cabinet of Ministers of Ukraine dated December 28, 2016 No. 1055).
 
 The compliance of level sensors with the significant health and safety requirements was ensured by meeting the requirements of the following standards: EN 60079-0: 2017 (as amended 11: 2017), EN 60079- 11: 2017
 

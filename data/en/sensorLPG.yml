@@ -13,7 +13,7 @@ info:
 
   title: "Overview"
   paragraphs:    
-    - content : "Level gauge for LPG MIRA+™ is designed for continuous measurement of level and temperature of liquids in tanks. The level sensor for LPG MIRA +™ is designed for continuous measurement of the level and temperature of gases in storage tanks. "
+    - content : "Level gauge for LPG MIRA+™ is designed for continuous measurement of level and temperature of liquids in tanks. The level sensor for LPG MIRA+™ is designed for continuous measurement of the level and temperature of gases in storage tanks. "
     - content : "Level gauges MIRA+™ can be additionally used for interface level measurement, alarm and notification generation when sub-critical or critical process parameter values are estimated (e.g., for overfilling protection - when level reaches \"top fill level\" or \"alarm level\" that was optioned by an operator). "
     - content : "Level sensor has EX protection type \"Intrinsically safe electrical circuit\" and can be mounted in hazardous areas of classes 0,1,2."
     - content : "The level gauge is certified and can be used in custody transfer applications."
@@ -135,6 +135,9 @@ norm:
   title : "Certificates"
   docs:
     # step loop
+    - title : "Type examination certificate"
+      icon : "/images/icons/pdf.svg"
+      link : "/docs/sensorCertB.pdf"
     - title : "Type examination certificate (ATEX)"
       icon : "/images/icons/pdf.svg"
       link : "/docs/sensorCertBEx.pdf" 
@@ -172,11 +175,11 @@ bundle:
     - title : "Name"
     - title : "pcs."
   data :
-    - title : "Level sensor for LPG MIRA+"
+    - title : "Level sensor for LPG MIRA+™"
       count: 1
     - title : "Passport"
       count: 1
     - title : "User Manual"
       count: 1
-    - title : "Software «MIRA+ Desktop»"
+    - title : "Software MIRA+™ Desktop"
       count: 1

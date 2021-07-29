@@ -1,5 +1,5 @@
 ---
-title: "MIRA+ level gauges completed certification for use in potentially explosive atmospheres (Module F)"
+title: "MIRA+™ level gauges completed certification for use in potentially explosive atmospheres (Module F)"
 date: 2021-03-04T10:30:13+06:00
 draft: false
 keywords: AMICO DIGITAL", news, Certification
@@ -15,7 +15,7 @@ tags: ["Level_Sensor", "Certificate", "Ex"]
 type: "post"
 ---
 
-The authorized conformity assessment body confirmed the compliance of MIRA+ level rensors batch to the requirements of the Technical Regulations for equipment and protective systems intended for use in potentially explosive atmospheres (Resolution of the Cabinet of Ministers of Ukraine dated December 28, 2016 No. 1055) and previously type approval certificate.
+The authorized conformity assessment body confirmed the compliance of MIRA+™ level rensors batch to the requirements of the Technical Regulations for equipment and protective systems intended for use in potentially explosive atmospheres (Resolution of the Cabinet of Ministers of Ukraine dated December 28, 2016 No. 1055) and previously type approval certificate.
 
 Based on the results of conducted studies and tests (Module F  - conformity to type based on product verification), it was found that the devices meet the requirements of these technical regulations and the approved type, as indicated in the relevant certificate.
 
